@@ -1,9 +1,9 @@
 import './normalize.css'
-import ThemePicker from "../features/theme/Theme";
+import Header from "../widgets/Header";
 
 const App = () => {
 	return <>
-		<ThemePicker />
+		<Header />
 	</>
 }
 

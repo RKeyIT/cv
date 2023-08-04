@@ -1,6 +1,21 @@
 body {
-  background-color: #d2d296;
-  background-image: url("./backgrounds/sunrise.jpg");
+  background-color: rgb(210, 210, 150);
+  background-image: url("src/shared/assets/backgrounds/sunrise.jpg");
+}
+
+.navlink {
+  color: rgb(40, 40, 0);
+}
+.navlink:hover {
+  color: rgb(150, 150, 0);
+  text-shadow: 0 0 10px rgb(150, 150, 0);
+}
+
+.svg-theme-icon {
+  stroke: rgb(40, 40, 0);
+}
+.svg-theme-icon:hover {
+  stroke: rgb(150, 150, 0);
 }
 
 /*# sourceMappingURL=sunrise.css.map */

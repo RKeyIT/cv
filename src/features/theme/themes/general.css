@@ -6,4 +6,17 @@ body {
   height: 100vh;
 }
 
+.theme-button {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.svg-theme-icon {
+  fill: none;
+  width: 1.2em;
+  height: 1.2em;
+}
+
 /*# sourceMappingURL=general.css.map */

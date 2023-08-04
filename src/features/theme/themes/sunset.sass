@@ -1,5 +1,20 @@
 $primary: #9b5500
+$navlink: rgb(230, 210, 200)
+$navlink-hover: rgb(250, 245, 235)
 
 body
   background-color: $primary
-  background-image: url('./backgrounds/sunset.jpg')
+  background-image: url('src/shared/assets/backgrounds/sunset.jpg')
+
+.header-wrapper
+
+.navlink
+  color: $navlink
+  &:hover
+    color: $navlink-hover
+    text-shadow: 0 0 10px $navlink-hover
+
+.svg-theme-icon
+  stroke: $navlink
+  &:hover
+    stroke: $navlink-hover

@@ -1,6 +1,21 @@
 body {
   background-color: #190528;
-  background-image: url("./backgrounds/moon.jpg");
+  background-image: url("src/shared/assets/backgrounds/moon.jpg");
+}
+
+.navlink {
+  color: rgb(218, 200, 230);
+}
+.navlink:hover {
+  color: rgb(245, 235, 250);
+  text-shadow: 0 0 10px rgb(245, 235, 250);
+}
+
+.svg-theme-icon {
+  stroke: rgb(218, 200, 230);
+}
+.svg-theme-icon:hover {
+  stroke: rgb(245, 235, 250);
 }
 
 /*# sourceMappingURL=moon.css.map */

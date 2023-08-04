@@ -1,6 +1,21 @@
 body {
-  background-color: #96c3d2;
-  background-image: url("./backgrounds/noon.jpg");
+  background-color: rgb(220, 220, 230);
+  background-image: url("src/shared/assets/backgrounds/noon.jpg");
+}
+
+.navlink {
+  color: rgb(10, 10, 30);
+}
+.navlink:hover {
+  color: rgb(75, 75, 150);
+  text-shadow: 0 0 10px rgb(75, 75, 150);
+}
+
+.svg-theme-icon {
+  stroke: #2e6eb8;
+}
+.svg-theme-icon:hover {
+  stroke: rgb(75, 75, 150);
 }
 
 /*# sourceMappingURL=noon.css.map */
