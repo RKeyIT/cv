@@ -1,0 +1,21 @@
+.header-content {
+  font-size: 1.2rem;
+}
+.header-content-heading {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.header-content-h2 {
+  font-size: 2em;
+  text-align: center;
+}
+.header-content-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+.header-content-text-container {
+  padding: 20px 40px;
+  border-radius: 20px 0 0 20px;
+}
+
+/*# sourceMappingURL=style.css.map */
