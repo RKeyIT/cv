@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import './themes/animations.css'
 import './themes/general.css'
+import './themes/media.css'
 import sunrise from "./themes/sunrise.css?inline";
 import noon from "./themes/noon.css?inline";
 import sunset from "./themes/sunset.css?inline";

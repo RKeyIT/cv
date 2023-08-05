@@ -1,4 +1,4 @@
-body {
+.header-wrapper {
   background-color: rgb(155, 85, 0);
   background-image: url("src/shared/assets/backgrounds/sunset.jpg");
 }

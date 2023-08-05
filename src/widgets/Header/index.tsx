@@ -5,8 +5,10 @@ import HeaderContent from "./HeaderContent";
 
 const Header = () => {
 	return <header className="header-wrapper transition-1000ms">
-		<HeaderUI />
-		<HeaderContent />
+		<div className="container">
+			<HeaderUI />
+			<HeaderContent />
+		</div>
 	</header>
 };
 
