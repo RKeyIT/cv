@@ -1,12 +1,17 @@
 $primary: #190528
 $navlink: rgb(218, 200, 230)
 $navlink-hover: rgb(245, 235, 250)
+$content-light: rgb(218, 200, 230)
+$content-dark: rgb(39, 38, 43)
+$content-colored: rgb(45, 110, 185)
+$alpha-background: rgba(39, 38, 43, 0.8)
 
 body
   background-color: $primary
   background-image: url('src/shared/assets/backgrounds/moon.jpg')
 
-.header-wrapper
+.app-icon
+  fill: $content-light
 
 .navlink
   color: $navlink
@@ -15,6 +20,12 @@ body
     text-shadow: 0 0 10px $navlink-hover
 
 .svg-theme-icon
-  stroke: $navlink
+  stroke: $content-light
   &:hover
     stroke: $navlink-hover
+
+.header-content
+  color: $content-light
+
+  &-text-container
+    background-color: $alpha-background

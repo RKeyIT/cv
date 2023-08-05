@@ -1,6 +1,10 @@
 body {
-  background-color: #9b5500;
+  background-color: rgb(155, 85, 0);
   background-image: url("src/shared/assets/backgrounds/sunset.jpg");
+}
+
+.app-icon {
+  fill: rgb(230, 210, 200);
 }
 
 .navlink {
@@ -16,6 +20,13 @@ body {
 }
 .svg-theme-icon:hover {
   stroke: rgb(250, 245, 235);
+}
+
+.header-content {
+  color: rgb(230, 210, 200);
+}
+.header-content-text-container {
+  background-color: rgba(155, 85, 0, 0.5);
 }
 
 /*# sourceMappingURL=sunset.css.map */

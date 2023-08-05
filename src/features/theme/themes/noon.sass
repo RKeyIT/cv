@@ -1,13 +1,17 @@
 $primary: rgb(220, 220, 230)
 $navlink: rgb(10, 10, 30)
 $navlink-hover: rgb(75, 75, 150)
-
+$content-light: rgb(220, 220, 230)
+$content-dark: rgb(10, 10, 30)
+$content-colored: rgb(45, 110, 185)
+$alpha-background: rgba(10, 10, 30, 0.5)
 
 body
   background-color: $primary
   background-image: url('src/shared/assets/backgrounds/noon.jpg')
 
-.header-wrapper
+.app-icon
+  fill: $primary
 
 .navlink
   color: $navlink
@@ -19,3 +23,9 @@ body
   stroke: #2e6eb8
   &:hover
     stroke: $navlink-hover
+
+.header-content
+  color: $content-dark
+
+  &-text-container
+    background-color: $alpha-background

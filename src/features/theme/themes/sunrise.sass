@@ -1,13 +1,18 @@
 $primary: rgb(210, 210, 150)
 $navlink: rgb(40, 40, 0)
 $navlink-hover: rgb(150, 150, 0)
+$content-light: rgb(210, 210, 150)
+$content-dark: rgb(40, 40, 0)
+$content-colored: rgb(45, 110, 185)
+$alpha-background: rgba(40, 40, 0, 0.5)
 
 
 body
   background-color: $primary
   background-image: url('src/shared/assets/backgrounds/sunrise.jpg')
 
-.header-wrapper
+.app-icon
+  fill: $primary
 
 .navlink
   color: $navlink
@@ -16,6 +21,12 @@ body
     text-shadow: 0 0 10px $navlink-hover
 
 .svg-theme-icon
-  stroke: $navlink
+  stroke: $content-dark
   &:hover
     stroke: $navlink-hover
+
+.header-content
+  color: $content-dark
+
+  &-text-container
+    background-color: $alpha-background

@@ -3,6 +3,10 @@ body {
   background-image: url("src/shared/assets/backgrounds/moon.jpg");
 }
 
+.app-icon {
+  fill: rgb(218, 200, 230);
+}
+
 .navlink {
   color: rgb(218, 200, 230);
 }
@@ -16,6 +20,13 @@ body {
 }
 .svg-theme-icon:hover {
   stroke: rgb(245, 235, 250);
+}
+
+.header-content {
+  color: rgb(218, 200, 230);
+}
+.header-content-text-container {
+  background-color: rgba(39, 38, 43, 0.8);
 }
 
 /*# sourceMappingURL=moon.css.map */

@@ -1,35 +1,6 @@
-.header-ui {
-  display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.header-logo {
-  display: flex;
-}
-
-.themepicker {
-  display: flex;
-  flex-direction: row;
-  list-style: none;
-  justify-content: center;
-  gap: 6px;
-}
-
-.header-menu {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  list-style: none;
-  gap: 20px;
-  margin-block: 0;
-  margin-inline: 0;
-  padding-inline: 0;
-}
-
-.navlink {
-  text-decoration: none;
+.header-wrapper {
+  height: 100vh;
+  padding: 20px 30px;
 }
 
 /*# sourceMappingURL=style.css.map */

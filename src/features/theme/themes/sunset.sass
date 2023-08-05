@@ -1,12 +1,17 @@
-$primary: #9b5500
+$primary: rgb(155, 85, 0)
 $navlink: rgb(230, 210, 200)
 $navlink-hover: rgb(250, 245, 235)
+$content-light: rgb(230, 210, 200)
+$content-dark: rgb(155, 85, 0)
+$content-colored: rgb(45, 110, 185)
+$alpha-background: rgba(155, 85, 0, 0.5)
 
 body
   background-color: $primary
   background-image: url('src/shared/assets/backgrounds/sunset.jpg')
 
-.header-wrapper
+.app-icon
+  fill: $navlink
 
 .navlink
   color: $navlink
@@ -15,6 +20,12 @@ body
     text-shadow: 0 0 10px $navlink-hover
 
 .svg-theme-icon
-  stroke: $navlink
+  stroke: $content-light
   &:hover
     stroke: $navlink-hover
+
+.header-content
+  color: $content-light
+
+  &-text-container
+    background-color: $alpha-background
