@@ -21,13 +21,13 @@ const ThemePicker = () => {
 	const moonTheme = () => setTheme(moon)
 
 	// Automatically set the theme based on the current time
-	// useEffect(() => {
-	// 	const hours = new Date().getHours()
-	// 	if (hours >= 22 && hours < 4) setTheme(moon)
-	// 	if (hours >= 4 && hours < 10) setTheme(sunrise)
-	// 	if (hours >= 10 && hours < 16) setTheme(noon)
-	// 	if (hours >= 16 && hours < 22) setTheme(sunset)
-	// }, [])
+	useEffect(() => {
+		const hours = new Date().getHours()
+		if (hours >= 22 && hours < 4) setTheme(moon)
+		if (hours >= 4 && hours < 10) setTheme(sunrise)
+		if (hours >= 10 && hours < 16) setTheme(noon)
+		if (hours >= 16 && hours < 22) setTheme(sunset)
+	}, [])
 
 	// Button will be disabled when the user changes the theme on 1s (as like 1s of animation in animations.css)
 	useEffect(() => {
