@@ -5,10 +5,31 @@ $content-light: rgb(218, 200, 230)
 $content-dark: rgb(39, 38, 43)
 $content-colored: rgb(45, 110, 185)
 $alpha-background: rgba(39, 38, 43, 0.8)
+$exit-btn: rgba(200, 0, 0, 1)
+$exit-btn-hover: rgba(255, 0, 0, 1)
 
-.header-wrapper
-  background-color: $primary
-  background-image: url('src/shared/assets/backgrounds/moon.jpg')
+.header
+  &-wrapper
+    background-color: $primary
+    background-image: url('src/shared/assets/backgrounds/moon.jpg')
+
+  &-content
+    color: $content-light
+
+    &-h2
+      background-color: $alpha-background
+    &-text-container
+      background-color: $alpha-background
+
+
+.btn-separators-container
+  color: $content-light
+
+  &:hover
+    color: $navlink-hover
+
+.btn-separators-container-active
+  color: $exit-btn
 
 .app-icon
   fill: $content-light
@@ -24,8 +45,6 @@ $alpha-background: rgba(39, 38, 43, 0.8)
   &:hover
     stroke: $navlink-hover
 
-.header-content
-  color: $content-light
 
-  &-text-container
-    background-color: $alpha-background
+.header-burger-menu-container
+  background-color: $alpha-background

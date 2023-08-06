@@ -1,5 +1,6 @@
 import React from 'react';
 import './style.css';
+import './meadia.css'
 import HeaderUI from "./HeaderUI";
 import HeaderContent from "./HeaderContent";
 

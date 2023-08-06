@@ -1,0 +1,27 @@
+@media screen and (max-width: 767px) {
+  .header-ui {
+    position: fixed;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+  }
+  .header-logo {
+    width: 1em;
+    height: 1em;
+  }
+  .header-inline-menu {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header-ui {
+    position: relative;
+  }
+  .header-inline-menu {
+    display: flex;
+  }
+}
+
+/*# sourceMappingURL=media.css.map */

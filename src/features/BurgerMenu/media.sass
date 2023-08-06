@@ -1,34 +1,25 @@
-@mixin equalWH($width)
-  width: $width
-  height: $width
-
 // Watches
 @media screen and (max-width: 319px)
-  .svg-theme-icon
-    @include equalWH(0.75em)
+  .header-burger-menu
+    display: flex
+    opacity: 1
+    transform: translateY(0)
 
 // Mobile
 @media screen and (min-width: 320px)
-  .svg-theme-icon
-    @include equalWH(0.75em)
 
 // Tablet
 @media screen and (min-width: 480px)
 
 // Small screen PC/Laptop
 @media screen and (min-width: 768px)
-  .svg-theme-icon
-    @include equalWH(1em)
+  .header-burger-menu
+    display: none
+    opacity: 0
+    transform: translateY(-10px)
 
 // Medium screen PC/Laptop
 @media screen and (min-width: 1024px)
 
 // Big screens
 @media screen and (min-width: 1920px)
-  .svg-theme-icon
-    @include equalWH(2em)
-
-
-
-
-

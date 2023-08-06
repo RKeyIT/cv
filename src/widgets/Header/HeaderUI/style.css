@@ -19,7 +19,7 @@
   gap: 6px;
 }
 
-.header-menu {
+.header-inline-menu {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
