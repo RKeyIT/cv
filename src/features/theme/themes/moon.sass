@@ -5,6 +5,7 @@ $content-light: rgb(218, 200, 230)
 $content-dark: rgb(39, 38, 43)
 $content-colored: rgb(45, 110, 185)
 $alpha-background: rgba(39, 38, 43, 0.8)
+$burger-menu-bg: rgba($primary, 0.95)
 $exit-btn: rgba(200, 0, 0, 1)
 $exit-btn-hover: rgba(255, 0, 0, 1)
 
@@ -12,6 +13,12 @@ $exit-btn-hover: rgba(255, 0, 0, 1)
   &-wrapper
     background-color: $primary
     background-image: url('src/shared/assets/backgrounds/moon.jpg')
+
+  &-ui
+    @media screen and (max-width: 767px)
+      background-color: $primary
+    @media screen and (min-width: 768px)
+      background: none
 
   &-content
     color: $content-light
@@ -47,4 +54,4 @@ $exit-btn-hover: rgba(255, 0, 0, 1)
 
 
 .header-burger-menu-container
-  background-color: $alpha-background
+  background-color: $burger-menu-bg

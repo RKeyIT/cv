@@ -13,7 +13,7 @@ const BurgerMenu = () => {
 		<button onClick={ openMenu }
 		        className={ `transition-500ms btn-separators-container${ isActive ? '-active' : '' }` }>
 			<div className="transition-500ms btn-burger-line-1">|</div>
-			<div className="transition-1000ms btn-burger-line-2">|</div>
+			<div className="transition-500ms btn-burger-line-2">|</div>
 			<div className="transition-500ms btn-burger-line-3">|</div>
 		</button>
 

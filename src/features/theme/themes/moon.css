@@ -2,6 +2,16 @@
   background-color: #190528;
   background-image: url("src/shared/assets/backgrounds/moon.jpg");
 }
+@media screen and (max-width: 767px) {
+  .header-ui {
+    background-color: #190528;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header-ui {
+    background: none;
+  }
+}
 .header-content {
   color: rgb(218, 200, 230);
 }
@@ -43,7 +53,7 @@
 }
 
 .header-burger-menu-container {
-  background-color: rgba(39, 38, 43, 0.8);
+  background-color: rgba(25, 5, 40, 0.95);
 }
 
 /*# sourceMappingURL=moon.css.map */
