@@ -1,6 +1,5 @@
 .header-wrapper {
   background-color: #190528;
-  background-image: url("src/shared/assets/backgrounds/moon.jpg");
 }
 @media screen and (max-width: 767px) {
   .header-ui {
