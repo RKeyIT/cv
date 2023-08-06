@@ -1,8 +1,8 @@
-import ThemePicker from "../../../features/Theme/ThemePicker";
-import AppIcon from "../../../shared/AppIcon";
+import ThemePicker from "../Theme/ThemePicker";
+import AppIcon from "../../shared/AppIcon";
 import './style.css'
 import './media.css'
-import BurgerMenu from "../../../features/BurgerMenu";
+import BurgerMenu from "../BurgerMenu";
 
 const HeaderUI = () => {
 	return <div className="header-ui">
@@ -14,13 +14,13 @@ const HeaderUI = () => {
 				<ThemePicker />
 			</div>
 			<ul className="header-inline-menu transition-200ms">
-				<a className="navlink" href="#">
+				<a className="navlink" href="src/features/HeaderUI/index#">
 					<li>Home</li>
 				</a>
-				<a className="navlink" href="#">
+				<a className="navlink" href="src/features/HeaderUI/index#">
 					<li>Projects</li>
 				</a>
-				<a className="navlink" href="#">
+				<a className="navlink" href="src/features/HeaderUI/index#">
 					<li>Contacts</li>
 				</a>
 			</ul>

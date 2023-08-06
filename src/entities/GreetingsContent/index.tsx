@@ -1,5 +1,7 @@
+import './style.css'
+
 const GreetingsContent = () => {
-	return <>
+	return <div className="greetings-container">
 		<p>
 			My name is Raman Krytski, and I'm 27 years old. I really like programming,
 			so I went to study it at Minsk College of Business and Law.
@@ -28,7 +30,7 @@ const GreetingsContent = () => {
 		<p>
 			Thanks for visiting my website and Enjoy!
 		</p>
-	</>
+	</div>
 };
 
 export default GreetingsContent;

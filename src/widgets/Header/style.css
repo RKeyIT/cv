@@ -1,3 +1,10 @@
-
+.header-wrapper {
+  height: 100vh;
+  padding-top: 2em;
+}
+.header-wrapper .container {
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
 
 /*# sourceMappingURL=style.css.map */

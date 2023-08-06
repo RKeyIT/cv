@@ -1,7 +1,7 @@
 import './style.css';
 import './meadia.css'
-import HeaderUI from "./HeaderUI";
-import HeaderContent from "./HeaderContent";
+import HeaderUI from "../../features/HeaderUI";
+import HeaderContent from "../../features/HeaderContent";
 
 const Header = () => {
 	return <header className="header-wrapper transition-1000ms">
