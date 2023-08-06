@@ -1,4 +1,3 @@
-import React from 'react';
 import ThemePicker from "../../../features/Theme/ThemePicker";
 import AppIcon from "../../../shared/AppIcon";
 import './style.css'
