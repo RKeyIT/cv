@@ -1,7 +1,7 @@
 import './BurgerNav.css'
 
-const BurgerNav = () => {
-	return <ul className={ `transition-500ms header-burger-menu-container` }>
+const BurgerNav = ({burgerMenuRef}) => {
+	return <ul ref={burgerMenuRef} className={ `transition-500ms header-burger-menu-container` }>
 		<a className="navlink" href="#">
 			<li className="header-burger-menu-item">
 				Home
