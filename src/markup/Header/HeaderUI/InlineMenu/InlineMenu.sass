@@ -1,5 +1,4 @@
 .header-inline-menu
-  display: flex
   flex-direction: row
   justify-content: flex-end
   list-style: none
@@ -7,3 +6,10 @@
   margin-block: 0
   margin-inline: 0
   padding-inline: 0
+
+
+  @media screen and (max-width: 767px)
+    display: none
+
+  @media screen and (min-width: 768px)
+    display: flex
