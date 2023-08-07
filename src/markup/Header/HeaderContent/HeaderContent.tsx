@@ -1,5 +1,5 @@
 import './style.css'
-import GreetingsContent from "../../entities/GreetingsContent";
+import GreetingsContent from "../../../content/GreetingsContent";
 
 const HeaderContent = () => {
 	return <div className="header-content">

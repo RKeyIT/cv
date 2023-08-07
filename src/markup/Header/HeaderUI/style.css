@@ -1,6 +1,7 @@
 .header-ui {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
+  height: 2em;
   justify-content: space-between;
   align-items: center;
 }
@@ -34,10 +35,6 @@
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 100;
-}
-
-.h1-cv {
-  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */

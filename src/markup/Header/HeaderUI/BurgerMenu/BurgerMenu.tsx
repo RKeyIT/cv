@@ -19,17 +19,17 @@ const BurgerMenu = () => {
 
 		{ isActive &&
 			<ul className={`transition-500ms header-burger-menu-container`}>
-				<a className="navlink" href="#">
+				<a className="navlink" href="src/markup/Header/HeaderUI/BurgerMenu/index#BurgerMenu.tsx">
 					<li className="header-burger-menu-item">
 						Home
 					</li>
 				</a>
-				<a className="navlink" href="#">
+				<a className="navlink" href="src/markup/Header/HeaderUI/BurgerMenu/index#BurgerMenu.tsx">
 					<li className="header-burger-menu-item">
 						About
 					</li>
 				</a>
-				<a className="navlink" href="#">
+				<a className="navlink" href="src/markup/Header/HeaderUI/BurgerMenu/index#BurgerMenu.tsx">
 					<li className="header-burger-menu-item">
 						Contact
 					</li>

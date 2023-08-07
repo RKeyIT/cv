@@ -1,6 +1,6 @@
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 1919px) {
   .header-wrapper {
-    padding: 0;
+    height: 100vh;
   }
 }
 @media screen and (min-width: 1920px) {
@@ -9,4 +9,4 @@
   }
 }
 
-/*# sourceMappingURL=meadia.css.map */
+/*# sourceMappingURL=style.css.map */

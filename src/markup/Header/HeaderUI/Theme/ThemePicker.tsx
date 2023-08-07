@@ -1,15 +1,14 @@
 import { useState, useEffect } from "react";
-import './themes/animations.css'
+import '../../../../app/animations.css'
 import './themes/general.css'
-import './themes/media.css'
 import sunrise from "./themes/sunrise.css?inline";
 import noon from "./themes/noon.css?inline";
 import sunset from "./themes/sunset.css?inline";
 import moon from "./themes/moon.css?inline";
-import IconSunrise from "../../shared/IconSunrise";
-import IconNoon from "../../shared/IconNoon";
-import IconSunset from "../../shared/IconSunset";
-import IconMoon from "../../shared/IconMoon";
+import IconSunrise from "../../../../shared/IconSunrise/IconMoon";
+import IconNoon from "../../../../shared/IconNoon/IconMoon";
+import IconSunset from "../../../../shared/IconSunset/IconMoon";
+import IconMoon from "../../../../shared/IconMoon/IconMoon";
 
 const ThemePicker = () => {
 	const [ theme, setTheme ] = useState(moon)
