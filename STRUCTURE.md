@@ -3,10 +3,12 @@
 ## Header
 
 - Header 
-  - BurgerMenu
-  - InlineMenu
-  - Theme
-    - themes
+  - HeaderUI
+    - BurgerMenu
+    - InlineMenu
+    - Theme
+      - themes
+  - HeaderContent
 
 ## Main
 

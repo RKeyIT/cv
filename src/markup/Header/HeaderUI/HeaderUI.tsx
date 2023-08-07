@@ -7,12 +7,12 @@ import InlineMenu from "./InlineMenu/InlineMenu";
 
 const HeaderUI = () => {
 	return <div className="header-ui">
-		<div className="header-logo">
-			<AppIcon />
-		</div>
-		<ThemePicker />
-		<InlineMenu />
-		<BurgerMenu />
+			<div className="header-logo">
+				<AppIcon />
+			</div>
+			<ThemePicker />
+			<InlineMenu />
+			<BurgerMenu />
 	</div>
 };
 
