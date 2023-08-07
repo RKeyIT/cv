@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import '../../../../app/animations.css'
-import './themes/general.css'
+import './themes/themes.css'
+import './ThemePicker.css'
 import sunrise from "./themes/sunrise.css?inline";
 import noon from "./themes/noon.css?inline";
 import sunset from "./themes/sunset.css?inline";
@@ -34,7 +35,7 @@ const ThemePicker = () => {
 		setTimeout(() => setDisabled(false), 1000)
 	}, [ theme ])
 
-	return <>
+	return <div className="theme-picker">
 		<style>{ theme }</style>
 		{/*<button onClick={changeTheme}>Auto</button>*/ }
 		<button className="theme-button" onClick={ sunriseTheme } disabled={ isDisabled }>
@@ -49,7 +50,7 @@ const ThemePicker = () => {
 		<button className="theme-button" onClick={ moonTheme } disabled={ isDisabled }>
 			<IconMoon />
 		</button>
-	</>
+	</div>
 }
 
 export default ThemePicker

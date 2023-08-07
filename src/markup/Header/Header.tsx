@@ -1,4 +1,4 @@
-import './style.css';
+import './Header.css';
 import './meadia.css'
 import HeaderUI from "./HeaderUI/HeaderUI";
 import HeaderContent from "./HeaderContent/HeaderContent";

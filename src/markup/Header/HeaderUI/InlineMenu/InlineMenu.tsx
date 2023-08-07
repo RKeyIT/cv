@@ -1,3 +1,4 @@
+import './InlineMenu.css'
 
 const InlineMenu = () => {
 	return <ul className="header-inline-menu transition-200ms">

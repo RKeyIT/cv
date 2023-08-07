@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import './style.css'
-import './media.css'
+import './BurgerMenu.css'
+import './BurgerMenuMedia.css'
 
 const BurgerMenu = () => {
 	const [ isActive, setActive ] = useState(false);
