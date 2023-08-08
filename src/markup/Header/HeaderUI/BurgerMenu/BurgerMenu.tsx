@@ -59,7 +59,12 @@ const BurgerMenu: FC = () => {
 			</a>
 			<a className="navlink" href="#">
 				<li className="burger-menu-item">
-					About
+					About me
+				</li>
+			</a>
+			<a className="navlink" href="#">
+				<li className="burger-menu-item">
+					History
 				</li>
 			</a>
 			<a className="navlink" href="#">
