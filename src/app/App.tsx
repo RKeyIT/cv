@@ -1,12 +1,15 @@
 import './normalize.css'
 import './container.css'
 import Header from "../markup/Header/Header";
+import Footer from "../markup/Footer/Footer";
 
 const App = () => {
-	// Searching header will be hide
+	// Searching header (<h1>) will be hide
 	return <>
 		<h1>RKey CV</h1>
 		<Header />
+
+		<Footer />
 	</>
 }
 
