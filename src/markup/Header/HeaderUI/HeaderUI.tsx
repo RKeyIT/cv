@@ -1,6 +1,6 @@
 import './HeaderUI.css'
 import './HeaderUIMedia.css'
-import ThemePicker from "./Theme/ThemePicker";
+import ThemePicker from "../../../feature/Theme/ThemePicker";
 import AppIcon from "../../../shared/AppIcon/AppIcon";
 import BurgerMenu from "./BurgerMenu/BurgerMenu";
 import InlineMenu from "./InlineMenu/InlineMenu";
