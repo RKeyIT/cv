@@ -15,14 +15,14 @@
   color: rgb(218, 200, 230);
 }
 
-.btn-separators-container {
+.burger-btn {
   color: rgb(218, 200, 230);
 }
-.btn-separators-container:hover {
+.burger-btn:hover {
   color: rgb(245, 235, 250);
 }
 
-.btn-separators-container-active {
+.burger-btn-active {
   color: rgb(200, 0, 0);
 }
 
@@ -45,8 +45,8 @@
   stroke: rgb(245, 235, 250);
 }
 
-.header-burger-menu-container {
-  background-color: rgba(25, 5, 40, 0.95);
+.burger-menu {
+  background-color: rgba(39, 38, 43, 0.8);
 }
 
 /*# sourceMappingURL=moon.css.map */
