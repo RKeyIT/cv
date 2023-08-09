@@ -1,33 +1,92 @@
+/********************************/
+/************ GENERAL ***********/
+body {
+  color: rgb(95, 95, 90);
+  background-color: rgb(225, 235, 240);
+}
+
+/******** GENERAL-END ***********/
+/********************************/
+/********************************/
+/************ HEADER ************/
 .header-wrapper {
-  background-color: rgb(220, 220, 230);
+  background-color: rgb(225, 235, 240);
   background-image: url("bg_noon.jpg");
+  background-repeat: no-repeat;
   background-position: 38%;
+}
+@media screen and (max-width: 767px) {
+  .header-ui {
+    background-color: rgb(225, 235, 240);
+  }
+}
+@media screen and (min-width: 768px) {
+  .header-ui {
+    background: none;
+  }
+}
+.header-content {
+  color: rgb(95, 95, 90);
+}
+
+.burger-btn {
+  color: rgb(95, 95, 90);
+}
+.burger-btn:hover {
+  color: #797973;
+}
+
+.burger-btn-active {
+  color: rgb(200, 0, 0);
 }
 
 .app-icon {
-  fill: rgb(220, 220, 230);
+  fill: rgb(95, 95, 90);
 }
 
 .navlink {
-  color: rgb(10, 10, 30);
+  color: rgb(95, 95, 90);
 }
 .navlink:hover {
-  color: rgb(75, 75, 150);
-  text-shadow: 0 0 10px rgb(75, 75, 150);
+  color: #797973;
+  text-shadow: 0 0 10px #797973;
 }
 
 .svg-theme-icon {
-  stroke: #2e6eb8;
+  stroke: rgb(95, 95, 90);
 }
 .svg-theme-icon:hover {
-  stroke: rgb(75, 75, 150);
+  stroke: #797973;
 }
 
-.header-content {
-  color: rgb(10, 10, 30);
+.burger-menu {
+  background: linear-gradient(to bottom, rgb(225, 235, 240) 0%, rgba(225, 235, 240, 0.8) 100%);
 }
-.header-content-text-container {
-  background-color: rgba(10, 10, 30, 0.5);
+
+/******** HEADER-END ************/
+/********************************/
+/********************************/
+/************* MAIN *************/
+.Technologies {
+  background-color: rgb(95, 95, 90);
+  color: rgb(225, 235, 240);
 }
+
+.Mock {
+  background-color: rgb(225, 235, 240);
+  color: rgb(95, 95, 90);
+}
+
+/********* MAIN-END *************/
+/********************************/
+/********************************/
+/************ FOOTER ************/
+.footer-wrapper {
+  background-color: rgb(225, 235, 240);
+  color: rgb(95, 95, 90);
+}
+
+/******** FOOTER-END ************/
+/********************************/
 
 /*# sourceMappingURL=noon.css.map */

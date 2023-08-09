@@ -1,34 +1,92 @@
+/********************************/
+/************ GENERAL ***********/
+body {
+  color: rgb(255, 225, 195);
+  background-color: rgb(30, 15, 5);
+}
+
+/******** GENERAL-END ***********/
+/********************************/
+/********************************/
+/************ HEADER ************/
 .header-wrapper {
-  background-color: rgb(210, 210, 150);
+  background-color: rgb(30, 15, 5);
   background-image: url("bg_sunrise.jpg");
   background-repeat: no-repeat;
   background-position: 32.5%;
 }
+@media screen and (max-width: 767px) {
+  .header-ui {
+    background-color: rgb(30, 15, 5);
+  }
+}
+@media screen and (min-width: 768px) {
+  .header-ui {
+    background: none;
+  }
+}
+.header-content {
+  color: rgb(255, 225, 195);
+}
+
+.burger-btn {
+  color: rgb(255, 225, 195);
+}
+.burger-btn:hover {
+  color: #fffbf6;
+}
+
+.burger-btn-active {
+  color: rgb(200, 0, 0);
+}
 
 .app-icon {
-  fill: rgb(210, 210, 150);
+  fill: rgb(255, 225, 195);
 }
 
 .navlink {
-  color: rgb(40, 40, 0);
+  color: rgb(255, 225, 195);
 }
 .navlink:hover {
-  color: rgb(150, 150, 0);
-  text-shadow: 0 0 10px rgb(150, 150, 0);
+  color: #fffbf6;
+  text-shadow: 0 0 10px #fffbf6;
 }
 
 .svg-theme-icon {
-  stroke: rgb(40, 40, 0);
+  stroke: rgb(255, 225, 195);
 }
 .svg-theme-icon:hover {
-  stroke: rgb(150, 150, 0);
+  stroke: #fffbf6;
 }
 
-.header-content {
-  color: rgb(40, 40, 0);
+.burger-menu {
+  background: linear-gradient(to bottom, rgb(30, 15, 5) 0%, rgba(30, 15, 5, 0.8) 100%);
 }
-.header-content-text-container {
-  background-color: rgba(40, 40, 0, 0.5);
+
+/******** HEADER-END ************/
+/********************************/
+/********************************/
+/************* MAIN *************/
+.Technologies {
+  background-color: rgb(30, 15, 5);
+  color: rgb(255, 225, 195);
 }
+
+.Mock {
+  background-color: rgb(255, 225, 195);
+  color: rgb(30, 15, 5);
+}
+
+/********* MAIN-END *************/
+/********************************/
+/********************************/
+/************ FOOTER ************/
+.footer-wrapper {
+  background-color: rgb(30, 15, 5);
+  color: rgb(255, 225, 195);
+}
+
+/******** FOOTER-END ************/
+/********************************/
 
 /*# sourceMappingURL=sunrise.css.map */

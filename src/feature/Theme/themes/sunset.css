@@ -1,8 +1,43 @@
+/********************************/
+/************ GENERAL ***********/
+body {
+  color: rgb(230, 210, 200);
+  background-color: rgb(100, 55, 25);
+}
+
+/******** GENERAL-END ***********/
+/********************************/
+/********************************/
+/************ HEADER ************/
 .header-wrapper {
-  background-color: rgb(155, 85, 0);
+  background-color: rgb(100, 55, 25);
   background-image: url("bg_sunset.jpg");
   background-repeat: no-repeat;
   background-position: 45%;
+}
+@media screen and (max-width: 767px) {
+  .header-ui {
+    background-color: rgb(100, 55, 25);
+  }
+}
+@media screen and (min-width: 768px) {
+  .header-ui {
+    background: none;
+  }
+}
+.header-content {
+  color: rgb(230, 210, 200);
+}
+
+.burger-btn {
+  color: rgb(230, 210, 200);
+}
+.burger-btn:hover {
+  color: #f6efeb;
+}
+
+.burger-btn-active {
+  color: rgb(200, 0, 0);
 }
 
 .app-icon {
@@ -13,22 +48,42 @@
   color: rgb(230, 210, 200);
 }
 .navlink:hover {
-  color: rgb(250, 245, 235);
-  text-shadow: 0 0 10px rgb(250, 245, 235);
+  color: #f6efeb;
+  text-shadow: 0 0 10px #f6efeb;
 }
 
 .svg-theme-icon {
   stroke: rgb(230, 210, 200);
 }
 .svg-theme-icon:hover {
-  stroke: rgb(250, 245, 235);
+  stroke: #f6efeb;
 }
 
-.header-content {
-  color: rgb(230, 210, 200);
+.burger-menu {
+  background: linear-gradient(to bottom, rgb(100, 55, 25) 0%, rgba(100, 55, 25, 0.8) 100%);
 }
-.header-content-text-container {
-  background-color: rgba(155, 85, 0, 0.5);
+
+/******** HEADER-END ************/
+/********************************/
+/********************************/
+/************* MAIN *************/
+.Technologies {
+  background-color: rgb(10, 20, 35);
 }
+
+.Mock {
+  background-color: rgb(100, 55, 25);
+}
+
+/********* MAIN-END *************/
+/********************************/
+/********************************/
+/************ FOOTER ************/
+.footer-wrapper {
+  background-color: rgb(10, 20, 35);
+}
+
+/******** FOOTER-END ************/
+/********************************/
 
 /*# sourceMappingURL=sunset.css.map */
