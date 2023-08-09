@@ -12,14 +12,13 @@ const Footer: FC = () => {
 					<div className={`footer-socials`}>
 						<IconLinkedIn />
 						<IconGitHub />
-						<IconTelegram />
 					</div>
 					<div className="footer-contacts">
 						<div className="gmail">
 							Gmail: gmail@gmail.com
 						</div>
 						<div className="phone">
-							Phone: +45645465456
+							Phone/Telegram: +45645465456
 						</div>
 					</div>
 					<div className="footer-copyright">

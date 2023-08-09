@@ -1,4 +1,4 @@
-.header-ui {
+.header-ui .container {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   justify-content: space-between;

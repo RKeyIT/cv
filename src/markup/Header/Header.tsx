@@ -1,6 +1,5 @@
 import './Header.css';
 import HeaderUI from "./HeaderUI/HeaderUI";
-import HeaderContent from "./HeaderContent/HeaderContent";
 
 const Header = () => {
 	return <header className="header-wrapper transition-1000ms">
@@ -8,7 +7,6 @@ const Header = () => {
 			<HeaderUI />
 
 		</div>
-			{/*<HeaderContent />*/}
 	</header>
 };
 
