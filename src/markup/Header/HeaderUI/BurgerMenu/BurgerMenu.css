@@ -64,6 +64,7 @@
 }
 .burger-menu {
   position: fixed;
+  top: 9px;
   left: 0;
   right: 0;
   padding: 0.5em 0;

@@ -50,7 +50,7 @@ const BurgerMenu: FC = () => {
 		</button>
 		<ul ref={ burgerMenuRef }
 		    className={ `transition-500ms burger-menu ${ isActive ? 'active' : 'non-active' }`
-		      + ` ${ isDisplayNone? 'display-none' : '' }`}
+		      + ` ${ isDisplayNone ? 'display-none' : '' }`}
 		>
 			<a className="navlink" href="#">
 				<li className="burger-menu-item">

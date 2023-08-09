@@ -1,12 +1,23 @@
+/********************************/
+/************ GENERAL ***********/
+body {
+  color: rgb(200, 185, 210);
+  background-color: rgb(15, 0, 20);
+}
+
+/******** GENERAL-END ***********/
+/********************************/
+/********************************/
+/************ HEADER ************/
 .header-wrapper {
-  background-color: #190528;
+  background-color: rgb(15, 0, 20);
   background-image: url("bg_moon.jpg");
   background-repeat: no-repeat;
   background-position: 55%;
 }
 @media screen and (max-width: 767px) {
   .header-ui {
-    background-color: #190528;
+    background-color: rgb(15, 0, 20);
   }
 }
 @media screen and (min-width: 768px) {
@@ -15,14 +26,14 @@
   }
 }
 .header-content {
-  color: rgb(218, 200, 230);
+  color: rgb(200, 185, 210);
 }
 
 .burger-btn {
-  color: rgb(218, 200, 230);
+  color: rgb(200, 185, 210);
 }
 .burger-btn:hover {
-  color: rgb(245, 235, 250);
+  color: #e0d8e6;
 }
 
 .burger-btn-active {
@@ -30,26 +41,37 @@
 }
 
 .app-icon {
-  fill: rgb(218, 200, 230);
+  fill: rgb(200, 185, 210);
 }
 
 .navlink {
-  color: rgb(218, 200, 230);
+  color: rgb(200, 185, 210);
 }
 .navlink:hover {
-  color: rgb(245, 235, 250);
-  text-shadow: 0 0 10px rgb(245, 235, 250);
+  color: #e0d8e6;
+  text-shadow: 0 0 10px #e0d8e6;
 }
 
 .svg-theme-icon {
-  stroke: rgb(218, 200, 230);
+  stroke: rgb(200, 185, 210);
 }
 .svg-theme-icon:hover {
-  stroke: rgb(245, 235, 250);
+  stroke: #e0d8e6;
 }
 
 .burger-menu {
-  background-color: rgba(39, 38, 43, 0.8);
+  background-color: rgba(15, 0, 20, 0.9);
 }
+
+/******** HEADER-END ************/
+/********************************/
+/********************************/
+/************ FOOTER ************/
+.footer-wrapper {
+  background-color: #1a1a1a;
+}
+
+/******** FOOTER-END ************/
+/********************************/
 
 /*# sourceMappingURL=moon.css.map */
