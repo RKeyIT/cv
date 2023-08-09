@@ -60,7 +60,7 @@ body {
 }
 
 .burger-menu {
-  background-color: rgba(15, 0, 20, 0.9);
+  background: linear-gradient(to bottom, rgb(15, 0, 20) 0%, rgba(15, 0, 20, 0.8) 100%);
 }
 
 /******** HEADER-END ************/
