@@ -1,0 +1,34 @@
+$primary: rgb(155, 85, 0)
+$navlink: rgb(230, 210, 200)
+$navlink-hover: rgb(250, 245, 235)
+$content-light: rgb(230, 210, 200)
+$content-dark: rgb(155, 85, 0)
+$content-colored: rgb(45, 110, 185)
+$alpha-background: rgba(155, 85, 0, 0.5)
+
+.header-wrapper
+  background-color: $primary
+  //noinspection CssUnknownTarget
+  background-image: url('bg_sunset.jpg')
+  background-repeat: no-repeat
+  background-position: 45%
+
+.app-icon
+  fill: $navlink
+
+.navlink
+  color: $navlink
+  &:hover
+    color: $navlink-hover
+    text-shadow: 0 0 10px $navlink-hover
+
+.svg-theme-icon
+  stroke: $content-light
+  &:hover
+    stroke: $navlink-hover
+
+.header-content
+  color: $content-light
+
+  &-text-container
+    background-color: $alpha-background

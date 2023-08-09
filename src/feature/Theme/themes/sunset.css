@@ -1,0 +1,34 @@
+.header-wrapper {
+  background-color: rgb(155, 85, 0);
+  background-image: url("bg_sunset.jpg");
+  background-repeat: no-repeat;
+  background-position: 45%;
+}
+
+.app-icon {
+  fill: rgb(230, 210, 200);
+}
+
+.navlink {
+  color: rgb(230, 210, 200);
+}
+.navlink:hover {
+  color: rgb(250, 245, 235);
+  text-shadow: 0 0 10px rgb(250, 245, 235);
+}
+
+.svg-theme-icon {
+  stroke: rgb(230, 210, 200);
+}
+.svg-theme-icon:hover {
+  stroke: rgb(250, 245, 235);
+}
+
+.header-content {
+  color: rgb(230, 210, 200);
+}
+.header-content-text-container {
+  background-color: rgba(155, 85, 0, 0.5);
+}
+
+/*# sourceMappingURL=sunset.css.map */

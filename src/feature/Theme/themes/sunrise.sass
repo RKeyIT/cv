@@ -1,0 +1,35 @@
+$primary: rgb(210, 210, 150)
+$navlink: rgb(40, 40, 0)
+$navlink-hover: rgb(150, 150, 0)
+$content-light: rgb(210, 210, 150)
+$content-dark: rgb(40, 40, 0)
+$content-colored: rgb(45, 110, 185)
+$alpha-background: rgba(40, 40, 0, 0.5)
+
+
+.header-wrapper
+  background-color: $primary
+  //noinspection CssUnknownTarget
+  background-image: url('bg_sunrise.jpg')
+  background-repeat: no-repeat
+  background-position: 32.5%
+
+.app-icon
+  fill: $primary
+
+.navlink
+  color: $navlink
+  &:hover
+    color: $navlink-hover
+    text-shadow: 0 0 10px $navlink-hover
+
+.svg-theme-icon
+  stroke: $content-dark
+  &:hover
+    stroke: $navlink-hover
+
+.header-content
+  color: $content-dark
+
+  &-text-container
+    background-color: $alpha-background

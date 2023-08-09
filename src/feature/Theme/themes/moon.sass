@@ -1,0 +1,100 @@
+$white: darken(white, 10%)
+$black: lighten(black, 10%)
+
+$primary: rgb(15, 0, 20)
+$primary-hover: lighten($primary, 10%)
+$secondary: rgb(200, 185, 210)
+$secondary-hover: lighten($secondary, 10%)
+
+$link-dark: rgb(0, 5, 30)
+$link-light: rgb(230, 200, 220)
+
+
+$content-light: rgb(218, 200, 230)
+$content-dark: rgb(39, 38, 43)
+$content-colored: rgb(45, 110, 185)
+$alpha-background: rgba(39, 38, 43, 0.8)
+$burger-menu-bg: rgba($primary, 0.5)
+$exit-btn: rgb(200, 0, 0)
+
+/********************************/
+/************ GENERAL ***********/
+body
+  color: $secondary
+  background-color: $primary
+/******** GENERAL-END ***********/
+/********************************/
+
+/********************************/
+/************ HEADER ************/
+.header
+  &-wrapper
+    background-color: $primary
+    //noinspection CssUnknownTarget
+    background-image: url('bg_moon.jpg')
+    background-repeat: no-repeat
+    background-position: 55%
+
+  &-ui
+    @media screen and (max-width: 767px)
+      background-color: $primary
+    @media screen and (min-width: 768px)
+      background: none
+
+  &-content
+    color: $secondary
+
+    //&-h2
+    //  background-color: $alpha-background
+    //&-text-container
+    //  background-color: $alpha-background
+
+
+.burger-btn
+  color: $secondary
+
+  &:hover
+    color: $secondary-hover
+
+.burger-btn-active
+  color: $exit-btn
+
+.app-icon
+  fill: $secondary
+
+.navlink
+  color: $secondary
+  &:hover
+    color: $secondary-hover
+    text-shadow: 0 0 10px $secondary-hover
+
+.svg-theme-icon
+  stroke: $secondary
+  &:hover
+    stroke: $secondary-hover
+
+
+.burger-menu
+  background: linear-gradient(to bottom, $primary 0%, rgba($primary, 0.8) 100%)
+/******** HEADER-END ************/
+/********************************/
+
+
+/********************************/
+/************* MAIN *************/
+.Technologies
+  background-color: $black
+
+.Mock
+  background-color: $primary
+/********* MAIN-END *************/
+/********************************/
+
+
+/********************************/
+/************ FOOTER ************/
+.footer-wrapper
+  background-color: $black
+
+/******** FOOTER-END ************/
+/********************************/

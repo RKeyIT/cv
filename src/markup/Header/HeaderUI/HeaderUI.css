@@ -1,0 +1,23 @@
+.header-ui {
+  font-size: 2em;
+}
+.header-ui .container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  display: flex;
+  width: 1em;
+  height: 1em;
+}
+
+.navlink {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 100;
+}
+
+/*# sourceMappingURL=HeaderUI.css.map */

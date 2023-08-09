@@ -1,0 +1,89 @@
+/********************************/
+/************ GENERAL ***********/
+body {
+  color: rgb(200, 185, 210);
+  background-color: rgb(15, 0, 20);
+}
+
+/******** GENERAL-END ***********/
+/********************************/
+/********************************/
+/************ HEADER ************/
+.header-wrapper {
+  background-color: rgb(15, 0, 20);
+  background-image: url("bg_moon.jpg");
+  background-repeat: no-repeat;
+  background-position: 55%;
+}
+@media screen and (max-width: 767px) {
+  .header-ui {
+    background-color: rgb(15, 0, 20);
+  }
+}
+@media screen and (min-width: 768px) {
+  .header-ui {
+    background: none;
+  }
+}
+.header-content {
+  color: rgb(200, 185, 210);
+}
+
+.burger-btn {
+  color: rgb(200, 185, 210);
+}
+.burger-btn:hover {
+  color: #e0d8e6;
+}
+
+.burger-btn-active {
+  color: rgb(200, 0, 0);
+}
+
+.app-icon {
+  fill: rgb(200, 185, 210);
+}
+
+.navlink {
+  color: rgb(200, 185, 210);
+}
+.navlink:hover {
+  color: #e0d8e6;
+  text-shadow: 0 0 10px #e0d8e6;
+}
+
+.svg-theme-icon {
+  stroke: rgb(200, 185, 210);
+}
+.svg-theme-icon:hover {
+  stroke: #e0d8e6;
+}
+
+.burger-menu {
+  background: linear-gradient(to bottom, rgb(15, 0, 20) 0%, rgba(15, 0, 20, 0.8) 100%);
+}
+
+/******** HEADER-END ************/
+/********************************/
+/********************************/
+/************* MAIN *************/
+.Technologies {
+  background-color: #1a1a1a;
+}
+
+.Mock {
+  background-color: rgb(15, 0, 20);
+}
+
+/********* MAIN-END *************/
+/********************************/
+/********************************/
+/************ FOOTER ************/
+.footer-wrapper {
+  background-color: #1a1a1a;
+}
+
+/******** FOOTER-END ************/
+/********************************/
+
+/*# sourceMappingURL=moon.css.map */

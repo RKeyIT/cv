@@ -1,6 +1,26 @@
-.app-icon {
-  width: 100%;
-  height: 100%;
+@media screen and (max-width: 319px) {
+  .svg-theme-icon {
+    width: 0.75em;
+    height: 0.75em;
+  }
+}
+@media screen and (min-width: 320px) {
+  .svg-theme-icon {
+    width: 0.75em;
+    height: 0.75em;
+  }
+}
+@media screen and (min-width: 768px) {
+  .svg-theme-icon {
+    width: 1em;
+    height: 1em;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .svg-theme-icon {
+    width: 2em;
+    height: 2em;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

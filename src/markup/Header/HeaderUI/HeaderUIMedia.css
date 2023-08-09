@@ -1,0 +1,22 @@
+@media screen and (max-width: 767px) {
+  .header-ui {
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  .header-inline-menu {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .header-ui {
+    position: relative;
+  }
+  .header-inline-menu {
+    display: flex;
+  }
+}
+
+/*# sourceMappingURL=HeaderUIMedia.css.map */

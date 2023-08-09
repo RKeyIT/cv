@@ -1,0 +1,82 @@
+// BURGER BUTTON
+.header-burger
+  display: flex
+  z-index: 1
+  justify-content: flex-end
+
+  & .burger-btn, .burger-btn-active
+    font-weight: 900
+    background: none
+    border: none
+    margin: 0
+    padding: 0
+    outline: none
+    cursor: pointer
+    display: flex
+    z-index: 2
+
+  & .burger-btn
+    transform: rotate(90deg)
+
+  & .burger-btn-active
+    transform: rotate(1turn) scale(1.2) translate(-10%, -30%)
+
+    & .burger-btn-line-1
+      transform: rotate(45deg) translate(160%)
+    & .burger-btn-line-2
+      transform: scale(0)
+    & .burger-btn-line-3
+      transform: rotate(-45deg) translate(-160%)
+
+// BURGER-MENU
+@keyframes menu-slide-in
+  from
+    opacity: 0
+    height: 0
+    border-radius: 0
+    padding: 0
+    gap: 0
+  to
+    opacity: 1
+    border-radius: 0 0 20px 20px
+    height: auto
+    padding: .5em 0
+    gap: 1em
+
+
+@keyframes menu-slide-out
+  from
+    opacity: 1
+    border-radius: 0 0 20px 20px
+    height: auto
+    padding: .5em 0
+    gap: 1em
+  to
+    opacity: 0
+    border-radius: 0
+    height: 0
+    padding: 0
+    gap: 0
+
+.burger-menu
+  position: fixed
+  top: 9px
+  left: 0
+  right: 0
+  padding: .5em 0
+  list-style: none
+  display: flex
+  flex-direction: column
+  align-items: center
+  gap: 1em
+  border-radius: 0 0 20px 20px
+
+  // WARNING: setTimeout in BurgerMenu component is based and hardcoded on timers in this classes
+  &.non-active
+    animation: menu-slide-out .5s ease forwards
+
+  &.active
+    animation: menu-slide-in .5s ease forwards
+
+.display-none
+  display: none
