@@ -1,5 +1,7 @@
 .header-wrapper {
   background-color: rgb(220, 220, 230);
+  background-image: url("bg_noon.jpg");
+  background-position: 38%;
 }
 
 .app-icon {

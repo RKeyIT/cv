@@ -1,5 +1,8 @@
 .header-wrapper {
   background-color: rgb(155, 85, 0);
+  background-image: url("bg_sunset.jpg");
+  background-repeat: no-repeat;
+  background-position: 45%;
 }
 
 .app-icon {

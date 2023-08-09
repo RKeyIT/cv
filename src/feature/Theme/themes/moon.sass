@@ -12,8 +12,10 @@ $exit-btn-hover: rgba(255, 0, 0, 1)
 .header
   &-wrapper
     background-color: $primary
-    // TODO: Images do not work on production
-    //background-image: url('src/shared/assets/backgrounds/moon.jpg')
+    //noinspection CssUnknownTarget
+    background-image: url('bg_moon.jpg')
+    background-repeat: no-repeat
+    background-position: 55%
 
   &-ui
     @media screen and (max-width: 767px)

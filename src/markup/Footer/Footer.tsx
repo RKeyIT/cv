@@ -2,7 +2,6 @@ import { FC } from 'react';
 import './Footer.css'
 import IconLinkedIn from "../../shared/IconLinkedIn/IconLinkedIn";
 import IconGitHub from "../../shared/IconGitHub/IconGitHub";
-import IconTelegram from "../../shared/IconTelegram/IconTelegram";
 
 const Footer: FC = () => {
 	return <>
