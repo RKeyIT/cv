@@ -10,6 +10,10 @@
   width: 2em;
   height: 2em;
 }
+.theme-button:disabled .svg-theme-icon {
+  stroke: gray;
+  cursor: wait;
+}
 
 .svg-theme-icon {
   fill: none;
