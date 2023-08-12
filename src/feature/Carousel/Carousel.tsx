@@ -1,14 +1,15 @@
 import IconReact from "../../shared/IconReact/IconReact";
+import './Carousel.css'
 
 const Carousel = () => {
 	return <div className={ `Carousel` }>
-		<div className="container window">
-			<div className="container slide">
+		<div className="container window height">
+			<div className="slide">
 				<IconReact />
 			</div>
-			<div className="container slide">TS</div>
-			<div className="container slide">SASS</div>
-			<div className="container slide">VITE</div>
+			<div className="slide">TS</div>
+			<div className="slide active">SASS</div>
+			<div className="slide">VITE</div>
 		</div>
 	</div>
 };
