@@ -1,0 +1,8 @@
+.Carousel .window {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+/*# sourceMappingURL=style.css.map */
