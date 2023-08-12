@@ -1,8 +1,8 @@
 /********************************/
 /************ GENERAL ***********/
 body {
-  color: rgb(95, 95, 90);
-  background-color: rgb(225, 235, 240);
+  color: rgb(231, 238, 246);
+  background-color: rgb(42, 96, 166);
 }
 
 /******** GENERAL-END ***********/
@@ -10,14 +10,14 @@ body {
 /********************************/
 /************ HEADER ************/
 .header-wrapper {
-  background-color: rgb(225, 235, 240);
+  background-color: rgb(42, 96, 166);
   background-image: url("bg_noon.jpg");
   background-repeat: no-repeat;
   background-position: 38%;
 }
 @media screen and (max-width: 767px) {
   .header-ui {
-    background-color: rgb(225, 235, 240);
+    background-color: rgb(42, 96, 166);
   }
 }
 @media screen and (min-width: 768px) {
@@ -26,14 +26,14 @@ body {
   }
 }
 .header-content {
-  color: rgb(95, 95, 90);
+  color: rgb(231, 238, 246);
 }
 
 .burger-btn {
-  color: rgb(95, 95, 90);
+  color: rgb(231, 238, 246);
 }
 .burger-btn:hover {
-  color: #797973;
+  color: white;
 }
 
 .burger-btn-active {
@@ -41,26 +41,26 @@ body {
 }
 
 .app-icon {
-  fill: rgb(95, 95, 90);
+  fill: rgb(231, 238, 246);
 }
 
 .navlink {
-  color: rgb(95, 95, 90);
+  color: rgb(231, 238, 246);
 }
 .navlink:hover {
-  color: #797973;
-  text-shadow: 0 0 10px #797973;
+  color: white;
+  text-shadow: 0 0 10px white;
 }
 
 .svg-theme-icon {
-  stroke: rgb(95, 95, 90);
+  stroke: rgb(231, 238, 246);
 }
 .svg-theme-icon:hover {
-  stroke: #797973;
+  stroke: white;
 }
 
 .burger-menu {
-  background: linear-gradient(to bottom, rgb(225, 235, 240) 0%, rgba(225, 235, 240, 0.8) 100%);
+  background: linear-gradient(to bottom, rgb(42, 96, 166) 0%, rgba(42, 96, 166, 0.8) 100%);
 }
 
 /******** HEADER-END ************/
@@ -68,13 +68,13 @@ body {
 /********************************/
 /************* MAIN *************/
 .Technologies {
-  background-color: rgb(95, 95, 90);
-  color: rgb(225, 235, 240);
+  background-color: #1a1a1a;
+  color: rgb(231, 238, 246);
 }
 
 .Mock {
-  background-color: rgb(225, 235, 240);
-  color: rgb(95, 95, 90);
+  background-color: rgb(42, 96, 166);
+  color: rgb(231, 238, 246);
 }
 
 /********* MAIN-END *************/
@@ -82,8 +82,8 @@ body {
 /********************************/
 /************ FOOTER ************/
 .footer-wrapper {
-  background-color: rgb(225, 235, 240);
-  color: rgb(95, 95, 90);
+  background-color: rgb(42, 96, 166);
+  color: rgb(231, 238, 246);
 }
 
 /******** FOOTER-END ************/
