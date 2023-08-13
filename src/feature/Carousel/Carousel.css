@@ -11,8 +11,8 @@
   padding: 0;
 }
 .Carousel .window .slide svg {
-  max-width: 1em;
-  max-height: 1em;
+  max-width: 0;
+  max-height: 0;
 }
 .Carousel .window .slide.active {
   flex-basis: 100%;
