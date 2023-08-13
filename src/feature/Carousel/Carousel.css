@@ -13,5 +13,9 @@
 .Carousel .window .slide.active {
   flex-basis: 100%;
 }
+.Carousel .window .slide.active svg {
+  width: 100%;
+  height: 100%;
+}
 
 /*# sourceMappingURL=Carousel.css.map */

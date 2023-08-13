@@ -1,4 +1,3 @@
-import './style.css'
 import Carousel from "../../../feature/Carousel/Carousel";
 
 const Technologies = () => {
