@@ -5,32 +5,34 @@ import IconTS from "../../shared/IconTS/IconTS";
 import IconVite from "../../shared/IconVite/IconVite";
 import { useState, useEffect } from "react";
 
-type slide = 1 | 2 | 3 | 4
-type direction = 1 | -1
+type Slide = 1 | 2 | 3 | 4
 
 const Carousel = () => {
-	const [active, setActive] = useState<slide>(1)
-	const [carouselDirection, setCarouselDirection] = useState<direction>(1)
+	const [active, setActive] = useState<Slide>(1)
 
 	useEffect(() => {
-		if(active === 2) setCarouselDirection(1)
-		if(active === 3) setCarouselDirection(-1)
+		const timer = 2 * 1000
 		// TODO: Dangerous type assertion using "as" syntax
-		setTimeout(() => setActive((prev): slide => (prev + carouselDirection) as slide), 2000)
+		const interval = setInterval(() => setActive((prev): Slide => (prev + 1) as Slide), timer)
+		if(active > 4) {
+			setActive(1)
+			clearInterval(interval)
+		}
+		return () => clearInterval(interval)
 	}, [active])
 
 	return <div className={ `Carousel` }>
 		<div className="container window height">
-			<div className={`slide${active === 1 ? ' active' : ''}`} onClick={() => setActive(1)}>
+			<div className={`slide${active === 1 ? ' active' : ''}`}>
 				<IconReact />
 			</div>
-			<div className={`slide${active === 2 ? ' active' : ''}`} onClick={() => setActive(2)}>
+			<div className={`slide${active === 2 ? ' active' : ''}`}>
 				<IconTS/>
 			</div>
-			<div className={`slide${active === 3 ? ' active' : ''}`} onClick={() => setActive(3)}>
+			<div className={`slide${active === 3 ? ' active' : ''}`}>
 				<IconSass />
 			</div>
-			<div className={`slide${active === 4 ? ' active' : ''}`} onClick={() => setActive(4)}>
+			<div className={`slide${active === 4 ? ' active' : ''}`}>
 				<IconVite />
 			</div>
 		</div>
