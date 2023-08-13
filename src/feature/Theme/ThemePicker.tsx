@@ -6,9 +6,9 @@ import sunrise from "./themes/sunrise.css?inline";
 import noon from "./themes/noon.css?inline";
 import sunset from "./themes/sunset.css?inline";
 import moon from "./themes/moon.css?inline";
-import IconSunrise from "../../shared/IconSunrise/IconMoon";
-import IconNoon from "../../shared/IconNoon/IconMoon";
-import IconSunset from "../../shared/IconSunset/IconMoon";
+import IconSunrise from "../../shared/IconSunrise/IconSunrise";
+import IconNoon from "../../shared/IconNoon/IconNoon";
+import IconSunset from "../../shared/IconSunset/IconSunset";
 import IconMoon from "../../shared/IconMoon/IconMoon";
 
 const ThemePicker = () => {
