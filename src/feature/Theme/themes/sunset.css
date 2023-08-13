@@ -53,10 +53,10 @@ body {
 }
 
 .svg-theme-icon {
-  stroke: rgb(230, 210, 200);
+  color: rgb(230, 210, 200);
 }
 .svg-theme-icon:hover {
-  stroke: #f6efeb;
+  color: #f6efeb;
 }
 
 .burger-menu {
