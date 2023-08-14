@@ -1,6 +1,6 @@
 const TabTab = () => {
 	return <div className={ `TabTab` }>
-		<h2>Welcome to Tab tab!</h2>
+		<h3>Welcome to Tab tab!</h3>
 	</div>
 };
 

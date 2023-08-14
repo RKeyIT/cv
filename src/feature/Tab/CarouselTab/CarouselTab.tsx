@@ -1,6 +1,6 @@
 const CarouselTab = () => {
 	return <div className={ `CarouselTab` }>
-		<h2>Welcome to Carousel tab!</h2>
+		<h3>Welcome to Carousel tab!</h3>
 	</div>
 };
 

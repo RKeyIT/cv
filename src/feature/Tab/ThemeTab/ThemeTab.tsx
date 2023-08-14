@@ -1,6 +1,6 @@
 const ThemeTab = () => {
 	return <div className={ `ThemeTab` }>
-		<h2>Welcome to Theme tab!</h2>
+		<h3>Welcome to Theme tab!</h3>
 	</div>
 };
 

@@ -1,6 +1,6 @@
 const ParallaxTab = () => {
 	return <div className={ `ParallaxTab` }>
-		<h2>Welcome to Parallax tab!</h2>
+		<h3>Welcome to Parallax tab!</h3>
 	</div>
 };
 
