@@ -1,34 +1,31 @@
 .Tab .window {
   overflow-y: hidden;
 }
-.Tab .window .switcher {
-  position: relative;
+.Tab .window .switcher, .Tab .window .tabs {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
+}
+.Tab .window .switcher .tabs {
+  flex-grow: 1;
+  overflow-x: hidden;
+}
+.Tab .window .switcher .right {
+  transform: rotate(180deg);
 }
 .Tab .window .switcher button {
   display: inline-flex;
   justify-content: center;
   align-items: center;
 }
-.Tab .window .switcher button.left, .Tab .window .switcher button.right {
-  position: absolute;
+.Tab .window .switcher button.active {
+  background-color: rgba(105, 105, 105, 0.7);
 }
-.Tab .window .switcher button.left {
-  left: 0;
-}
-.Tab .window .switcher button.right {
-  right: 0;
-}
-.Tab .window .switcher svg {
+.Tab .window .switcher button svg {
   height: 1em;
   width: 1em;
   color: black;
-}
-.Tab .window .switcher .right {
-  transform: rotate(180deg);
 }
 
 /*# sourceMappingURL=Tab.css.map */
