@@ -1,0 +1,32 @@
+.Tab
+
+  & .window
+    overflow-y: hidden
+
+    .switcher
+      position: relative
+      display: flex
+      flex-direction: row
+      align-items: center
+      justify-content: center
+
+      button
+        display: inline-flex
+        justify-content: center
+        align-items: center
+
+        &.left, &.right
+          position: absolute
+        &.left
+          left: 0
+        &.right
+          right: 0
+
+
+      svg
+        height: 1em
+        width: 1em
+        color: black
+
+      & .right
+        transform: rotate(180deg)

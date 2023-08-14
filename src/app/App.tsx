@@ -11,8 +11,6 @@ const App = () => {
 		<Header />
 		<Main />
 		<Footer />
-		<Main />
-
 	</>
 }
 
