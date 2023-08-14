@@ -1,12 +1,11 @@
 import Technologies from "./Technologies/Technologies";
-import Mock from "./Mock/Mock";
 import Tab from "../../feature/Tab/Tab";
 
 const Main = () => {
 	return <main className={`main`}>
 		<Technologies/>
 		<Tab />
-		<Mock />
+		{/*<Mock />*/}
 	</main>
 };
 

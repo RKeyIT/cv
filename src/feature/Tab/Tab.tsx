@@ -1,21 +1,38 @@
 import './Tab.css'
 import IconArrow from "../../shared/IconArrow/IconArrow";
-import { useState } from "react";
+import { useState, } from "react";
+import NullTab from "./NullTab/NullTab";
+import ThemeTab from "./ThemeTab/ThemeTab";
+import CarouselTab from "./CarouselTab/CarouselTab";
+import TabTab from "./TabTab/TabTab";
+import ParallaxTab from "./ParallaxTab/ParallaxTab";
+
+type ActiveTab = null | 1 | 2 | 3 | 4
 
 const Tab = () => {
-	const [ tabActive, setTabActive ] = useState<1 | 2 | 3 | 4 | null>(null);
+	const [ tabActive, setTabActive ] = useState<ActiveTab>(null);
+
+	// TODO: Find a new type for this
+	const tabs: JSX.Element[] = [
+		<NullTab />,
+		<ThemeTab />,
+		<CarouselTab />,
+		<TabTab/>,
+		<ParallaxTab/>
+	]
 
 	const activateTab = (num: 1 | 2 | 3 | 4) => {
 		return num === tabActive ? setTabActive(null) : setTabActive(num)
 	}
 	const changeTab = (direction: -1 | 1) => {
-		if (tabActive === null) return setTabActive(direction === 1? 1 : 4)
+		if (tabActive === null) return setTabActive(direction === 1 ? 1 : 4)
 		if (tabActive === 1 && direction === -1) return setTabActive(4)
 		if (tabActive === 4 && direction === 1) return setTabActive(1)
-		return setTabActive(prev => prev + direction)
+		return setTabActive(prev => (prev! + direction) as ActiveTab)
 	}
 
-	const showTab = (num: 1 | 2 | 3 | 4) => <div>This is tab with {`${num}`} id!</div>
+	// TODO: Find a new type for this
+	const showTab = (tab: JSX.Element) => tab
 
 	return <div className={ `Tab` }>
 		<div className="container window height">
@@ -50,10 +67,8 @@ const Tab = () => {
 				</button>
 			</div>
 
-			<div className="content">
-				{!tabActive && <div>Click to some "Tab" to open it!</div>}
-				{tabActive && showTab(tabActive)}
-			</div>
+			{!tabActive && <NullTab />}
+			{tabActive && showTab(tabs[tabActive])}
 
 		</div>
 	</div>

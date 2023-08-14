@@ -27,5 +27,11 @@
   width: 1em;
   color: black;
 }
+.Tab .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 10px;
+}
 
 /*# sourceMappingURL=Tab.css.map */
