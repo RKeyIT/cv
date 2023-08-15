@@ -7,10 +7,12 @@ import CarouselTab from "./CarouselTab/CarouselTab";
 import TabTab from "./TabTab/TabTab";
 import ParallaxTab from "./ParallaxTab/ParallaxTab";
 
-type ActiveTab = null | 1 | 2 | 3 | 4
+type ActivateTab = 1 | 2 | 3 | 4
+type ChangeTab = null | ActivateTab
+type Direction = -1 | 1
 
 const Tab = () => {
-	const [ tabActive, setTabActive ] = useState<ActiveTab>(null);
+	const [ tabActive, setTabActive ] = useState<ChangeTab>(null);
 	const [ isExpanded, setExpanded ] = useState(false)
 
 	// TODO: Find a new type for this
@@ -22,15 +24,14 @@ const Tab = () => {
 		<ParallaxTab />
 	]
 
-	const activateTab = (num: 1 | 2 | 3 | 4) => {
-		return num === tabActive ? setTabActive(null) : setTabActive(num)
+	const activateTab = (tab: ActivateTab) => {
+		return tab === tabActive ? setTabActive(null) : setTabActive(tab)
 	}
-	const changeTab = (direction: -1 | 1) => {
+	const changeTab = (direction: Direction) => {
 		if (tabActive === null) return setTabActive(direction === 1 ? 1 : 4)
 		if (tabActive === 1 && direction === -1) return setTabActive(4)
 		if (tabActive === 4 && direction === 1) return setTabActive(1)
-		// TODO: Fix "as" syntax
-		return setTabActive(prev => (prev! + direction) as ActiveTab)
+		return setTabActive(prev => (prev! + direction))
 	}
 
 	// TODO: Find a new type for this
@@ -69,14 +70,14 @@ const Tab = () => {
 				</button>
 			</div>
 
-			<div className={`content-container${isExpanded ? ' expanded' : ''}`}>
+			<div className={ `content-container${ isExpanded ? ' expanded' : '' }` }>
 				<div className="content" id="content">
 					{ !tabActive && <NullTab /> }
 					{ tabActive && showTab(tabs[ tabActive ]) }
 				</div>
-				{/*<a href="#content"> dont work to return content on first line*/}
-				<button className="expand-btn" onClick={() => setExpanded(!isExpanded)}>
-					{isExpanded ? "Collapse" : "Expand"}
+				{/*<a href="#content"> dont work to return content on first line*/ }
+				<button className="expand-btn" onClick={ () => setExpanded(!isExpanded) }>
+					{ isExpanded ? "Collapse" : "Expand" }
 				</button>
 			</div>
 		</div>
