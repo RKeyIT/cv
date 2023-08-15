@@ -17,7 +17,7 @@ export const tabs =
 ]`
 
 export const OpenCloseTab =
-	`const activateTab = (num: 1 | 2 | 3 | 4) => {
+	`const activateTab = (num: ActivateTab) => {
 	return num === tabActive ? setTabActive(null) : setTabActive(num)
 }`
 

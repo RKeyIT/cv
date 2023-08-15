@@ -31,7 +31,8 @@ const Tab = () => {
 		if (tabActive === null) return setTabActive(direction === 1 ? 1 : 4)
 		if (tabActive === 1 && direction === -1) return setTabActive(4)
 		if (tabActive === 4 && direction === 1) return setTabActive(1)
-		return setTabActive(prev => (prev! + direction))
+		// TODO: "as" syntax
+		return setTabActive(prev => (prev! + direction) as ChangeTab)
 	}
 
 	// TODO: Find a new type for this

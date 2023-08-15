@@ -1,10 +1,14 @@
-import Light from 'react-syntax-highlighter'
+import { Light as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { rainbow } from 'react-syntax-highlighter/dist/esm/styles/hljs'
 
-const CodeBlock = ({ code }) => {
-	return <Light language={ "javascript-tsx" } style={ rainbow }>
+interface CodeBlockProps {
+	code: string
+}
+
+const CodeBlock = ({ code }: CodeBlockProps) => {
+	return <SyntaxHighlighter language={ "javascript-tsx" } style={ rainbow }>
 		{ code }
-	</Light>
+	</SyntaxHighlighter>
 };
 
 export default CodeBlock;

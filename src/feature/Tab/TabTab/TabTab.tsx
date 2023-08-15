@@ -25,50 +25,48 @@ const TabTab = () => {
 		<p>
 			So, let's see:
 		</p>
-		<ul>
+		<h4>
+			In first, we have 3 types. They are help us understand what and how we will change.
+		</h4>
+		<p>
+			<CodeBlock code={ types } />
+
+		</p>
+		<ol>
 			<li>
-				<p>
-					In first, we have 3 types. They are help us understand what and how we will change.
-				</p>
-				<CodeBlock code={ types } />
-				<ol>
-					<li>
-						Activate tab that was clicked.
-					</li>
-					<li>
-						Change tab on null if active tab was clicked again or change tab that was clicked.
-					</li>
-					<li>
-						And direction for arrow buttons
-					</li>
-				</ol>
+				Activate tab that was clicked.
 			</li>
 			<li>
-				Useful useState hooks based on one of types.
-				<CodeBlock code={ states } />
-				<ol>
-					<li>
-						Tab changer hook
-					</li>
-					<li>
-						Hook that responsible for button Expand/Collapse
-					</li>
-				</ol>
+				Change tab on null if active tab was clicked again or change tab that was clicked.
 			</li>
 			<li>
-				Tabs array - components array
-				<CodeBlock code={ tabs } />
-				Here I have one problem with type. It seems as deprecated and I want to change it later.
+				And direction for arrow buttons
+			</li>
+		</ol>
+		<h4>
+			Useful useState hooks based on one of types.
+		</h4>
+		<p>
+			<CodeBlock code={ states } />
+
+		</p>
+		<ol>
+			<li>
+				Tab changer hook
 			</li>
 			<li>
-				Last and sweet is the functionality.
-				<CodeBlock code={ OpenCloseTab } />
-				<CodeBlock code={ tabChanger } />
-				<CodeBlock code={ tabGetter } />
-				<CodeBlock code={ buttonImplementation } />
-				<CodeBlock code={ contentWindow } />
+				Hook that responsible for button Expand/Collapse
 			</li>
-		</ul>
+		</ol>
+		<h4>Tabs array - components array</h4>
+		<p><CodeBlock code={ tabs } /></p>
+		<p>Here I have one problem with type. It seems as deprecated and I want to change it later.</p>
+		<h4>Last and sweet is the functionality.</h4>
+		<CodeBlock code={ OpenCloseTab } />
+		<CodeBlock code={ tabChanger } />
+		<CodeBlock code={ tabGetter } />
+		<CodeBlock code={ buttonImplementation } />
+		<CodeBlock code={ contentWindow } />
 	</div>
 };
 
