@@ -70,17 +70,17 @@ const Tab = () => {
 			</div>
 
 			<div className={`content-container${isExpanded ? ' expanded' : ''}`}>
-				<div className="content">
+				<div className="content" id="content">
 					{ !tabActive && <NullTab /> }
 					{ tabActive && showTab(tabs[ tabActive ]) }
 				</div>
+				{/*<a href="#content"> dont work to return content on first line*/}
 				<button className="expand-btn" onClick={() => setExpanded(!isExpanded)}>
 					{isExpanded ? "Collapse" : "Expand"}
 				</button>
 			</div>
-
 		</div>
 	</div>
-};
+}
 
-export default Tab;
+export default Tab

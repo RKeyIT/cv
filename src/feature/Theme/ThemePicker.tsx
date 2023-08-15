@@ -37,7 +37,6 @@ const ThemePicker = () => {
 
 	return <div className="theme-picker">
 		<style>{ theme }</style>
-		{/*<button onClick={changeTheme}>Auto</button>*/ }
 		<button className="theme-button" onClick={ sunriseTheme } disabled={ isDisabled }>
 			<IconSunrise />
 		</button>
