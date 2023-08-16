@@ -75,6 +75,15 @@ body {
   background-color: rgb(100, 55, 25);
 }
 
+.Tab .window {
+  background-color: rgb(100, 55, 25);
+  color: rgb(230, 210, 200);
+}
+.Tab .window .content-container {
+  color: rgba(230, 210, 200, 0.8);
+  background-color: rgba(10, 20, 35, 0.9);
+}
+
 /********* MAIN-END *************/
 /********************************/
 /********************************/

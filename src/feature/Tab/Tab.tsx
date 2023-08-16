@@ -44,6 +44,7 @@ const Tab = () => {
 	// TODO: Find a new type for this
 	const showTab = (tab: JSX.Element) => tab
 
+	// TODO: Add arrow buttons to expanded window
 	return <div className={ `Tab` }>
 		<div className="container window height">
 			<h2>Features of project</h2>
