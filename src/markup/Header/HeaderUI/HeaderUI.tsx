@@ -1,6 +1,6 @@
 import './HeaderUI.css'
 import './HeaderUIMedia.css'
-import ThemePicker from "../../../feature/Theme/ThemePicker";
+import ThemeSwitcher from "../../../feature/Theme/ThemeSwitcher";
 import AppIcon from "../../../shared/AppIcon/AppIcon";
 import BurgerMenu from "./BurgerMenu/BurgerMenu";
 import InlineMenu from "./InlineMenu/InlineMenu";
@@ -11,7 +11,7 @@ const HeaderUI = () => {
 				<div className="header-logo">
 					<AppIcon />
 				</div>
-				<ThemePicker />
+				<ThemeSwitcher />
 				<InlineMenu />
 				<BurgerMenu />
 			</div>

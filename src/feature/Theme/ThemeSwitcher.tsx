@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import '../../app/animations.css'
 import './themes/themes.css'
-import './ThemePicker.css'
+import './ThemeSwitcher.css'
 import sunrise from "./themes/sunrise.css?inline";
 import noon from "./themes/noon.css?inline";
 import sunset from "./themes/sunset.css?inline";
@@ -11,7 +11,7 @@ import IconNoon from "../../shared/IconNoon/IconNoon";
 import IconSunset from "../../shared/IconSunset/IconSunset";
 import IconMoon from "../../shared/IconMoon/IconMoon";
 
-const ThemePicker = () => {
+const ThemeSwitcher = () => {
 	const [ theme, setTheme ] = useState(sunrise)
 	const [ isDisabled, setDisabled ] = useState(false)
 
@@ -53,4 +53,4 @@ const ThemePicker = () => {
 	</div>
 }
 
-export default ThemePicker
+export default ThemeSwitcher

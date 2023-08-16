@@ -3,7 +3,7 @@ import IconArrow from "../../shared/IconArrow/IconArrow";
 import { useState, } from "react";
 import NullTab from "./NullTab/NullTab";
 import ThemeTab from "./ThemeTab/ThemeTab";
-import CarouselTab from "./CarouselTab/CarouselTab";
+import SliderTab from "./SliderTab/SliderTab";
 import TabTab from "./TabTab/TabTab";
 import ParallaxTab from "./ParallaxTab/ParallaxTab";
 
@@ -19,7 +19,7 @@ const Tab = () => {
 	const tabs: JSX.Element[] = [
 		<NullTab />,
 		<ThemeTab />,
-		<CarouselTab />,
+		<SliderTab />,
 		<TabTab />,
 		<ParallaxTab />
 	]
@@ -54,7 +54,7 @@ const Tab = () => {
 					</button>
 					<button className={ `button${ tabActive === 2 ? ' active' : '' }` }
 					        onClick={ () => activateTab(2) }>
-						Carousel
+						Slider
 					</button>
 					<button className={ `button${ tabActive === 3 ? ' active' : '' }` }
 					        onClick={ () => activateTab(3) }>

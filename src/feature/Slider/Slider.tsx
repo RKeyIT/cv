@@ -1,5 +1,5 @@
 import IconReact from "../../shared/IconReact/IconReact";
-import './Carousel.css'
+import './Slider.css'
 import IconSass from "../../shared/IconSass/IconSass";
 import IconTS from "../../shared/IconTS/IconTS";
 import IconVite from "../../shared/IconVite/IconVite";
@@ -7,7 +7,7 @@ import { useState, useEffect } from "react";
 
 type Slide = 1 | 2 | 3 | 4
 
-const Carousel = () => {
+const Slider = () => {
 	const [active, setActive] = useState<Slide>(1)
 
 	useEffect(() => {
@@ -39,4 +39,4 @@ const Carousel = () => {
 	</div>
 };
 
-export default Carousel;
+export default Slider;

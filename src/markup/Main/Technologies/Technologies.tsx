@@ -1,8 +1,8 @@
-import Carousel from "../../../feature/Carousel/Carousel";
+import Slider from "../../../feature/Slider/Slider";
 
 const Technologies = () => {
 	return <div className={ `Technologies height` }>
-		<Carousel />
+		<Slider />
 	</div>
 };
 
