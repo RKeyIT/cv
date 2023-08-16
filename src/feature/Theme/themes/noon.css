@@ -85,6 +85,10 @@ body {
   color: rgba(231, 238, 246, 0.9);
   background-color: rgba(26, 26, 26, 0.3);
 }
+.Tab .window .content-container.expanded {
+  color: rgba(26, 26, 26, 0.9);
+  background-color: rgba(231, 238, 246, 0.9);
+}
 
 /********* MAIN-END *************/
 /********************************/

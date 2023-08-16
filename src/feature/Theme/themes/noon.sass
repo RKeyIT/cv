@@ -87,6 +87,7 @@ body
   background-color: $secondary
   color: $primary
 
+
 .Tab
   & .window
     background-color: $secondary
@@ -95,6 +96,10 @@ body
     & .content-container
       color: transparentize($primary, 0.1)
       background-color: transparentize($black, 0.7)
+
+      &.expanded
+        color: transparentize($black, 0.1)
+        background-color: transparentize($primary, 0.1)
 /********* MAIN-END *************/
 /********************************/
 
