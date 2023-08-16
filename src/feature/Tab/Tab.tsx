@@ -6,6 +6,7 @@ import ThemeTab from "./ThemeTab/ThemeTab";
 import SliderTab from "./SliderTab/SliderTab";
 import TabTab from "./TabTab/TabTab";
 import ParallaxTab from "./ParallaxTab/ParallaxTab";
+import { useSwipeable } from "react-swipeable";
 
 type ActivateTab = 1 | 2 | 3 | 4
 type ChangeTab = null | ActivateTab
@@ -14,6 +15,11 @@ type Direction = -1 | 1
 const Tab = () => {
 	const [ tabActive, setTabActive ] = useState<ChangeTab>(null);
 	const [ isExpanded, setExpanded ] = useState(false)
+	const swipeable = useSwipeable({
+		onSwipedLeft: () => changeTab(1),
+		onSwipedRight: () => changeTab(-1),
+		trackMouse: true
+	})
 
 	// TODO: Find a new type for this
 	const tabs: JSX.Element[] = [
@@ -71,7 +77,7 @@ const Tab = () => {
 				</button>
 			</div>
 
-			<div className={ `content-container${ isExpanded ? ' expanded' : '' }` }>
+			<div { ...swipeable } className={ `content-container${ isExpanded ? ' expanded' : '' }` }>
 				<div className="content" id="content">
 					{ !tabActive && <NullTab /> }
 					{ tabActive && showTab(tabs[ tabActive ]) }
