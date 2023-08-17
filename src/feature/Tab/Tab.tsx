@@ -1,5 +1,4 @@
 import './Tab.css'
-import IconArrow from "../../shared/IconArrow/IconArrow";
 import { useState, } from "react";
 import NullTab from "./NullTab/NullTab";
 import ThemeTab from "./ThemeTab/ThemeTab";
@@ -7,17 +6,20 @@ import SliderTab from "./SliderTab/SliderTab";
 import TabTab from "./TabTab/TabTab";
 import ParallaxTab from "./ParallaxTab/ParallaxTab";
 import { useSwipeable } from "react-swipeable";
-
-type ActivateTab = 1 | 2 | 3 | 4
-type ChangeTab = null | ActivateTab
-type Direction = -1 | 1
+import { ChangeTab, ActivateTab, Direction } from "./types";
+import TabSwitcher from "./TabSwitcher/TabSwitcher";
 
 const Tab = () => {
 	const [ tabActive, setTabActive ] = useState<ChangeTab>(null);
-	const [ isExpanded, setExpanded ] = useState(false)
+	const [ isExpanded, setExpanded ] = useState(false);
+
+	// TODO: Scrolling of code blocks activate swipe actions! Fix it.
 	const swipeable = useSwipeable({
 		onSwipedLeft: () => changeTab(1),
 		onSwipedRight: () => changeTab(-1),
+		onSwipedUp: () => setTabActive(null),
+		onSwipedDown: () => setTabActive(null),
+		swipeDuration: 300,
 		trackMouse: true
 	})
 
@@ -49,34 +51,7 @@ const Tab = () => {
 		<div className="container window height">
 			<h2>Features of project</h2>
 
-			<div className="switcher">
-				<button className="left" onClick={ () => changeTab(-1) }>
-					<IconArrow />
-				</button>
-
-				<div className="tabs">
-					<button className={ `button${ tabActive === 1 ? ' active' : '' }` }
-					        onClick={ () => activateTab(1) }>
-						Theme
-					</button>
-					<button className={ `button${ tabActive === 2 ? ' active' : '' }` }
-					        onClick={ () => activateTab(2) }>
-						Slider
-					</button>
-					<button className={ `button${ tabActive === 3 ? ' active' : '' }` }
-					        onClick={ () => activateTab(3) }>
-						Tab
-					</button>
-					<button className={ `button${ tabActive === 4 ? ' active' : '' }` }
-					        onClick={ () => activateTab(4) }>
-						Parallax
-					</button>
-				</div>
-
-				<button className="right" onClick={ () => changeTab(1) }>
-					<IconArrow />
-				</button>
-			</div>
+			<TabSwitcher tabActive={ tabActive } changeTab={ changeTab } activateTab={ activateTab } />
 
 			<div { ...swipeable } className={ `content-container${ isExpanded ? ' expanded' : '' }` }>
 				<div className="content" id="content">

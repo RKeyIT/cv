@@ -94,6 +94,22 @@ body
       color: transparentize($secondary, 0.2)
       background-color: transparentize($black, 0.1)
 
+.TabSwitcher
+  & .switcher
+    background-color: transparentize($secondary, 0.8)
+
+    & .button
+      color: transparentize($secondary, 0.5)
+      background-color: transparentize($primary, 0.5)
+
+    & .tab
+      background: linear-gradient(to bottom, transparentize($primary, 0.1), transparentize($secondary, 0.9))
+
+      &.active
+        color: transparentize($secondary, 0.2)
+        background: linear-gradient(to bottom, transparentize($black, 0.2), transparentize($secondary, 0.8))
+        outline: transparentize($white, 0.8) outset 2px
+
 /********* MAIN-END *************/
 /********************************/
 

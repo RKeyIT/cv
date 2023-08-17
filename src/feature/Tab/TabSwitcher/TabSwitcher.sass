@@ -1,0 +1,35 @@
+.TabSwitcher
+  .switcher,
+  & .tabs
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: center
+
+  & .tabs
+    flex-grow: 1
+    overflow-x: hidden
+    gap: 0.1em
+
+  & .button
+    display: inline-flex
+    justify-content: center
+    align-items: center
+    background: none
+    border: none
+    outline: none
+    box-sizing: border-box
+
+    &.active
+      justify-self: center !important
+      align-self: center !important
+
+    & svg
+      height: 1em
+      width: 1em
+
+  & .tab
+    margin-top: 0.25em
+    width: 25%
+    min-width: 25%
+    max-width: 25%

@@ -4,36 +4,7 @@
     display: flex
     flex-direction: column
 
-    .switcher, .tabs
-      display: flex
-      flex-direction: row
-      align-items: center
-      justify-content: center
 
-    .switcher
-      .tabs
-        flex-grow: 1
-        overflow-x: hidden
-
-      .right
-        transform: rotate(180deg)
-
-
-      button
-        display: inline-flex
-        justify-content: center
-        align-items: center
-
-        &.active
-          // TODO: Themes specification
-          background-color: rgba(105, 105, 105, 0.7)
-
-
-        svg
-          height: 1em
-          width: 1em
-          // TODO: Themes specification
-          color: black
 
   & .content-container
     position: relative
