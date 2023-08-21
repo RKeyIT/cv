@@ -1,34 +1,120 @@
+/********************************/
+/************ GENERAL ***********/
+body {
+  color: rgb(255, 225, 195);
+  background-color: rgb(30, 15, 5);
+}
+
+/******** GENERAL-END ***********/
+/********************************/
+/********************************/
+/************ HEADER ************/
 .header-wrapper {
-  background-color: rgb(210, 210, 150);
+  background-color: rgb(30, 15, 5);
   background-image: url("bg_sunrise.jpg");
   background-repeat: no-repeat;
   background-position: 32.5%;
 }
+@media screen and (max-width: 767px) {
+  .header-ui {
+    background-color: rgb(30, 15, 5);
+  }
+}
+@media screen and (min-width: 768px) {
+  .header-ui {
+    background: none;
+  }
+}
+.header-content {
+  color: rgb(255, 225, 195);
+}
+
+.burger-btn {
+  color: rgb(255, 225, 195);
+}
+.burger-btn:hover {
+  color: #fffbf6;
+}
+
+.burger-btn-active {
+  color: rgb(200, 0, 0);
+}
 
 .app-icon {
-  fill: rgb(210, 210, 150);
+  fill: rgb(255, 225, 195);
 }
 
 .navlink {
-  color: rgb(40, 40, 0);
+  color: rgb(255, 225, 195);
 }
 .navlink:hover {
-  color: rgb(150, 150, 0);
-  text-shadow: 0 0 10px rgb(150, 150, 0);
+  color: #fffbf6;
+  text-shadow: 0 0 10px #fffbf6;
 }
 
 .svg-theme-icon {
-  stroke: rgb(40, 40, 0);
+  color: rgb(255, 225, 195);
 }
 .svg-theme-icon:hover {
-  stroke: rgb(150, 150, 0);
+  color: #fffbf6;
 }
 
-.header-content {
-  color: rgb(40, 40, 0);
+.burger-menu {
+  background: linear-gradient(to bottom, rgb(30, 15, 5) 0%, rgba(30, 15, 5, 0.8) 100%);
 }
-.header-content-text-container {
-  background-color: rgba(40, 40, 0, 0.5);
+
+/******** HEADER-END ************/
+/********************************/
+/********************************/
+/************* MAIN *************/
+.Technologies, .Mock {
+  background-color: rgb(30, 15, 5);
+  color: rgb(255, 225, 195);
 }
+
+.Tab .window {
+  background-color: rgb(30, 15, 5);
+  color: rgb(255, 225, 195);
+}
+.Tab .window .content-container {
+  color: rgba(255, 225, 195, 0.8);
+  background-color: rgba(26, 26, 26, 0.9);
+}
+.Tab .expand-btn {
+  background: linear-gradient(to top, rgba(26, 26, 26, 0.5), rgba(255, 225, 195, 0.3));
+  color: rgb(255, 225, 195);
+}
+.Tab .expand-btn:hover {
+  color: #fffbf6;
+  background: linear-gradient(to top, rgba(26, 26, 26, 0.8), rgba(255, 225, 195, 0.2));
+}
+
+.TabSwitcher .switcher {
+  background-color: rgba(255, 225, 195, 0.2);
+}
+.TabSwitcher .switcher .button {
+  color: rgba(255, 225, 195, 0.5);
+  background-color: rgba(30, 15, 5, 0.5);
+}
+.TabSwitcher .switcher .tab {
+  background: linear-gradient(to bottom, rgba(30, 15, 5, 0.9), rgba(255, 225, 195, 0.1));
+}
+.TabSwitcher .switcher .tab.active {
+  color: rgba(255, 225, 195, 0.8);
+  background: linear-gradient(to bottom, rgba(26, 26, 26, 0.8), rgba(255, 225, 195, 0.2));
+  outline: rgba(230, 230, 230, 0.2) outset 2px;
+}
+
+/********* MAIN-END *************/
+/********************************/
+/********************************/
+/************ FOOTER ************/
+.footer-wrapper {
+  background-color: rgb(30, 15, 5);
+  color: rgb(255, 225, 195);
+}
+
+/******** FOOTER-END ************/
+/********************************/
 
 /*# sourceMappingURL=sunrise.css.map */

@@ -1,33 +1,139 @@
-$primary: rgb(220, 220, 230)
-$navlink: rgb(10, 10, 30)
-$navlink-hover: rgb(75, 75, 150)
-$content-light: rgb(220, 220, 230)
-$content-dark: rgb(10, 10, 30)
-$content-colored: rgb(45, 110, 185)
-$alpha-background: rgba(10, 10, 30, 0.5)
+$white: darken(white, 10%)
+$black: lighten(black, 10%)
 
-.header-wrapper
-  background-color: $primary
-  //noinspection CssUnknownTarget
-  background-image: url('bg_noon.jpg')
-  background-position: 38%
+//$primary: rgb(10, 20, 30)
+//$primary: rgb(17, 24, 30)
+$primary: rgb(231, 238, 246)
+$primary-hover: lighten($primary, 10%)
+$secondary: rgb(42, 96, 166)
+$secondary-hover: lighten($secondary, 10%)
+
+$link-dark: rgb(75, 75, 150)
+$link-light: rgb(45, 110, 185)
+
+$exit-btn: rgb(200, 0, 0)
+
+/********************************/
+/************ GENERAL ***********/
+body
+  color: $primary
+  background-color: $secondary
+/******** GENERAL-END ***********/
+/********************************/
+
+/********************************/
+/************ HEADER ************/
+.header
+  &-wrapper
+    background-color: $secondary
+    //noinspection CssUnknownTarget
+    background-image: url('bg_noon.jpg')
+    background-repeat: no-repeat
+    // sunrise: 32.5% noon: 38% sunset: 45% moon: 55%
+    background-position: 38%
+
+  &-ui
+    @media screen and (max-width: 767px)
+      background-color: $secondary
+    @media screen and (min-width: 768px)
+      background: none
+
+  &-content
+    color: $primary
+
+//&-h2
+//  background-color: $alpha-background
+//&-text-container
+//  background-color: $alpha-background
+
+
+.burger-btn
+  color: $primary
+
+  &:hover
+    color: $primary-hover
+
+.burger-btn-active
+  color: $exit-btn
 
 .app-icon
   fill: $primary
 
 .navlink
-  color: $navlink
+  color: $primary
   &:hover
-    color: $navlink-hover
-    text-shadow: 0 0 10px $navlink-hover
+    color: $primary-hover
+    text-shadow: 0 0 10px $primary-hover
 
 .svg-theme-icon
-  stroke: #2e6eb8
+  color: $primary
   &:hover
-    stroke: $navlink-hover
+    color: $primary-hover
 
-.header-content
-  color: $content-dark
 
-  &-text-container
-    background-color: $alpha-background
+.burger-menu
+  background: linear-gradient(to bottom, $secondary 0%, rgba($secondary, 0.8) 100%)
+/******** HEADER-END ************/
+/********************************/
+
+
+/********************************/
+/************* MAIN *************/
+.Technologies
+  background-color: $black
+  color: $primary
+
+.Mock
+  background-color: $secondary
+  color: $primary
+
+
+.Tab
+  & .window
+    background-color: $secondary
+    color: $primary
+
+    & .content-container
+      color: transparentize($primary, 0.1)
+      background-color: transparentize($black, 0.7)
+
+      &.expanded
+        color: transparentize($black, 0.1)
+        background-color: transparentize($primary, 0.1)
+
+  & .expand-btn
+    background: linear-gradient(to top, transparentize($black, 0.5), transparentize($secondary, 0.7))
+    color: $primary
+
+    &:hover
+      color: $primary-hover
+      background: linear-gradient(to top, transparentize($black, 0.2), transparentize($secondary, 0.8))
+
+
+.TabSwitcher
+  & .switcher
+    background-color: transparentize($secondary, 0.8)
+
+    & .button
+      color: transparentize($primary, 0.3)
+      background-color: transparentize($primary, 0.5)
+
+    & .tab
+      background: linear-gradient(to bottom, transparentize($primary, 0.5), transparentize($secondary, 0.5))
+
+      &.active
+        color: transparentize($primary, 0.1)
+        background: linear-gradient(to bottom, transparentize($black, 0.2), transparentize($secondary, 0.8))
+        outline: transparentize($white, 0.8) outset 2px
+/********* MAIN-END *************/
+/********************************/
+
+
+/********************************/
+/************ FOOTER ************/
+.footer-wrapper
+  background-color: $secondary
+  color: $primary
+
+/******** FOOTER-END ************/
+/********************************/

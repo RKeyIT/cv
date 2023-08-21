@@ -1,33 +1,129 @@
+/********************************/
+/************ GENERAL ***********/
+body {
+  color: rgb(231, 238, 246);
+  background-color: rgb(42, 96, 166);
+}
+
+/******** GENERAL-END ***********/
+/********************************/
+/********************************/
+/************ HEADER ************/
 .header-wrapper {
-  background-color: rgb(220, 220, 230);
+  background-color: rgb(42, 96, 166);
   background-image: url("bg_noon.jpg");
+  background-repeat: no-repeat;
   background-position: 38%;
+}
+@media screen and (max-width: 767px) {
+  .header-ui {
+    background-color: rgb(42, 96, 166);
+  }
+}
+@media screen and (min-width: 768px) {
+  .header-ui {
+    background: none;
+  }
+}
+.header-content {
+  color: rgb(231, 238, 246);
+}
+
+.burger-btn {
+  color: rgb(231, 238, 246);
+}
+.burger-btn:hover {
+  color: white;
+}
+
+.burger-btn-active {
+  color: rgb(200, 0, 0);
 }
 
 .app-icon {
-  fill: rgb(220, 220, 230);
+  fill: rgb(231, 238, 246);
 }
 
 .navlink {
-  color: rgb(10, 10, 30);
+  color: rgb(231, 238, 246);
 }
 .navlink:hover {
-  color: rgb(75, 75, 150);
-  text-shadow: 0 0 10px rgb(75, 75, 150);
+  color: white;
+  text-shadow: 0 0 10px white;
 }
 
 .svg-theme-icon {
-  stroke: #2e6eb8;
+  color: rgb(231, 238, 246);
 }
 .svg-theme-icon:hover {
-  stroke: rgb(75, 75, 150);
+  color: white;
 }
 
-.header-content {
-  color: rgb(10, 10, 30);
+.burger-menu {
+  background: linear-gradient(to bottom, rgb(42, 96, 166) 0%, rgba(42, 96, 166, 0.8) 100%);
 }
-.header-content-text-container {
-  background-color: rgba(10, 10, 30, 0.5);
+
+/******** HEADER-END ************/
+/********************************/
+/********************************/
+/************* MAIN *************/
+.Technologies {
+  background-color: #1a1a1a;
+  color: rgb(231, 238, 246);
 }
+
+.Mock {
+  background-color: rgb(42, 96, 166);
+  color: rgb(231, 238, 246);
+}
+
+.Tab .window {
+  background-color: rgb(42, 96, 166);
+  color: rgb(231, 238, 246);
+}
+.Tab .window .content-container {
+  color: rgba(231, 238, 246, 0.9);
+  background-color: rgba(26, 26, 26, 0.3);
+}
+.Tab .window .content-container.expanded {
+  color: rgba(26, 26, 26, 0.9);
+  background-color: rgba(231, 238, 246, 0.9);
+}
+.Tab .expand-btn {
+  background: linear-gradient(to top, rgba(26, 26, 26, 0.5), rgba(42, 96, 166, 0.3));
+  color: rgb(231, 238, 246);
+}
+.Tab .expand-btn:hover {
+  color: white;
+  background: linear-gradient(to top, rgba(26, 26, 26, 0.8), rgba(42, 96, 166, 0.2));
+}
+
+.TabSwitcher .switcher {
+  background-color: rgba(42, 96, 166, 0.2);
+}
+.TabSwitcher .switcher .button {
+  color: rgba(231, 238, 246, 0.7);
+  background-color: rgba(231, 238, 246, 0.5);
+}
+.TabSwitcher .switcher .tab {
+  background: linear-gradient(to bottom, rgba(231, 238, 246, 0.5), rgba(42, 96, 166, 0.5));
+}
+.TabSwitcher .switcher .tab.active {
+  color: rgba(231, 238, 246, 0.9);
+  background: linear-gradient(to bottom, rgba(26, 26, 26, 0.8), rgba(42, 96, 166, 0.2));
+  outline: rgba(230, 230, 230, 0.2) outset 2px;
+}
+
+/********* MAIN-END *************/
+/********************************/
+/********************************/
+/************ FOOTER ************/
+.footer-wrapper {
+  background-color: rgb(42, 96, 166);
+  color: rgb(231, 238, 246);
+}
+
+/******** FOOTER-END ************/
+/********************************/
 
 /*# sourceMappingURL=noon.css.map */
