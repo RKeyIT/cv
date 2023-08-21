@@ -4,19 +4,13 @@
     display: flex
     flex-direction: column
 
-
-
   & .content-container
     position: relative
     display: flex
     flex-direction: column
     justify-content: space-between
     flex-grow: 1
-    margin: 10px
-    padding: 10px
     overflow: hidden
-    // TODO: Themes specification
-    background-color: rgba(255, 255, 255, 1)
 
     &.expanded
       position: fixed
@@ -31,6 +25,14 @@
       & .content
         overflow: auto
 
+
     & .content
       max-height: 100%
+      padding: 10px
+      margin: 10px 10px 0 10px
       overflow: hidden
+
+  & .expand-btn
+    background: none
+    outline: none
+    border: none

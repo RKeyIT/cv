@@ -6,8 +6,8 @@ import IconGitHub from "../../shared/IconGitHub/IconGitHub";
 const Footer: FC = () => {
 	return <>
 		<footer className={`footer-wrapper`}>
-			<div className={`container`}>
-				<div className={`footer-grid`}>
+			<div className={`container `}>
+				<div className={`footer-flex`}>
 					<div className={`footer-socials`}>
 						<IconLinkedIn />
 						<IconGitHub />

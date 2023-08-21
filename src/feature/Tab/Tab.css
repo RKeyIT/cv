@@ -8,10 +8,7 @@
   flex-direction: column;
   justify-content: space-between;
   flex-grow: 1;
-  margin: 10px;
-  padding: 10px;
   overflow: hidden;
-  background-color: rgb(255, 255, 255);
 }
 .Tab .content-container.expanded {
   position: fixed;
@@ -28,7 +25,14 @@
 }
 .Tab .content-container .content {
   max-height: 100%;
+  padding: 10px;
+  margin: 10px 10px 0 10px;
   overflow: hidden;
+}
+.Tab .expand-btn {
+  background: none;
+  outline: none;
+  border: none;
 }
 
 /*# sourceMappingURL=Tab.css.map */

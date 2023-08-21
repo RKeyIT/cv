@@ -101,6 +101,14 @@ body
         color: transparentize($black, 0.1)
         background-color: transparentize($primary, 0.1)
 
+  & .expand-btn
+    background: linear-gradient(to top, transparentize($black, 0.5), transparentize($secondary, 0.7))
+    color: $primary
+
+    &:hover
+      color: $primary-hover
+      background: linear-gradient(to top, transparentize($black, 0.2), transparentize($secondary, 0.8))
+
 
 .TabSwitcher
   & .switcher

@@ -17,9 +17,9 @@ const Tab = () => {
 	const swipeable = useSwipeable({
 		onSwipedLeft: () => changeTab(1),
 		onSwipedRight: () => changeTab(-1),
-		onSwipedUp: () => setTabActive(null),
-		onSwipedDown: () => setTabActive(null),
-		swipeDuration: 300,
+		// onSwipedUp: () => setTabActive(null),
+		// onSwipedDown: () => setTabActive(null),
+		// swipeDuration: 300,
 		trackMouse: true
 	})
 

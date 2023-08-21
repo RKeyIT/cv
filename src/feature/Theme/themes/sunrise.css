@@ -80,6 +80,14 @@ body {
   color: rgba(255, 225, 195, 0.8);
   background-color: rgba(26, 26, 26, 0.9);
 }
+.Tab .expand-btn {
+  background: linear-gradient(to top, rgba(26, 26, 26, 0.5), rgba(255, 225, 195, 0.3));
+  color: rgb(255, 225, 195);
+}
+.Tab .expand-btn:hover {
+  color: #fffbf6;
+  background: linear-gradient(to top, rgba(26, 26, 26, 0.8), rgba(255, 225, 195, 0.2));
+}
 
 .TabSwitcher .switcher {
   background-color: rgba(255, 225, 195, 0.2);
