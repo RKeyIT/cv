@@ -12,7 +12,7 @@ import {
 
 const TabTab = () => {
 	return <div className={ `TabTab` }>
-		<h3>Welcome to Tab tab!</h3>
+		<h3>Welcome to the Tab!</h3>
 		<p>
 			Let me show you how this component works!
 		</p>

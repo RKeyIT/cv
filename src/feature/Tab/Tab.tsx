@@ -1,5 +1,5 @@
 import './Tab.css'
-import { useState, } from "react";
+import { useState, FC, useEffect, } from "react";
 import NullTab from "./NullTab/NullTab";
 import ThemeTab from "./ThemeTab/ThemeTab";
 import SliderTab from "./SliderTab/SliderTab";
@@ -9,18 +9,25 @@ import { useSwipeable } from "react-swipeable";
 import { ChangeTab, ActivateTab, Direction } from "./types";
 import TabSwitcher from "./TabSwitcher/TabSwitcher";
 
-const Tab = () => {
+const Tab: FC = () => {
 	const [ tabActive, setTabActive ] = useState<ChangeTab>(null);
-	const [ isExpanded, setExpanded ] = useState(false);
+	const [ isExpanded, setExpanded ] = useState<boolean>(false);
+	const [ taps, setTaps ] = useState(0);
+
+	useEffect(() => {
+		console.log(`Count of taps: ${taps}`)
+		if (taps === 2) setExpanded(prevState => !prevState)
+		const delay = setTimeout(() => setTaps(0), 300)
+		return () => clearTimeout(delay)
+	}, [ taps ])
 
 	// TODO: Scrolling of code blocks activate swipe actions! Fix it.
 	const swipeable = useSwipeable({
 		onSwipedLeft: () => changeTab(1),
 		onSwipedRight: () => changeTab(-1),
-		// onSwipedUp: () => setTabActive(null),
-		// onSwipedDown: () => setTabActive(null),
-		// swipeDuration: 300,
-		trackMouse: true
+		onTouchStartOrOnMouseDown: () => setTaps(prevState => prevState + 1),
+		swipeDuration: 300,
+		// trackMouse: true
 	})
 
 	// TODO: Find a new type for this
