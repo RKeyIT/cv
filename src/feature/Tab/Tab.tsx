@@ -12,10 +12,14 @@ import TabSwitcher from "./TabSwitcher/TabSwitcher";
 const Tab: FC = () => {
 	const [ tabActive, setTabActive ] = useState<ChangeTab>(null);
 	const [ isExpanded, setExpanded ] = useState<boolean>(false);
-	const [ taps, setTaps ] = useState(0);
+	const [ taps, setTaps ] = useState<number>(0);
+
+	// // Is it need? Returns to null tab if window was collapsed
+	// useEffect(() => {
+	// 	if(!isExpanded) setTabActive(null)
+	// }, [isExpanded])
 
 	useEffect(() => {
-		console.log(`Count of taps: ${taps}`)
 		if (taps === 2) setExpanded(prevState => !prevState)
 		const delay = setTimeout(() => setTaps(0), 300)
 		return () => clearTimeout(delay)
