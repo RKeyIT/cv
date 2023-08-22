@@ -14,10 +14,10 @@ const Tab: FC = () => {
 	const [ isExpanded, setExpanded ] = useState<boolean>(false);
 	const [ taps, setTaps ] = useState<number>(0);
 
-	// // Is it need? Returns to null tab if window was collapsed
-	// useEffect(() => {
-	// 	if(!isExpanded) setTabActive(null)
-	// }, [isExpanded])
+	// Is it need? Returns to null tab if window was collapsed
+	useEffect(() => {
+		if(!isExpanded) setTabActive(null)
+	}, [isExpanded])
 
 	useEffect(() => {
 		if (taps === 2) setExpanded(prevState => !prevState)
