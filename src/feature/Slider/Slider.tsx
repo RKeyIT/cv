@@ -4,6 +4,7 @@ import IconSass from "../../shared/IconSass/IconSass";
 import IconTS from "../../shared/IconTS/IconTS";
 import IconVite from "../../shared/IconVite/IconVite";
 import { useState, useEffect } from "react";
+import Card from "./Card/Card";
 
 type Slide = 1 | 2 | 3 | 4
 
@@ -25,6 +26,7 @@ const Slider = () => {
 
 	return <div className={ `Slider container height` }>
 			<h2>Used technologies</h2>
+			<Card />
 			<div className="window">
 				<div className={ `slide${ active === 1 ? ' active' : '' }` }>
 					<IconReact />
