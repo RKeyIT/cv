@@ -12,7 +12,7 @@ const Slider = () => {
 
 	useEffect(() => {
 		const timer = 2 * 1000
-		// TODO: Dangerous type assertion using "as" syntax
+		// TODO: Dangerous type assertion using "as" syntax.
 		const interval = setInterval(() => setActive((prev): Slide => (prev + 1) as Slide), timer)
 		if (active > 4) {
 			setActive(1)
@@ -20,6 +20,8 @@ const Slider = () => {
 		}
 		return () => clearInterval(interval)
 	}, [ active ])
+
+	// TODO: Refactor slider to more smooth and create Card component that contains background and received technology.
 
 	return <div className={ `Slider container height` }>
 			<h2>Used technologies</h2>
