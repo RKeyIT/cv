@@ -1,9 +1,10 @@
-import Technologies from "./Technologies/Technologies";
+import Slider from "../../feature/Slider/Slider";
 import Tab from "../../feature/Tab/Tab";
 
 const Main = () => {
 	return <main className={`main`}>
-		<Technologies/>
+		<Slider />
+		{/*<Technologies/>*/}
 		<Tab />
 		{/*<Mock />*/}
 	</main>
