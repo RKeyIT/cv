@@ -1,5 +1,5 @@
 import './Tab.css'
-import { useState, FC, useEffect, } from "react";
+import { useState, FC, useEffect, ReactNode, } from "react";
 import NullTab from "./NullTab/NullTab";
 import ThemeTab from "./ThemeTab/ThemeTab";
 import SliderTab from "./SliderTab/SliderTab";
@@ -34,8 +34,7 @@ const Tab: FC = () => {
 		// trackMouse: true
 	})
 
-	// TODO: Find a new type for this
-	const tabs: JSX.Element[] = [
+	const tabs: ReactNode[] = [
 		<NullTab />,
 		<ThemeTab />,
 		<SliderTab />,
@@ -54,8 +53,7 @@ const Tab: FC = () => {
 		return setTabActive(prev => (prev! + direction) as ChangeTab)
 	}
 
-	// TODO: Find a new type for this
-	const showTab = (tab: JSX.Element) => tab
+	const showTab = (tab: ReactNode) => tab
 
 	// TODO: Add arrow buttons to expanded window
 	return <div className={ `Tab` }>
