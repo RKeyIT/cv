@@ -1,7 +1,8 @@
 import Slider from "../../feature/Slider/Slider";
 import Tab from "../../feature/Tab/Tab";
+// TODO: Add routing
 
-const Main = () => {
+const Router = () => {
 	return <main className={`main`}>
 		<Slider />
 		{/*<Technologies/>*/}
@@ -10,4 +11,4 @@ const Main = () => {
 	</main>
 };
 
-export default Main;
+export default Router;

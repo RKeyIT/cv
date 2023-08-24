@@ -12,7 +12,7 @@ const Slider = () => {
 	const [ active, setActive ] = useState<Slide>(1)
 
 	useEffect(() => {
-		const timer = 2 * 1000
+		const timer = 2000
 		// TODO: Dangerous type assertion using "as" syntax.
 		const interval = setInterval(() => setActive((prev): Slide => (prev + 1) as Slide), timer)
 		if (active > 4) {
