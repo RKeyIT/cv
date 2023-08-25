@@ -2,7 +2,6 @@ import './normalize.css'
 import './container.css'
 import Header from "../layout/Header/Header";
 import Footer from "../layout/Footer/Footer";
-import Main from "../layout/Main/Main";
 import { Routes, Route } from 'react-router-dom'
 import Home from "../page/Home";
 import About from "../page/About";
@@ -24,7 +23,6 @@ const App = () => {
 					<Route path={ '*' } element={ <Code404 /> } />
 				</Route>
 			</Routes>
-			<Main />
 		</main>
 		<Footer />
 	</>
