@@ -1,23 +1,29 @@
-.Carousel .window {
+.Slider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Slider .window {
   position: relative;
   display: flex;
+  flex-grow: 1;
   flex-direction: row;
   overflow: hidden;
 }
-.Carousel .window .slide {
+.Slider .window .slide {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0;
 }
-.Carousel .window .slide svg {
+.Slider .window .slide svg {
   max-width: 0;
   max-height: 0;
 }
-.Carousel .window .slide.active {
+.Slider .window .slide.active {
   flex-basis: 100%;
+  padding: 20px;
 }
-.Carousel .window .slide.active svg {
+.Slider .window .slide.active svg {
   min-width: 100%;
   width: 100%;
   max-width: 100%;

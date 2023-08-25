@@ -2,8 +2,9 @@ import CodeBlock from "../../../shared/CodeBlock/CodeBlock";
 import { type, state, effect } from "./CodeExamples";
 
 const SliderTab = () => {
+
 	return <div className={ `CarouselTab` }>
-		<h3>Welcome to Slider tab!</h3>
+		<h3>Welcome to the Slider tab!</h3>
 		<p>
 			Currently it has a simple implementation that contains one type, one state, one effect and a markup.
 		</p>

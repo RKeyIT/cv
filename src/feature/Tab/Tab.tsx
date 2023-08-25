@@ -1,5 +1,5 @@
 import './Tab.css'
-import { useState, } from "react";
+import { useState, FC, useEffect, ReactNode, } from "react";
 import NullTab from "./NullTab/NullTab";
 import ThemeTab from "./ThemeTab/ThemeTab";
 import SliderTab from "./SliderTab/SliderTab";
@@ -9,22 +9,32 @@ import { useSwipeable } from "react-swipeable";
 import { ChangeTab, ActivateTab, Direction } from "./types";
 import TabSwitcher from "./TabSwitcher/TabSwitcher";
 
-const Tab = () => {
+const Tab: FC = () => {
 	const [ tabActive, setTabActive ] = useState<ChangeTab>(null);
-	const [ isExpanded, setExpanded ] = useState(false);
+	const [ isExpanded, setExpanded ] = useState<boolean>(false);
+	const [ taps, setTaps ] = useState<number>(0);
+
+	// Is it need? Returns to null tab if content window was collapsed
+	useEffect(() => {
+		if(!isExpanded) setTabActive(null)
+	}, [isExpanded])
+
+	useEffect(() => {
+		if (taps === 2) setExpanded(prevState => !prevState)
+		const delay = setTimeout(() => setTaps(0), 300)
+		return () => clearTimeout(delay)
+	}, [ taps ])
 
 	// TODO: Scrolling of code blocks activate swipe actions! Fix it.
 	const swipeable = useSwipeable({
 		onSwipedLeft: () => changeTab(1),
 		onSwipedRight: () => changeTab(-1),
-		// onSwipedUp: () => setTabActive(null),
-		// onSwipedDown: () => setTabActive(null),
-		// swipeDuration: 300,
-		trackMouse: true
+		onTouchStartOrOnMouseDown: () => setTaps(prevState => prevState + 1),
+		swipeDuration: 300,
+		// trackMouse: true
 	})
 
-	// TODO: Find a new type for this
-	const tabs: JSX.Element[] = [
+	const tabs: ReactNode[] = [
 		<NullTab />,
 		<ThemeTab />,
 		<SliderTab />,
@@ -43,8 +53,7 @@ const Tab = () => {
 		return setTabActive(prev => (prev! + direction) as ChangeTab)
 	}
 
-	// TODO: Find a new type for this
-	const showTab = (tab: JSX.Element) => tab
+	const showTab = (tab: ReactNode) => tab
 
 	// TODO: Add arrow buttons to expanded window
 	return <div className={ `Tab` }>

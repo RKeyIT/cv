@@ -1,19 +1,24 @@
 // Watches
 @media screen and (max-width: 319px)
-  .header-burger-menu
+  .header-burger
     display: flex
     opacity: 1
     transform: translateY(0)
 
 // Mobile
 @media screen and (min-width: 320px)
+  @media screen and (orientation: landscape)
+    .burger-menu
+      top: 1em
+      font-size: 1rem
+      gap: 0
 
 // Tablet
 @media screen and (min-width: 480px)
 
 // Small screen PC/Laptop
 @media screen and (min-width: 768px)
-  .header-burger-menu
+  .header-burger
     display: none
     opacity: 0
     transform: translateY(-10px)

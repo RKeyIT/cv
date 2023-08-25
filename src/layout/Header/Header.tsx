@@ -26,10 +26,7 @@ const Header = () => {
 	}, []);
 
 	return <header className="header-wrapper height transition-1000ms">
-		<div className="container">
 			{imagesLoaded && <HeaderUI/>}
-
-		</div>
 	</header>
 };
 

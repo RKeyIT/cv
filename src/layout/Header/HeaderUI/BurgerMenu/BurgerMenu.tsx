@@ -1,6 +1,7 @@
 import { useState, useRef, Ref, useEffect, FC } from 'react';
 import './BurgerMenu.css'
 import './BurgerMenuMedia.css'
+import { Link } from "react-router-dom";
 
 // Variant with refs
 // Working better than using onBlur
@@ -52,26 +53,21 @@ const BurgerMenu: FC = () => {
 		    className={ `transition-500ms burger-menu ${ isActive ? 'active' : 'non-active' }`
 		      + ` ${ isDisplayNone ? 'display-none' : '' }`}
 		>
-			<a className="navlink" href="#">
+			<Link className="navlink" to="/">
 				<li className="burger-menu-item">
 					Home
 				</li>
-			</a>
-			<a className="navlink" href="#">
+			</Link>
+			<Link className="navlink" to="about">
 				<li className="burger-menu-item">
-					About me
+					About
 				</li>
-			</a>
-			<a className="navlink" href="#">
-				<li className="burger-menu-item">
-					History
-				</li>
-			</a>
-			<a className="navlink" href="#">
+			</Link>
+			<Link className="navlink" to="contact">
 				<li className="burger-menu-item">
 					Contact
 				</li>
-			</a>
+			</Link>
 		</ul>
 	</div>
 };

@@ -18,7 +18,10 @@ const NullTab = () => {
 			Any tab contains description with code examples about same-named feature that you can see on my website
 		</p>
 		<p>
-			On the bottom of this section you can find "Expand" button. It's expand this window on full screen and add scroll option.
+			You can double tap/click on this widow to expand/collapse it.
+			Also, on the bottom of this section you can find "Expand" button.
+			It's expand this window on full screen and add scroll option.
+			After expanding it will change on "Collapse" button and add you option to close scrollable window.
 		</p>
 		<p>
 			<b>Enjoy!</b>

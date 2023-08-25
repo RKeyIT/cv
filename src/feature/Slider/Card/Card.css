@@ -1,0 +1,25 @@
+.Card {
+  width: 250px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  color: black;
+}
+.Card .image, .Card .description {
+  display: flex;
+}
+.Card .image {
+  height: 250px;
+  padding: 25px;
+  width: 100%;
+}
+.Card .description {
+  height: 50px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: #e6e6e6;
+}
+
+/*# sourceMappingURL=Card.css.map */

@@ -1,8 +1,12 @@
-.Carousel
+.Slider
+  display: flex
+  flex-direction: column
+  align-items: center
 
   & .window
     position: relative
     display: flex
+    flex-grow: 1
     flex-direction: row
     overflow: hidden
 
@@ -10,7 +14,6 @@
       display: flex
       justify-content: center
       align-items: center
-      padding: 0
 
       & svg
         max-width: 0
@@ -18,6 +21,8 @@
 
       &.active
         flex-basis: 100%
+        padding: 20px
+
 
         & svg
           min-width: 100%
