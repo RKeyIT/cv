@@ -1,0 +1,12 @@
+.HeaderMobile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.75em;
+}
+.HeaderMobile .logo {
+  width: 1em;
+  height: 1em;
+}
+
+/*# sourceMappingURL=HeaderMobile.css.map */

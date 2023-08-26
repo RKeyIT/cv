@@ -2,12 +2,29 @@ import sunrise from "./themes/sunrise.css?inline";
 import noon from "./themes/noon.css?inline";
 import sunset from "./themes/sunset.css?inline";
 import moon from "./themes/moon.css?inline";
-import { createContext, useContext, useState } from "react";
+import { createContext, useContext, useState, ReactNode, FC } from "react";
 
-const ThemeContext = createContext({  })
+interface useThemeProps {
+	theme: string
+	setSunriseTheme: () => void,
+	setNoonTheme: () => void,
+	setSunsetTheme: () => void,
+	setMoonTheme: () => void
+}
+const ThemeContext = createContext<useThemeProps>({
+	setMoonTheme(): void {
+	}, setNoonTheme(): void {
+	}, setSunriseTheme(): void {
+	}, setSunsetTheme(): void {
+	}, theme: ""
+})
+
 export const useTheme = () => useContext(ThemeContext)
 
-export function ThemeProvider({ children }) {
+interface ThemeProviderProps {
+	children: ReactNode
+}
+export const ThemeProvider: FC<ThemeProviderProps> = ({ children }) => {
 	const [theme, setTheme] = useState(sunrise); // Initialize with the default theme
 
 	const setSunriseTheme = () => setTheme(sunrise);

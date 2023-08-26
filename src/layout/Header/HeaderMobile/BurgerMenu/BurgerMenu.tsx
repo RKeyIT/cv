@@ -1,11 +1,9 @@
-import { useState, useRef, Ref, useEffect, FC } from 'react';
-import './MobileMenu.css'
-import './MobileMenuMedia.css'
+import './BurgerMenu.css'
+import './MenuMobileMedia.css'
 import { Link } from "react-router-dom";
+import { useState, Ref, useRef, useEffect, FC } from "react";
 
-// Variant with refs
-// Working better than using onBlur
-const MobileMenu: FC = () => {
+const BurgerMenu: FC = () => {
 	const [ isActive, setActive ] = useState<boolean>(false);
 	const [ isDisplayNone, setisDisplayNone] = useState<boolean>(false);
 
@@ -42,16 +40,16 @@ const MobileMenu: FC = () => {
 			: setTimeout(() => setisDisplayNone(true), 500);
 	}, [ isActive ])
 
-	return <div className="header-burger">
+	return <div className="BurgerMenu">
 		<button onClick={ burgerBtnHandler } ref={ burgerBtnRef }
 		        className={ `transition-500ms burger-btn${ isActive ? '-active' : '' }` }>
-			<div className="transition-500ms burger-btn-line-1">|</div>
-			<div className="transition-500ms burger-btn-line-2">|</div>
-			<div className="transition-500ms burger-btn-line-3">|</div>
+			<span className="transition-500ms burger-btn-line-1">|</span>
+			<span className="transition-500ms burger-btn-line-2">|</span>
+			<span className="transition-500ms burger-btn-line-3">|</span>
 		</button>
 		<ul ref={ burgerMenuRef }
 		    className={ `transition-500ms burger-menu ${ isActive ? 'active' : 'non-active' }`
-		      + ` ${ isDisplayNone ? 'display-none' : '' }`}
+			    + ` ${ isDisplayNone ? 'display-none' : '' }`}
 		>
 			<Link className="navlink" to="/">
 				<li className="burger-menu-item">
@@ -72,43 +70,4 @@ const MobileMenu: FC = () => {
 	</div>
 };
 
-// Shortest variant with onBlur
-// const MobileMenu = () => {
-// 	const [ isActive, setActive ] = useState(false);
-//
-// 	const burgerBtnHandler = () => {
-// 		setActive(!isActive);
-// 	};
-//
-// 	const handleBlur = () => {
-// 		setActive(false);
-// 	};
-//
-// 	return <div className="header-burger-menu" onBlur={ handleBlur }>
-// 		<button
-// 			onClick={ burgerBtnHandler }
-// 			className={ `transition-500ms btn-separators-container${
-// 				isActive ? '-active' : ''
-// 			}` }
-// 		>
-// 			<div className="transition-500ms burger-btn-line-1">|</div>
-// 			<div className="transition-500ms burger-btn-line-2">|</div>
-// 			<div className="transition-500ms burger-btn-line-3">|</div>
-// 		</button>
-// 		{ isActive && (
-// 			<ul className={ `transition-500ms header-burger-menu-container` }>
-// 				<a className="navlink" href="#">
-// 					<li className="header-burger-menu-item">Home</li>
-// 				</a>
-// 				<a className="navlink" href="#">
-// 					<li className="header-burger-menu-item">About</li>
-// 				</a>
-// 				<a className="navlink" href="#">
-// 					<li className="header-burger-menu-item">Contact</li>
-// 				</a>
-// 			</ul>
-// 		) }
-// 	</div>
-// };
-
-export default MobileMenu;
+export default BurgerMenu;

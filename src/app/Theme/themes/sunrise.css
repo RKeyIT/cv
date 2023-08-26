@@ -9,35 +9,25 @@ body {
 /********************************/
 /********************************/
 /************ HEADER ************/
-.header-wrapper {
+.Header {
   background-color: rgb(30, 15, 5);
   background-image: url("bg_sunrise.jpg");
   background-repeat: no-repeat;
   background-position: 32.5%;
 }
-@media screen and (max-width: 767px) {
-  .header-ui {
-    background-color: rgb(30, 15, 5);
-  }
-}
-@media screen and (min-width: 768px) {
-  .header-ui {
-    background: none;
-  }
-}
-.header-content {
-  color: rgb(255, 225, 195);
+
+.HeaderMobile {
+  background-color: rgb(30, 15, 5);
 }
 
-.burger-btn {
+.BurgerMenu .burger-btn {
   color: rgb(255, 225, 195);
 }
-.burger-btn:hover {
-  color: #fffbf6;
-}
-
-.burger-btn-active {
+.BurgerMenu .burger-btn-active {
   color: rgb(200, 0, 0);
+}
+.BurgerMenu .burger-btn:hover {
+  color: #fffbf6;
 }
 
 .app-icon {
