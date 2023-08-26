@@ -9,5 +9,9 @@
   width: 1em;
   height: 1em;
 }
+.ThemeSwitcher .theme-button * {
+  min-width: 1em;
+  min-height: 1em;
+}
 
 /*# sourceMappingURL=ThemeSwitcher.css.map */

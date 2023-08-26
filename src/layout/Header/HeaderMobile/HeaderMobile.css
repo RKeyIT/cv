@@ -1,8 +1,10 @@
 .HeaderMobile {
   display: flex;
+  position: fixed;
   justify-content: space-between;
   align-items: center;
   font-size: 1.75em;
+  z-index: 3;
 }
 .HeaderMobile .logo {
   width: 1em;

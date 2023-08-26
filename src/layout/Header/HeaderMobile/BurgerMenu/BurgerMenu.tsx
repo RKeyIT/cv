@@ -5,7 +5,7 @@ import { useState, Ref, useRef, useEffect, FC } from "react";
 
 const BurgerMenu: FC = () => {
 	const [ isActive, setActive ] = useState<boolean>(false);
-	const [ isDisplayNone, setisDisplayNone] = useState<boolean>(false);
+	const [ isDisplayNone, setDisplayNone ] = useState<boolean>(false);
 
 	const burgerBtnRef: Ref<any> = useRef(null);
 	const burgerMenuRef: Ref<any> = useRef(null);
@@ -33,11 +33,11 @@ const BurgerMenu: FC = () => {
 
 	useEffect(() => {
 		isActive
-			? setisDisplayNone(false)
+			? setDisplayNone(false)
 			// TODO: Replace this with a better solution
 			// WARNING: This is a temporary solution based on animation timer in MobileMenu.sass
 			// Rules in .active and .non-active classes
-			: setTimeout(() => setisDisplayNone(true), 500);
+			: setTimeout(() => setDisplayNone(true), 500);
 	}, [ isActive ])
 
 	return <div className="BurgerMenu">
@@ -49,23 +49,23 @@ const BurgerMenu: FC = () => {
 		</button>
 		<ul ref={ burgerMenuRef }
 		    className={ `transition-500ms burger-menu ${ isActive ? 'active' : 'non-active' }`
-			    + ` ${ isDisplayNone ? 'display-none' : '' }`}
+			    + ` ${ isDisplayNone ? 'display-none' : '' }` }
 		>
-			<Link className="navlink" to="/">
-				<li className="burger-menu-item">
+			<li className="burger-menu-item">
+				<Link className="navlink" to="/" onClick={() => setActive(!isActive)}>
 					Home
-				</li>
-			</Link>
-			<Link className="navlink" to="about">
-				<li className="burger-menu-item">
+				</Link>
+			</li>
+			<li className="burger-menu-item">
+				<Link className="navlink" to="about" onClick={() => setActive(!isActive)}>
 					About
-				</li>
-			</Link>
-			<Link className="navlink" to="contact">
-				<li className="burger-menu-item">
+				</Link>
+			</li>
+			<li className="burger-menu-item">
+				<Link className="navlink" to="contact" onClick={() => setActive(!isActive)}>
 					Contact
-				</li>
-			</Link>
+				</Link>
+			</li>
 		</ul>
 	</div>
 };
