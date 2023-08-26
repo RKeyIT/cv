@@ -1,7 +1,7 @@
-import './InlineMenu.css'
+import './PCMenu.css'
 import { Link } from "react-router-dom";
 
-const InlineMenu = () => {
+const PCMenu = () => {
 	return <ul className="header-inline-menu transition-200ms">
 		<Link className="navlink" to="/">
 			<li>Home</li>
@@ -15,4 +15,4 @@ const InlineMenu = () => {
 	</ul>
 };
 
-export default InlineMenu;
+export default PCMenu;

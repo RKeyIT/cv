@@ -1,11 +1,11 @@
 import { useState, useRef, Ref, useEffect, FC } from 'react';
-import './BurgerMenu.css'
-import './BurgerMenuMedia.css'
+import './MobileMenu.css'
+import './MobileMenuMedia.css'
 import { Link } from "react-router-dom";
 
 // Variant with refs
 // Working better than using onBlur
-const BurgerMenu: FC = () => {
+const MobileMenu: FC = () => {
 	const [ isActive, setActive ] = useState<boolean>(false);
 	const [ isDisplayNone, setisDisplayNone] = useState<boolean>(false);
 
@@ -37,7 +37,7 @@ const BurgerMenu: FC = () => {
 		isActive
 			? setisDisplayNone(false)
 			// TODO: Replace this with a better solution
-			// WARNING: This is a temporary solution based on animation timer in BurgerMenu.sass
+			// WARNING: This is a temporary solution based on animation timer in MobileMenu.sass
 			// Rules in .active and .non-active classes
 			: setTimeout(() => setisDisplayNone(true), 500);
 	}, [ isActive ])
@@ -73,7 +73,7 @@ const BurgerMenu: FC = () => {
 };
 
 // Shortest variant with onBlur
-// const BurgerMenu = () => {
+// const MobileMenu = () => {
 // 	const [ isActive, setActive ] = useState(false);
 //
 // 	const burgerBtnHandler = () => {
@@ -111,4 +111,4 @@ const BurgerMenu: FC = () => {
 // 	</div>
 // };
 
-export default BurgerMenu;
+export default MobileMenu;

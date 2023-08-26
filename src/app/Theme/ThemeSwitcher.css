@@ -1,12 +1,11 @@
-.theme-picker {
+.ThemeSwitcher {
   display: flex;
   flex-direction: row;
   list-style: none;
   justify-content: center;
   gap: 6px;
 }
-
-.theme-button {
+.ThemeSwitcher .theme-button {
   width: 1em;
   height: 1em;
 }

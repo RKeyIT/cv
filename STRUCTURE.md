@@ -4,8 +4,8 @@
 
 - Header 
   - HeaderUI
-    - BurgerMenu
-    - InlineMenu
+    - MobileMenu
+    - PCMenu
     - Theme
       - themes
   - HeaderContent
