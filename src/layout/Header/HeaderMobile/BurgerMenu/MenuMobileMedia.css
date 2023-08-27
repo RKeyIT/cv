@@ -1,0 +1,14 @@
+@media screen and (orientation: portrait) {
+  .header-burger {
+    display: flex;
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@media screen and (orientation: landscape) {
+  .burger-menu {
+    gap: 0;
+  }
+}
+
+/*# sourceMappingURL=MenuMobileMedia.css.map */

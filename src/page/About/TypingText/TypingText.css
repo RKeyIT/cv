@@ -1,0 +1,24 @@
+@keyframes typing {
+  50% {
+    border-color: transparent;
+  }
+  100% {
+    border-color: inherit;
+  }
+}
+.TypingText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 1em;
+}
+.TypingText .text {
+  margin: 0;
+  line-height: 1;
+  display: inline-flex;
+  border-right: 10px solid;
+  padding-right: 0.2em;
+  animation: typing ease 1s infinite;
+}
+
+/*# sourceMappingURL=TypingText.css.map */

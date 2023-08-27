@@ -1,0 +1,50 @@
+@keyframes error {
+  50% {
+    color: rgba(255, 0, 0, 0.1);
+  }
+}
+.Summary {
+  background-color: rgba(0, 0, 0, 0.2);
+  display: grid;
+  border: 1px solid;
+  border-radius: 1px;
+}
+.Summary .section {
+  display: grid;
+}
+.Summary .section .header {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+.Summary .section .content {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  justify-content: center;
+}
+.Summary .section .content:nth-child(odd) {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.Summary .section .content:nth-child(odd) {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.Summary .section .content .cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.3em;
+  overflow: hidden;
+}
+.Summary .section .content .cell.head {
+  overflow: auto;
+  word-break: break-all;
+}
+.Summary .section .content .cell.error {
+  font-weight: 900;
+  animation: error linear infinite 1s;
+}
+
+/*# sourceMappingURL=Summary.css.map */
