@@ -13,4 +13,13 @@
   cursor: wait;
 }
 
+a.text-link {
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+span.text-link {
+  font-weight: 600;
+}
+
 /*# sourceMappingURL=themes.css.map */

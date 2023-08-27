@@ -14,11 +14,11 @@ const Me = () => {
 				and much more interesting things :)
 			</p>
 			<p>
-				It was interesting way from basic <a href={`https://www.linkedin.com/learning/`} target={`_blank`}>
+				It was interesting way from basic <a className={`text-link`} href={`https://www.linkedin.com/learning/`} target={`_blank`}>
 				LinkedIn
-			</a> and <a href={`https://stepik.org/`} target={`_blank`}>
+			</a> and <a className={`text-link`} href={`https://stepik.org/`} target={`_blank`}>
 				Stepik
-			</a> courses to more challenging paths in the <a href={`https://rs.school/`} target={`_blank`}>
+			</a> courses to more challenging paths in the <a className={`text-link`} href={`https://rs.school/`} target={`_blank`}>
 				RS School
 			</a>
 			</p>
@@ -28,7 +28,7 @@ const Me = () => {
 				I look on it like that, if I can get a good experience with writing some code
 				to solve my tasks, I can do it by my hand. But if it's something like a thousand lines
 				of code for media queries, I would prefer to use a library
-				like <a href={`https://github.com/duskload/react-device-detect`} target={`_blank`}><code>
+				like <a className={`text-link`} href={`https://github.com/duskload/react-device-detect`} target={`_blank`}><code>
 				react-device-detect</code></a> similar to what I did on this project.
 			</p>
 	</div>

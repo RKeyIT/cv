@@ -42,6 +42,10 @@ body {
   text-shadow: 0 0 10px #fffbf6;
 }
 
+.text-link {
+  color: #ffeedd;
+}
+
 .svg-theme-icon {
   color: rgb(255, 225, 195);
 }
