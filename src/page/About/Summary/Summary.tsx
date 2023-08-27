@@ -1,10 +1,21 @@
 import './Summary.css'
+import { FC } from "react";
+
+interface HeaderProps {
+	header: string
+}
+interface ContentProps {
+	status: string
+	name: string
+	comment: string
+}
+
 
 const Summary = () => {
 
-	const Header = ({header}) => <h4 className={`header`}>{header}</h4>
+	const Header: FC<HeaderProps> = ({header}) => <h4 className={`header`}>{header}</h4>
 
-	const Content = ({status, name, comment}) => <div className="content">
+	const Content: FC<ContentProps> = ({status, name, comment}) => <div className="content">
 		<div className="cell">{status}</div>
 		<div className="cell">{name}</div>
 		<div className="cell">{comment}</div>
