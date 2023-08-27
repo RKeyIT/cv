@@ -52,7 +52,7 @@ const Summary = () => {
 			<Content status={`+`} name={`NodeJS`} comment={`JavaScript everywhere!`} />
 			<Content status={`+`} name={`Express`} comment={`Can you do API faster?`} />
 			<Content status={`+`} name={`MongoDB`} comment={`Where is my users id?`} />
-			<Content status={`+`} name={`MVC`} comment={`Three in one. It is. It shows. It controls.`} />
+			<Content status={`+`} name={`MVC`} comment={`Three for one. That is. That shows. That controls.`} />
 			<MockContent />
 			<Content status={`-`} name={`SQL`} comment={`Haven't practice :(`} />
 		</section>
