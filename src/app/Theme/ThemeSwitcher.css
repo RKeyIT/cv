@@ -1,0 +1,17 @@
+.ThemeSwitcher {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: center;
+  gap: 6px;
+}
+.ThemeSwitcher .theme-button {
+  width: 1em;
+  height: 1em;
+}
+.ThemeSwitcher .theme-button * {
+  min-width: 1em;
+  min-height: 1em;
+}
+
+/*# sourceMappingURL=ThemeSwitcher.css.map */

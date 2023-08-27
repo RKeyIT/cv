@@ -1,0 +1,95 @@
+// BURGER BUTTON
+.BurgerMenu
+  display: flex
+  z-index: 1
+  justify-content: flex-end
+
+
+  & .burger-btn, .burger-btn-active
+    font-weight: 900
+    background: none
+    border: none
+    // TODO: Here is hardcoded margin. Otherwise burger btn creates
+    //margin: 0 4px 0 0
+    margin: 0
+    width: 1em
+    min-width: 1em
+    max-width: 1em
+    height: 1em
+    min-height: 1em
+    max-height: 1em
+    padding: 0
+    outline: none
+    cursor: pointer
+    display: flex
+    justify-content: center
+    align-items: center
+    z-index: 2
+
+  & .burger-btn
+    transform: rotate(90deg)
+
+  & .burger-btn-active
+    transform: rotate(1turn) translate(0, -30%)
+
+    & .burger-btn-line-1
+      transform: rotate(45deg) translate(160%)
+    & .burger-btn-line-2
+      transform: scale(0)
+    & .burger-btn-line-3
+      transform: rotate(-45deg) translate(-160%)
+
+// BURGER-MENU
+@keyframes menu-slide-in
+  from
+    opacity: 0
+    height: 0
+    padding: 0
+    gap: 0
+  to
+    opacity: 1
+    height: auto
+    padding: .5em 0
+    gap: 1em
+
+
+@keyframes menu-slide-out
+  from
+    opacity: 1
+    height: auto
+    padding: .5em 0
+    gap: 1em
+  to
+    opacity: 0
+    height: 0
+    padding: 0
+    gap: 0
+
+.burger-menu
+  position: fixed
+  z-index: 10
+  top: .1em
+  left: 0
+  right: 0
+  padding: .5em 0
+  list-style: none
+  display: flex
+  flex-direction: column
+  align-items: center
+  gap: 1em
+  border-radius: 0 0 20px 20px
+
+  & .navlink
+    font-weight: 100
+    text-decoration: none
+
+
+  // WARNING: setTimeout in MenuMobile component is based and hardcoded on timers in this classes
+  &.non-active
+    animation: menu-slide-out .5s ease forwards
+
+  &.active
+    animation: menu-slide-in .5s ease forwards
+
+.display-none
+  display: none

@@ -1,0 +1,98 @@
+.BurgerMenu {
+  display: flex;
+  z-index: 1;
+  justify-content: flex-end;
+}
+.BurgerMenu .burger-btn, .BurgerMenu .burger-btn-active {
+  font-weight: 900;
+  background: none;
+  border: none;
+  margin: 0;
+  width: 1em;
+  min-width: 1em;
+  max-width: 1em;
+  height: 1em;
+  min-height: 1em;
+  max-height: 1em;
+  padding: 0;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+.BurgerMenu .burger-btn {
+  transform: rotate(90deg);
+}
+.BurgerMenu .burger-btn-active {
+  transform: rotate(1turn) translate(0, -30%);
+}
+.BurgerMenu .burger-btn-active .burger-btn-line-1 {
+  transform: rotate(45deg) translate(160%);
+}
+.BurgerMenu .burger-btn-active .burger-btn-line-2 {
+  transform: scale(0);
+}
+.BurgerMenu .burger-btn-active .burger-btn-line-3 {
+  transform: rotate(-45deg) translate(-160%);
+}
+
+@keyframes menu-slide-in {
+  from {
+    opacity: 0;
+    height: 0;
+    padding: 0;
+    gap: 0;
+  }
+  to {
+    opacity: 1;
+    height: auto;
+    padding: 0.5em 0;
+    gap: 1em;
+  }
+}
+@keyframes menu-slide-out {
+  from {
+    opacity: 1;
+    height: auto;
+    padding: 0.5em 0;
+    gap: 1em;
+  }
+  to {
+    opacity: 0;
+    height: 0;
+    padding: 0;
+    gap: 0;
+  }
+}
+.burger-menu {
+  position: fixed;
+  z-index: 10;
+  top: 0.1em;
+  left: 0;
+  right: 0;
+  padding: 0.5em 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  border-radius: 0 0 20px 20px;
+}
+.burger-menu .navlink {
+  font-weight: 100;
+  text-decoration: none;
+}
+.burger-menu.non-active {
+  animation: menu-slide-out 0.5s ease forwards;
+}
+.burger-menu.active {
+  animation: menu-slide-in 0.5s ease forwards;
+}
+
+.display-none {
+  display: none;
+}
+
+/*# sourceMappingURL=BurgerMenu.css.map */

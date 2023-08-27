@@ -1,6 +1,8 @@
 import './Header.css';
-import HeaderUI from "./HeaderUI/HeaderUI";
 import { useState, useEffect } from "react";
+import {isMobile, isBrowser} from 'react-device-detect'
+import HeaderMobile from "./HeaderMobile/HeaderMobile";
+import HeaderPC from "./HeaderPC/HeaderPC";
 
 const Header = () => {
 	const imageUrls = [
@@ -25,8 +27,13 @@ const Header = () => {
 		});
 	}, []);
 
-	return <header className="header-wrapper height transition-1000ms">
-			{imagesLoaded && <HeaderUI/>}
+	return <header className="Header height">
+			{imagesLoaded &&
+				<>
+					{ isMobile && <HeaderMobile /> }
+					{ isBrowser && <HeaderPC /> }
+				</>
+			}
 	</header>
 };
 
