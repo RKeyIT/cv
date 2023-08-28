@@ -29,6 +29,10 @@ body
   // sunrise: 32.5% noon: 38% sunset: 45% moon: 55%
   background-position: 55%
 
+  @media screen and (orientation: landscape)
+    // sunrise: 77.5% noon: 55% sunset: 45% moon: 55%
+    background-position: 37% 78%
+
 .HeaderMobile
   background-color: $primary
 
@@ -40,6 +44,10 @@ body
       color: $exit-btn
     &:hover
       color: $secondary-hover
+
+.HeaderContent
+  .header
+    text-shadow: 0 0 5px $black
 
 .app-icon
   fill: $secondary

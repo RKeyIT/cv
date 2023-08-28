@@ -15,6 +15,11 @@ body {
   background-repeat: no-repeat;
   background-position: 32.5%;
 }
+@media screen and (orientation: landscape) {
+  .Header {
+    background-position: 50% 77.5%;
+  }
+}
 
 .HeaderMobile {
   background-color: rgb(30, 15, 5);
@@ -28,6 +33,10 @@ body {
 }
 .BurgerMenu .burger-btn:hover {
   color: #fffbf6;
+}
+
+.HeaderContent .header {
+  text-shadow: 0 0 5px #1a1a1a;
 }
 
 .app-icon {
