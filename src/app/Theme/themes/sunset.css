@@ -13,7 +13,7 @@ body {
   background-color: rgb(100, 55, 25);
   background-image: url("bg_sunset.jpg");
   background-repeat: no-repeat;
-  background-position: 45%;
+  background-position: 57% 0%;
 }
 @media screen and (orientation: landscape) {
   .Header {

@@ -13,7 +13,7 @@ body {
   background-color: rgb(231, 238, 246);
   background-image: url("bg_noon.jpg");
   background-repeat: no-repeat;
-  background-position: 38%;
+  background-position: 13%;
 }
 @media screen and (orientation: landscape) {
   .Header {

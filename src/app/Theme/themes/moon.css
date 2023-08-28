@@ -13,7 +13,7 @@ body {
   background-color: rgb(15, 0, 20);
   background-image: url("bg_moon.jpg");
   background-repeat: no-repeat;
-  background-position: 55%;
+  background-position: 51%;
 }
 @media screen and (orientation: landscape) {
   .Header {
