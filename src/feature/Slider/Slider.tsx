@@ -4,7 +4,7 @@ import IconSass from "../../shared/IconSass/IconSass";
 import IconTS from "../../shared/IconTS/IconTS";
 import IconVite from "../../shared/IconVite/IconVite";
 import { useState, useEffect } from "react";
-import Card from "./Card/Card";
+// import Card from "./Card/Card";
 
 type Slide = 1 | 2 | 3 | 4
 
