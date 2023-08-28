@@ -107,6 +107,20 @@ body {
   outline: rgba(230, 230, 230, 0.2) outset 2px;
 }
 
+.Summary {
+  background-color: rgba(100, 55, 25, 0.1);
+}
+.Summary .header {
+  background-color: rgba(230, 210, 200, 0.3);
+  text-shadow: 0 0 6px rgb(10, 20, 35);
+}
+.Summary .content:nth-child(odd) {
+  background-color: rgba(230, 210, 200, 0.05);
+}
+.Summary .content:nth-child(even) {
+  background-color: rgba(230, 210, 200, 0.1);
+}
+
 /********* MAIN-END *************/
 /********************************/
 /********************************/

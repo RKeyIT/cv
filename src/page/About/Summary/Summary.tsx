@@ -70,7 +70,7 @@ const Summary = () => {
 			<Header header={`Web Engineering`}/>
 			<Content status={ <IconAccept /> } name={`Front-End`} comment={`I can do it beautiful!`} />
 			<Content status={ <IconProgress /> } name={`Back-End`} comment={`We need more steps...`} />
-			<Content status={ <IconCross /> } name={`Architecture`} comment={`It can be reliably, but not yet ;)`} />
+			<Content status={ <IconProgress /> } name={`Architecture`} comment={`It can be reliably, but not yet ;)`} />
 			<Content status={ <IconCross /> } name={`Security`} comment={`Your data reliably buried! Can be...`} />
 			<Content status={ <IconCross /> } name={`Optimisation`} comment={`Can I do it faster? I want.`} />
 		</section>

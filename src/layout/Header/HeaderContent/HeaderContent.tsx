@@ -21,7 +21,7 @@ const HeaderContent: FC = () => {
 				setHeader(`Contact`)
 				break
 			default:
-				setHeader(location)
+				setHeader(`Error 404! This page does not exist`)
 		}
 
 		setAnimated(true)

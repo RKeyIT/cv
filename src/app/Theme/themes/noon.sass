@@ -61,7 +61,7 @@ body
     text-shadow: 0 0 10px $primary-hover
 
 .text-link
-  color: lighten($secondary, 5%)
+  color: lighten($primary, 5%)
 
 .svg-theme-icon
   color: $primary
@@ -118,6 +118,18 @@ body
         color: transparentize($primary, 0.1)
         background: linear-gradient(to bottom, transparentize($black, 0.2), transparentize($secondary, 0.8))
         outline: transparentize($white, 0.8) outset 2px
+
+.Summary
+  background-color: transparentize($primary, 0.8)
+  .header
+    background-color: transparentize($black, 0.5)
+    text-shadow: 0 0 6px $black
+  .content
+    &:nth-child(odd)
+      background-color: transparentize($black, 0.8)
+    &:nth-child(even)
+      background-color: transparentize($black, 0.6)
+
 /********* MAIN-END *************/
 /********************************/
 

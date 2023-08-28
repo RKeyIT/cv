@@ -3,7 +3,6 @@
     color: transparentize(red, 0.9)
 
 .Summary
-  background-color: transparentize(black, 0.8)
   display: grid
   border: 1px solid
   border-radius: 1px
@@ -15,7 +14,6 @@
       display: grid
       justify-content: center
       align-items: center
-      background-color: transparentize(white, 0.9)
       padding-top: 1em
       padding-bottom: 1em
 
@@ -24,10 +22,7 @@
       grid-template-columns: 1fr 2fr 2fr
       justify-content: center
 
-      &:nth-child(odd)
-        background-color: transparentize(black, 0.9)
-      &:nth-child(odd)
-        background-color: transparentize(black, 0.7)
+
 
       .cell
         display: flex

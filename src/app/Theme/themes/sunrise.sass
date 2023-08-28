@@ -113,6 +113,16 @@ body
         background: linear-gradient(to bottom, transparentize($black, 0.2), transparentize($secondary, 0.8))
         outline: transparentize($white, 0.8) outset 2px
 
+.Summary
+  background-color: transparentize($primary, 0.8)
+  .header
+    background-color: transparentize($secondary, 0.5)
+    text-shadow: 0 0 6px $black
+  .content
+    &:nth-child(odd)
+      background-color: transparentize($secondary, 0.9)
+    &:nth-child(even)
+      background-color: transparentize($secondary, 0.7)
 
 
 /********* MAIN-END *************/
@@ -122,7 +132,7 @@ body
 /********************************/
 /************ FOOTER ************/
 .footer-wrapper
-  background-color: $primary
+  background-color: $black
   color: $secondary
 /******** FOOTER-END ************/
 /********************************/

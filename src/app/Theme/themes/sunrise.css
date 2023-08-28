@@ -108,12 +108,26 @@ body {
   outline: rgba(230, 230, 230, 0.2) outset 2px;
 }
 
+.Summary {
+  background-color: rgba(30, 15, 5, 0.2);
+}
+.Summary .header {
+  background-color: rgba(255, 225, 195, 0.5);
+  text-shadow: 0 0 6px #1a1a1a;
+}
+.Summary .content:nth-child(odd) {
+  background-color: rgba(255, 225, 195, 0.1);
+}
+.Summary .content:nth-child(even) {
+  background-color: rgba(255, 225, 195, 0.3);
+}
+
 /********* MAIN-END *************/
 /********************************/
 /********************************/
 /************ FOOTER ************/
 .footer-wrapper {
-  background-color: rgb(30, 15, 5);
+  background-color: #1a1a1a;
   color: rgb(255, 225, 195);
 }
 
