@@ -9,35 +9,34 @@ body {
 /********************************/
 /********************************/
 /************ HEADER ************/
-.header-wrapper {
+.Header {
   background-color: rgb(100, 55, 25);
   background-image: url("bg_sunset.jpg");
   background-repeat: no-repeat;
-  background-position: 45%;
+  background-position: 57% 0%;
 }
-@media screen and (max-width: 767px) {
-  .header-ui {
-    background-color: rgb(100, 55, 25);
+@media screen and (orientation: landscape) {
+  .Header {
+    background-position: 60% 40%;
   }
-}
-@media screen and (min-width: 768px) {
-  .header-ui {
-    background: none;
-  }
-}
-.header-content {
-  color: rgb(230, 210, 200);
 }
 
-.burger-btn {
+.HeaderMobile {
+  background-color: rgb(100, 55, 25);
+}
+
+.BurgerMenu .burger-btn {
   color: rgb(230, 210, 200);
 }
-.burger-btn:hover {
+.BurgerMenu .burger-btn-active {
+  color: rgb(200, 0, 0);
+}
+.BurgerMenu .burger-btn:hover {
   color: #f6efeb;
 }
 
-.burger-btn-active {
-  color: rgb(200, 0, 0);
+.HeaderContent .header {
+  text-shadow: 0 0 5px rgb(10, 20, 35);
 }
 
 .app-icon {
@@ -50,6 +49,10 @@ body {
 .navlink:hover {
   color: #f6efeb;
   text-shadow: 0 0 10px #f6efeb;
+}
+
+.text-link {
+  color: #eee0da;
 }
 
 .svg-theme-icon {
@@ -67,12 +70,12 @@ body {
 /********************************/
 /********************************/
 /************* MAIN *************/
-.Slider {
-  background-color: rgb(10, 20, 35);
+.Intro {
+  background-color: rgb(100, 55, 25);
 }
 
-.Mock {
-  background-color: rgb(100, 55, 25);
+.Slider {
+  background-color: rgb(10, 20, 35);
 }
 
 .Tab .window {
@@ -108,12 +111,26 @@ body {
   outline: rgba(230, 230, 230, 0.2) outset 2px;
 }
 
+.Summary {
+  background-color: rgba(100, 55, 25, 0.1);
+}
+.Summary .header {
+  background-color: rgba(230, 210, 200, 0.3);
+  text-shadow: 0 0 6px rgb(10, 20, 35);
+}
+.Summary .content:nth-child(odd) {
+  background-color: rgba(230, 210, 200, 0.05);
+}
+.Summary .content:nth-child(even) {
+  background-color: rgba(230, 210, 200, 0.1);
+}
+
 /********* MAIN-END *************/
 /********************************/
 /********************************/
 /************ FOOTER ************/
 .footer-wrapper {
-  background-color: rgb(10, 20, 35);
+  background-color: rgb(100, 55, 25);
 }
 
 /******** FOOTER-END ************/

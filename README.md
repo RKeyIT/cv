@@ -1,6 +1,4 @@
-# Raman Krytski CV
-
-[Let's see](https://rkey-cv.netlify.app/)
+# [Raman Krytski CV](https://rkey-cv.netlify.app/)
 
 ## Greetings
 Hi there! Let me show you my cv as interactive website.

@@ -23,38 +23,33 @@ body
 
 /********************************/
 /************ HEADER ************/
-.header
-  &-wrapper
-    background-color: $primary
-    //noinspection CssUnknownTarget
-    background-image: url('bg_sunset.jpg')
-    background-repeat: no-repeat
-    // sunrise: 32.5% noon: 38% sunset: 45% moon: 55%
-    background-position: 45%
+.Header
+  background-color: $primary
+  //noinspection CssUnknownTarget
+  background-image: url('bg_sunset.jpg')
+  background-repeat: no-repeat
+  // sunrise: 32.5% noon: 38% sunset: 45% moon: 55%
+  background-position: 57% 0%
 
-  &-ui
-    @media screen and (max-width: 767px)
-      background-color: $primary
-    @media screen and (min-width: 768px)
-      background: none
+  @media screen and (orientation: landscape)
+    // sunrise: 77.5% noon: 55% sunset: 45% moon: 55%
+    background-position: 60% 40%
 
-  &-content
+.HeaderMobile
+  background-color: $primary
+
+.BurgerMenu
+  .burger-btn
     color: $secondary
 
-//&-h2
-//  background-color: $alpha-background
-//&-text-container
-//  background-color: $alpha-background
+    &-active
+      color: $exit-btn
+    &:hover
+      color: $secondary-hover
 
-
-.burger-btn
-  color: $secondary
-
-  &:hover
-    color: $secondary-hover
-
-.burger-btn-active
-  color: $exit-btn
+.HeaderContent
+  .header
+    text-shadow: 0 0 5px $black
 
 .app-icon
   fill: $secondary
@@ -64,6 +59,9 @@ body
   &:hover
     color: $secondary-hover
     text-shadow: 0 0 10px $secondary-hover
+
+.text-link
+  color: lighten($secondary, 5%)
 
 .svg-theme-icon
   color: $secondary
@@ -79,11 +77,11 @@ body
 
 /********************************/
 /************* MAIN *************/
+.Intro
+  background-color: $primary
+
 .Slider
   background-color: $black
-
-.Mock
-  background-color: $primary
 
 .Tab
   & .window
@@ -118,6 +116,17 @@ body
         background: linear-gradient(to bottom, transparentize($black, 0.2), transparentize($secondary, 0.8))
         outline: transparentize($white, 0.8) outset 2px
 
+.Summary
+  background-color: transparentize($primary, 0.9)
+  .header
+    background-color: transparentize($secondary, 0.7)
+    text-shadow: 0 0 6px $black
+  .content
+    &:nth-child(odd)
+      background-color: transparentize($secondary, 0.95)
+    &:nth-child(even)
+      background-color: transparentize($secondary, 0.9)
+
 /********* MAIN-END *************/
 /********************************/
 
@@ -125,7 +134,7 @@ body
 /********************************/
 /************ FOOTER ************/
 .footer-wrapper
-  background-color: $black
+  background-color: $primary
 
 /******** FOOTER-END ************/
 /********************************/

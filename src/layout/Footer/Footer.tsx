@@ -2,6 +2,7 @@ import { FC } from 'react';
 import './Footer.css'
 import IconLinkedIn from "../../shared/IconLinkedIn/IconLinkedIn";
 import IconGitHub from "../../shared/IconGitHub/IconGitHub";
+import CopyableText from "../../shared/CopyableText/CopyableText";
 
 const Footer: FC = () => {
 	return <>
@@ -14,10 +15,10 @@ const Footer: FC = () => {
 					</div>
 					<div className="footer-contacts">
 						<div className="gmail">
-							Gmail: gmail@gmail.com
+							<CopyableText text={`Gmail: rkeydevelop@gmail.com`} copiedText={`rkeydevelop@gmail.com`}/>
 						</div>
 						<div className="phone">
-							Phone/Telegram: +45645465456
+							<CopyableText text={`Phone/Telegram: +48794673466`} copiedText={`+48794673466`}/>
 						</div>
 					</div>
 					<div className="footer-copyright">

@@ -24,9 +24,9 @@ const Slider = () => {
 
 	// TODO: Refactor slider to more smooth and create Card component that contains background and received technology.
 
-	return <div className={ `Slider container height` }>
+	return <div className={ `Slider padding height` }>
 			<h2>Used technologies</h2>
-			<Card />
+			{/*<Card />*/}
 			<div className="window">
 				<div className={ `slide${ active === 1 ? ' active' : '' }` }>
 					<IconReact />

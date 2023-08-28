@@ -1,4 +1,5 @@
 import {BrowserView, MobileView} from 'react-device-detect'
+import MobileContact from "./MobileContact/MobileContact";
 
 const Contact = () => {
 	return <div className={ `Contact` }>
@@ -6,7 +7,7 @@ const Contact = () => {
 			<div>Browser view</div>
 		</BrowserView>
 		<MobileView>
-			<div>Mobile view</div>
+			<MobileContact />
 		</MobileView>
 	</div>
 };

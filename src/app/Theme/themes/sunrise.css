@@ -13,7 +13,12 @@ body {
   background-color: rgb(30, 15, 5);
   background-image: url("bg_sunrise.jpg");
   background-repeat: no-repeat;
-  background-position: 32.5%;
+  background-position: 40%;
+}
+@media screen and (orientation: landscape) {
+  .Header {
+    background-position: 50% 77.5%;
+  }
 }
 
 .HeaderMobile {
@@ -30,6 +35,10 @@ body {
   color: #fffbf6;
 }
 
+.HeaderContent .header {
+  text-shadow: 0 0 5px #1a1a1a;
+}
+
 .app-icon {
   fill: rgb(255, 225, 195);
 }
@@ -40,6 +49,10 @@ body {
 .navlink:hover {
   color: #fffbf6;
   text-shadow: 0 0 10px #fffbf6;
+}
+
+.text-link {
+  color: #ffeedd;
 }
 
 .svg-theme-icon {
@@ -57,8 +70,12 @@ body {
 /********************************/
 /********************************/
 /************* MAIN *************/
-.Slider, .Mock {
+.Intro {
   background-color: rgb(30, 15, 5);
+}
+
+.Slider {
+  background-color: #1a1a1a;
   color: rgb(255, 225, 195);
 }
 
@@ -93,6 +110,20 @@ body {
   color: rgba(255, 225, 195, 0.8);
   background: linear-gradient(to bottom, rgba(26, 26, 26, 0.8), rgba(255, 225, 195, 0.2));
   outline: rgba(230, 230, 230, 0.2) outset 2px;
+}
+
+.Summary {
+  background-color: rgba(30, 15, 5, 0.2);
+}
+.Summary .header {
+  background-color: rgba(255, 225, 195, 0.5);
+  text-shadow: 0 0 6px #1a1a1a;
+}
+.Summary .content:nth-child(odd) {
+  background-color: rgba(255, 225, 195, 0.1);
+}
+.Summary .content:nth-child(even) {
+  background-color: rgba(255, 225, 195, 0.3);
 }
 
 /********* MAIN-END *************/

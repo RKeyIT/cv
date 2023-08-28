@@ -1,8 +1,8 @@
 import { Route, Routes } from "react-router-dom";
 import Layout from "../../layout/Layout";
-import Home from "../../page/Home";
+import Home from "../../page/Home/Home";
 import About from "../../page/About/About";
-import Contact from "../../page/Contact";
+import Contact from "../../page/Contact/Contact";
 import Code404 from "../../page/Code404";
 
 const Router = () => {

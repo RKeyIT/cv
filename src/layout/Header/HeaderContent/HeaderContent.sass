@@ -1,0 +1,21 @@
+@keyframes fade-in-out
+  0%
+    opacity: 0
+    color: black
+  100%
+    opacity: 1
+
+.HeaderContent
+  font-size: 1.2rem
+  display: flex
+  justify-content: center
+  align-items: center
+  height: 100%
+
+  & .header
+    font-size: 2em
+    text-align: center
+    //animation: fade-in-out linear 5s 1
+
+    &.animate
+      animation: fade-in-out linear 5s 1

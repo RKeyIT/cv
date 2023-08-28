@@ -9,35 +9,34 @@ body {
 /********************************/
 /********************************/
 /************ HEADER ************/
-.header-wrapper {
+.Header {
   background-color: rgb(15, 0, 20);
   background-image: url("bg_moon.jpg");
   background-repeat: no-repeat;
-  background-position: 55%;
+  background-position: 51%;
 }
-@media screen and (max-width: 767px) {
-  .header-ui {
-    background-color: rgb(15, 0, 20);
+@media screen and (orientation: landscape) {
+  .Header {
+    background-position: 37% 78%;
   }
-}
-@media screen and (min-width: 768px) {
-  .header-ui {
-    background: none;
-  }
-}
-.header-content {
-  color: rgb(200, 185, 210);
 }
 
-.burger-btn {
+.HeaderMobile {
+  background-color: rgb(15, 0, 20);
+}
+
+.BurgerMenu .burger-btn {
   color: rgb(200, 185, 210);
 }
-.burger-btn:hover {
+.BurgerMenu .burger-btn-active {
+  color: rgb(200, 0, 0);
+}
+.BurgerMenu .burger-btn:hover {
   color: #e0d8e6;
 }
 
-.burger-btn-active {
-  color: rgb(200, 0, 0);
+.HeaderContent .header {
+  text-shadow: 0 0 5px #1a1a1a;
 }
 
 .app-icon {
@@ -50,6 +49,10 @@ body {
 .navlink:hover {
   color: #e0d8e6;
   text-shadow: 0 0 10px #e0d8e6;
+}
+
+.text-link {
+  color: #d4c9dc;
 }
 
 .svg-theme-icon {
@@ -67,12 +70,12 @@ body {
 /********************************/
 /********************************/
 /************* MAIN *************/
-.Slider {
-  background-color: #1a1a1a;
+.Intro {
+  background-color: rgb(15, 0, 20);
 }
 
-.Mock {
-  background-color: rgb(15, 0, 20);
+.Slider {
+  background-color: #1a1a1a;
 }
 
 .Tab .window {
@@ -108,12 +111,26 @@ body {
   outline: rgba(230, 230, 230, 0.2) outset 2px;
 }
 
+.Summary {
+  background-color: rgba(15, 0, 20, 0.2);
+}
+.Summary .header {
+  background-color: rgba(200, 185, 210, 0.5);
+  text-shadow: 0 0 6px #1a1a1a;
+}
+.Summary .content:nth-child(odd) {
+  background-color: rgba(200, 185, 210, 0.1);
+}
+.Summary .content:nth-child(even) {
+  background-color: rgba(200, 185, 210, 0.3);
+}
+
 /********* MAIN-END *************/
 /********************************/
 /********************************/
 /************ FOOTER ************/
 .footer-wrapper {
-  background-color: #1a1a1a;
+  background-color: rgb(15, 0, 20);
 }
 
 /******** FOOTER-END ************/

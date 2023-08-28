@@ -1,8 +1,9 @@
 import './Header.css';
 import { useState, useEffect } from "react";
-import {isMobile, isBrowser} from 'react-device-detect'
+import { isMobile, isBrowser } from 'react-device-detect'
 import HeaderMobile from "./HeaderMobile/HeaderMobile";
 import HeaderPC from "./HeaderPC/HeaderPC";
+import HeaderContent from "./HeaderContent/HeaderContent";
 
 const Header = () => {
 	const imageUrls = [
@@ -11,7 +12,7 @@ const Header = () => {
 		'bg_sunrise.jpg',
 		'bg_sunset.jpg'
 	]
-	const [imagesLoaded, setImagesLoaded] = useState(false);
+	const [ imagesLoaded, setImagesLoaded ] = useState(false);
 
 	useEffect(() => {
 		const loadImage = (url: string) => {
@@ -27,13 +28,14 @@ const Header = () => {
 		});
 	}, []);
 
-	return <header className="Header height">
-			{imagesLoaded &&
-				<>
-					{ isMobile && <HeaderMobile /> }
-					{ isBrowser && <HeaderPC /> }
-				</>
-			}
+	return <header className="Header height transition-1000ms">
+		{ imagesLoaded &&
+			<>
+				{ isMobile && <HeaderMobile /> }
+				{ isBrowser && <HeaderPC /> }
+			</>
+		}
+		<HeaderContent />
 	</header>
 };
 
