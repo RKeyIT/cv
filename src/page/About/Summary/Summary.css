@@ -46,5 +46,9 @@
   font-weight: 900;
   animation: error linear infinite 1s;
 }
+.Summary .section .content .cell.status svg {
+  width: 1em;
+  height: 1em;
+}
 
 /*# sourceMappingURL=Summary.css.map */
