@@ -9,35 +9,25 @@ body {
 /********************************/
 /********************************/
 /************ HEADER ************/
-.header-wrapper {
+.Header {
   background-color: rgb(100, 55, 25);
   background-image: url("bg_sunset.jpg");
   background-repeat: no-repeat;
   background-position: 45%;
 }
-@media screen and (max-width: 767px) {
-  .header-ui {
-    background-color: rgb(100, 55, 25);
-  }
-}
-@media screen and (min-width: 768px) {
-  .header-ui {
-    background: none;
-  }
-}
-.header-content {
-  color: rgb(230, 210, 200);
+
+.HeaderMobile {
+  background-color: rgb(100, 55, 25);
 }
 
-.burger-btn {
+.BurgerMenu .burger-btn {
   color: rgb(230, 210, 200);
 }
-.burger-btn:hover {
-  color: #f6efeb;
-}
-
-.burger-btn-active {
+.BurgerMenu .burger-btn-active {
   color: rgb(200, 0, 0);
+}
+.BurgerMenu .burger-btn:hover {
+  color: #f6efeb;
 }
 
 .app-icon {
@@ -50,6 +40,10 @@ body {
 .navlink:hover {
   color: #f6efeb;
   text-shadow: 0 0 10px #f6efeb;
+}
+
+.text-link {
+  color: #eee0da;
 }
 
 .svg-theme-icon {
@@ -69,10 +63,6 @@ body {
 /************* MAIN *************/
 .Slider {
   background-color: rgb(10, 20, 35);
-}
-
-.Mock {
-  background-color: rgb(100, 55, 25);
 }
 
 .Tab .window {

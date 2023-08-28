@@ -23,38 +23,25 @@ body
 
 /********************************/
 /************ HEADER ************/
-.header
-  &-wrapper
-    background-color: $secondary
-    //noinspection CssUnknownTarget
-    background-image: url('bg_noon.jpg')
-    background-repeat: no-repeat
-    // sunrise: 32.5% noon: 38% sunset: 45% moon: 55%
-    background-position: 38%
+.Header
+  background-color: $primary
+  //noinspection CssUnknownTarget
+  background-image: url('bg_noon.jpg')
+  background-repeat: no-repeat
+  // sunrise: 32.5% noon: 38% sunset: 45% moon: 55%
+  background-position: 38%
 
-  &-ui
-    @media screen and (max-width: 767px)
-      background-color: $secondary
-    @media screen and (min-width: 768px)
-      background: none
+.HeaderMobile
+  background-color: $secondary
 
-  &-content
+.BurgerMenu
+  .burger-btn
     color: $primary
 
-//&-h2
-//  background-color: $alpha-background
-//&-text-container
-//  background-color: $alpha-background
-
-
-.burger-btn
-  color: $primary
-
-  &:hover
-    color: $primary-hover
-
-.burger-btn-active
-  color: $exit-btn
+    &-active
+      color: $exit-btn
+    &:hover
+      color: $secondary-hover
 
 .app-icon
   fill: $primary
@@ -64,6 +51,9 @@ body
   &:hover
     color: $primary-hover
     text-shadow: 0 0 10px $primary-hover
+
+.text-link
+  color: lighten($secondary, 5%)
 
 .svg-theme-icon
   color: $primary
@@ -82,11 +72,6 @@ body
 .Slider
   background-color: $black
   color: $primary
-
-.Mock
-  background-color: $secondary
-  color: $primary
-
 
 .Tab
   & .window

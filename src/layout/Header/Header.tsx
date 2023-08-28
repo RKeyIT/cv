@@ -28,7 +28,7 @@ const Header = () => {
 		});
 	}, []);
 
-	return <header className="Header height">
+	return <header className="Header height transition-1000ms">
 		{ imagesLoaded &&
 			<>
 				{ isMobile && <HeaderMobile /> }
