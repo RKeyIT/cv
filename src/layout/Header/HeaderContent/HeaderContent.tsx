@@ -25,7 +25,7 @@ const HeaderContent: FC = () => {
 		}
 
 		setAnimated(true)
-		const animate = setTimeout(() => {setAnimated(false)}, 2000)
+		const animate = setTimeout(() => {setAnimated(false)}, 1000)
 
 		return () => {
 			setAnimated(false)

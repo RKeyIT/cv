@@ -1,9 +1,7 @@
 @keyframes fade-in-out {
-  0% {
-    opacity: 1;
-  }
-  10% {
+  50% {
     opacity: 0;
+    color: black;
   }
   100% {
     opacity: 1;
@@ -21,7 +19,7 @@
   text-align: center;
 }
 .HeaderContent .header.animate {
-  animation: fade-in-out linear 2s 1;
+  animation: fade-in-out linear 5s 1;
 }
 
 /*# sourceMappingURL=HeaderContent.css.map */
