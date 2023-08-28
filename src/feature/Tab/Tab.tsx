@@ -57,7 +57,7 @@ const Tab: FC = () => {
 
 	// TODO: Add arrow buttons to expanded window
 	return <div className={ `Tab` }>
-		<div className="container window height">
+		<div className="padding window height">
 			<h2>Features of project</h2>
 
 			<TabSwitcher tabActive={ tabActive } changeTab={ changeTab } activateTab={ activateTab } />

@@ -3,7 +3,7 @@ import Tab from "../../feature/Tab/Tab";
 import Intro from "./Intro/Intro";
 
 const Home = () => {
-	return <div className={ `Home` }>
+	return <div className={ `Home container` }>
 		<Intro />
 		<Slider />
 		<Tab />

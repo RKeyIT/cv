@@ -1,8 +1,9 @@
+import './Intro.css'
 import { Link } from "react-router-dom";
 
 const Intro = () => {
-	return <section className={ `Intro container` }>
-		<h3>Welcome to Home page!</h3>
+	return <section className={ `Intro padding` }>
+		<h3 className={`heading`}>Welcome to Home page!</h3>
 		<p>
 			This page contains short info about couple of features and technologies
 			that used on this page.

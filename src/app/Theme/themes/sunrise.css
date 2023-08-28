@@ -70,8 +70,12 @@ body {
 /********************************/
 /********************************/
 /************* MAIN *************/
-.Slider {
+.Intro {
   background-color: rgb(30, 15, 5);
+}
+
+.Slider {
+  background-color: #1a1a1a;
   color: rgb(255, 225, 195);
 }
 
@@ -127,7 +131,7 @@ body {
 /********************************/
 /************ FOOTER ************/
 .footer-wrapper {
-  background-color: #1a1a1a;
+  background-color: rgb(30, 15, 5);
   color: rgb(255, 225, 195);
 }
 
