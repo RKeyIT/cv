@@ -2,6 +2,11 @@
   width: 100%;
   margin: 0 auto;
 }
+@media screen and (min-width: 1500px) {
+  .container {
+    width: 1500px;
+  }
+}
 
 .padding {
   padding: 1em 0.2em;
@@ -9,6 +14,11 @@
 
 .height {
   height: 100vh;
+}
+@media screen and (min-width: 1500px) {
+  .height {
+    height: 500px;
+  }
 }
 
 /*# sourceMappingURL=container.css.map */

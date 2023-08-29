@@ -1,20 +1,22 @@
 .HeaderPC
-  display: grid
-  grid-template-columns: repeat(3, 1fr)
-  align-items: center
-  padding: .2em .5em
 
-  & :nth-child(1)
-    display: flex
-    justify-content: flex-start
-  & :nth-child(2)
-    display: flex
-    justify-content: center
-  & :nth-child(3)
-    display: flex
-    justify-content: flex-end
+  & .container
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    align-items: center
+    padding: .2em .5em
 
-  & .logo, & .theme-button
-    width: 2.5rem
-    height: 2.5rem
+    & :nth-child(1)
+      display: flex
+      justify-content: flex-start
+    & :nth-child(2)
+      display: flex
+      justify-content: center
+    & :nth-child(3)
+      display: flex
+      justify-content: flex-end
+
+    & .logo, & .theme-button
+      width: 2.5rem
+      height: 2.5rem
 

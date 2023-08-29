@@ -1,22 +1,22 @@
-.HeaderPC {
+.HeaderPC .container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
   padding: 0.2em 0.5em;
 }
-.HeaderPC :nth-child(1) {
+.HeaderPC .container :nth-child(1) {
   display: flex;
   justify-content: flex-start;
 }
-.HeaderPC :nth-child(2) {
+.HeaderPC .container :nth-child(2) {
   display: flex;
   justify-content: center;
 }
-.HeaderPC :nth-child(3) {
+.HeaderPC .container :nth-child(3) {
   display: flex;
   justify-content: flex-end;
 }
-.HeaderPC .logo, .HeaderPC .theme-button {
+.HeaderPC .container .logo, .HeaderPC .container .theme-button {
   width: 2.5rem;
   height: 2.5rem;
 }

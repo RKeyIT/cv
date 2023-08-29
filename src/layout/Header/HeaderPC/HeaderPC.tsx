@@ -5,12 +5,14 @@ import ThemeSwitcher from "../../../app/Theme/ThemeSwitcher";
 import MenuPC from "./MenuPC/MenuPC";
 
 const HeaderPC = () => {
-	return <div className={ `HeaderPC container` }>
-		<Link to={'/'} className="logo ">
-			<AppIcon />
-		</Link>
-		<ThemeSwitcher />
-		<MenuPC />
+	return <div className={ `HeaderPC` }>
+		<div className="container">
+			<Link to={'/'} className="logo ">
+				<AppIcon />
+			</Link>
+			<ThemeSwitcher />
+			<MenuPC />
+		</div>
 	</div>
 };
 
