@@ -8,6 +8,7 @@ import ParallaxTab from "./ParallaxTab/ParallaxTab";
 import { useSwipeable } from "react-swipeable";
 import { ChangeTab, ActivateTab, Direction } from "./types";
 import TabSwitcher from "./TabSwitcher/TabSwitcher";
+import { isBrowser } from "react-device-detect"
 
 const Tab: FC = () => {
 	const [ tabActive, setTabActive ] = useState<ChangeTab>(null);
@@ -16,8 +17,8 @@ const Tab: FC = () => {
 
 	// Is it need? Returns to null tab if content window was collapsed
 	useEffect(() => {
-		if(!isExpanded) setTabActive(null)
-	}, [isExpanded])
+		if (!isExpanded) setTabActive(null)
+	}, [ isExpanded ])
 
 	useEffect(() => {
 		if (taps === 2) setExpanded(prevState => !prevState)
@@ -56,18 +57,18 @@ const Tab: FC = () => {
 	const showTab = (tab: ReactNode) => tab
 
 	// TODO: Add arrow buttons to expanded window
-	return <div className={ `Tab` }>
-		<div className="padding window height">
+	// TODO: 2 scrollbars are occurred... =/
+	return <div className={ `Tab${isExpanded ? ' hide-scrollbar' : ''}` }>
+		<div className="container padding window height">
 			<h2>Features of project</h2>
 
 			<TabSwitcher tabActive={ tabActive } changeTab={ changeTab } activateTab={ activateTab } />
 
 			<div { ...swipeable } className={ `content-container${ isExpanded ? ' expanded' : '' }` }>
-				<div className="content" id="content">
+				<div className={ `content${isBrowser ? ' browser' : ''}` } id="content">
 					{ !tabActive && <NullTab /> }
 					{ tabActive && showTab(tabs[ tabActive ]) }
 				</div>
-				{/*<a href="#content"> dont work to return content on first line*/ }
 				<button className="expand-btn" onClick={ () => setExpanded(!isExpanded) }>
 					{ isExpanded ? "Collapse" : "Expand" }
 				</button>

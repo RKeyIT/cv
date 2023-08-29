@@ -1,29 +1,29 @@
-.Slider {
+.Slider .container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.Slider .window {
+.Slider .container .window {
   position: relative;
   display: flex;
   flex-grow: 1;
   flex-direction: row;
   overflow: hidden;
 }
-.Slider .window .slide {
+.Slider .container .window .slide {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.Slider .window .slide svg {
+.Slider .container .window .slide svg {
   max-width: 0;
   max-height: 0;
 }
-.Slider .window .slide.active {
+.Slider .container .window .slide.active {
   flex-basis: 100%;
   padding: 20px;
 }
-.Slider .window .slide.active svg {
+.Slider .container .window .slide.active svg {
   min-width: 100%;
   width: 100%;
   max-width: 100%;

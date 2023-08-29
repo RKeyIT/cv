@@ -24,21 +24,23 @@ const Slider = () => {
 
 	// TODO: Refactor slider to more smooth and create Card component that contains background and received technology.
 
-	return <div className={ `Slider padding height` }>
-			<h2>Used technologies</h2>
-			{/*<Card />*/}
-			<div className="window">
-				<div className={ `slide${ active === 1 ? ' active' : '' }` }>
-					<IconReact />
-				</div>
-				<div className={ `slide${ active === 2 ? ' active' : '' }` }>
-					<IconTS />
-				</div>
-				<div className={ `slide${ active === 3 ? ' active' : '' }` }>
-					<IconSass />
-				</div>
-				<div className={ `slide${ active === 4 ? ' active' : '' }` }>
-					<IconVite />
+	return <div className={ `Slider` }>
+			<div className="container height padding">
+				<h2>Used technologies</h2>
+				{/*<Card />*/}
+				<div className="window">
+					<div className={ `slide${ active === 1 ? ' active' : '' }` }>
+						<IconReact />
+					</div>
+					<div className={ `slide${ active === 2 ? ' active' : '' }` }>
+						<IconTS />
+					</div>
+					<div className={ `slide${ active === 3 ? ' active' : '' }` }>
+						<IconSass />
+					</div>
+					<div className={ `slide${ active === 4 ? ' active' : '' }` }>
+						<IconVite />
+					</div>
 				</div>
 			</div>
 	</div>

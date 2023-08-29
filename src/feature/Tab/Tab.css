@@ -29,6 +29,12 @@
   margin: 10px 10px 0 10px;
   overflow: hidden;
 }
+@media screen and (min-width: 1500px) {
+  .Tab .content-container .content.browser {
+    width: 80%;
+    margin-inline: auto;
+  }
+}
 .Tab .expand-btn {
   background: none;
   outline: none;
