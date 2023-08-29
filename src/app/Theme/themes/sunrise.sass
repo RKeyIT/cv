@@ -22,6 +22,19 @@ body
 /********************************/
 
 /********************************/
+/************ HOVERS ************/
+.app-icon,
+.navlink,
+.svg-theme-icon,
+.expand-btn
+  &:hover
+    fill: lighten($primary, 50%)
+    color: lighten($primary, 50%)
+    text-shadow: 0 0 2px $secondary
+/******** HOVERS-END ************/
+/********************************/
+
+/********************************/
 /************ HEADER ************/
 .Header
   background-color: $primary
@@ -35,7 +48,7 @@ body
     // sunrise: 77.5% noon: 55% sunset: 45% moon: 55%
     background-position: 50% 77.5%
 
-.HeaderMobile
+.HeaderMobile, .HeaderPC
   background-color: $primary
 
 .BurgerMenu
@@ -44,8 +57,6 @@ body
 
     &-active
       color: $exit-btn
-    &:hover
-      color: $secondary-hover
 
 .HeaderContent
   .header
@@ -56,17 +67,12 @@ body
 
 .navlink
   color: $secondary
-  &:hover
-    color: $secondary-hover
-    text-shadow: 0 0 10px $secondary-hover
 
 .text-link
   color: lighten($secondary, 5%)
 
 .svg-theme-icon
   color: $secondary
-  &:hover
-    color: $secondary-hover
 
 .burger-menu
   background: linear-gradient(to bottom, $primary 0%, rgba($primary, 0.8) 100%)
@@ -97,7 +103,6 @@ body
     color: $secondary
 
     &:hover
-      color: $secondary-hover
       background: linear-gradient(to top, transparentize($black, 0.2), transparentize($secondary, 0.8))
 
 .TabSwitcher

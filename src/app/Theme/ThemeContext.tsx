@@ -25,7 +25,7 @@ interface ThemeProviderProps {
 	children: ReactNode
 }
 export const ThemeProvider: FC<ThemeProviderProps> = ({ children }) => {
-	const [theme, setTheme] = useState(sunrise); // Initialize with the default theme
+	const [theme, setTheme] = useState(moon); // Initialize with the default theme
 
 	const setSunriseTheme = () => setTheme(sunrise);
 	const setNoonTheme = () => setTheme(noon);

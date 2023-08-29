@@ -4,9 +4,7 @@ $black: lighten(black, 10%)
 //$primary: rgb(10, 20, 30)
 //$primary: rgb(17, 24, 30)
 $primary: rgb(231, 238, 246)
-$primary-hover: lighten($primary, 10%)
 $secondary: rgb(42, 96, 166)
-$secondary-hover: lighten($secondary, 10%)
 
 $link-dark: rgb(75, 75, 150)
 $link-light: rgb(45, 110, 185)
@@ -19,6 +17,19 @@ body
   color: $primary
   background-color: $secondary
 /******** GENERAL-END ***********/
+/********************************/
+
+/********************************/
+/************ HOVERS ************/
+.app-icon,
+.navlink,
+.svg-theme-icon,
+.expand-btn
+  &:hover
+    fill: lighten($secondary, 35%)
+    color: lighten($secondary, 35%)
+    text-shadow: 0 0 2px $primary
+/******** HOVERS-END ************/
 /********************************/
 
 /********************************/
@@ -35,7 +46,7 @@ body
     // sunrise: 77.5% noon: 55% sunset: 45% moon: 55%
     background-position: 67% 42%
 
-.HeaderMobile
+.HeaderMobile, .HeaderPC
   background-color: $secondary
 
 .BurgerMenu
@@ -44,8 +55,6 @@ body
 
     &-active
       color: $exit-btn
-    &:hover
-      color: $secondary-hover
 
 .HeaderContent
   .header
@@ -56,18 +65,12 @@ body
 
 .navlink
   color: $primary
-  &:hover
-    color: $primary-hover
-    text-shadow: 0 0 10px $primary-hover
 
 .text-link
   color: lighten($primary, 5%)
 
 .svg-theme-icon
   color: $primary
-  &:hover
-    color: $primary-hover
-
 
 .burger-menu
   background: linear-gradient(to bottom, $secondary 0%, rgba($secondary, 0.8) 100%)
@@ -102,7 +105,6 @@ body
     color: $primary
 
     &:hover
-      color: $primary-hover
       background: linear-gradient(to top, transparentize($black, 0.2), transparentize($secondary, 0.8))
 
 

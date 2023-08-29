@@ -2,7 +2,7 @@ import './MenuPC.css'
 import { Link } from "react-router-dom";
 
 const MenuPC = () => {
-	return <ul className="header-inline-menu transition-200ms">
+	return <ul className="MenuPC transition-200ms">
 		<Link className="navlink" to="/">
 			<li>Home</li>
 		</Link>

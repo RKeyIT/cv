@@ -8,6 +8,19 @@ body {
 /******** GENERAL-END ***********/
 /********************************/
 /********************************/
+/************ HOVERS ************/
+.app-icon:hover,
+.navlink:hover,
+.svg-theme-icon:hover,
+.expand-btn:hover {
+  fill: #e08142;
+  color: #e08142;
+  text-shadow: 0 0 2px rgb(255, 225, 195);
+}
+
+/******** HOVERS-END ************/
+/********************************/
+/********************************/
 /************ HEADER ************/
 .Header {
   background-color: rgb(30, 15, 5);
@@ -21,7 +34,7 @@ body {
   }
 }
 
-.HeaderMobile {
+.HeaderMobile, .HeaderPC {
   background-color: rgb(30, 15, 5);
 }
 
@@ -30,9 +43,6 @@ body {
 }
 .BurgerMenu .burger-btn-active {
   color: rgb(200, 0, 0);
-}
-.BurgerMenu .burger-btn:hover {
-  color: #fffbf6;
 }
 
 .HeaderContent .header {
@@ -46,10 +56,6 @@ body {
 .navlink {
   color: rgb(255, 225, 195);
 }
-.navlink:hover {
-  color: #fffbf6;
-  text-shadow: 0 0 10px #fffbf6;
-}
 
 .text-link {
   color: #ffeedd;
@@ -57,9 +63,6 @@ body {
 
 .svg-theme-icon {
   color: rgb(255, 225, 195);
-}
-.svg-theme-icon:hover {
-  color: #fffbf6;
 }
 
 .burger-menu {
@@ -92,7 +95,6 @@ body {
   color: rgb(255, 225, 195);
 }
 .Tab .expand-btn:hover {
-  color: #fffbf6;
   background: linear-gradient(to top, rgba(26, 26, 26, 0.8), rgba(255, 225, 195, 0.2));
 }
 
