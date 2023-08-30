@@ -1,7 +1,4 @@
-.Intro .container {
-  padding: 1em 2em;
-}
-.Intro .container .heading {
+.Intro .heading {
   text-align: center;
   margin-bottom: 1em;
 }
