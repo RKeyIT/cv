@@ -5,12 +5,14 @@ import BurgerMenu from "./BurgerMenu/BurgerMenu";
 import { Link } from "react-router-dom";
 
 const HeaderMobile = () => {
-	return <div className={ `HeaderMobile container` }>
-		<Link to={'/'} className="logo">
-			<AppIcon />
-		</Link>
-		<ThemeSwitcher />
-		<BurgerMenu />
+	return <div className={ `HeaderMobile` }>
+		<div className="container">
+			<Link to={'/'} className="logo">
+				<AppIcon />
+			</Link>
+			<ThemeSwitcher />
+			<BurgerMenu />
+		</div>
 	</div>
 };
 
