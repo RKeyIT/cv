@@ -1,4 +1,4 @@
-import CodeBlock from "../../../shared/CodeBlock/CodeBlock";
+import CodeBlock from "../../../../shared/CodeBlock/CodeBlock";
 import { type, state, effect } from "./CodeExamples";
 
 const SliderTab = () => {

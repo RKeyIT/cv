@@ -1,5 +1,5 @@
-import Slider from "../../feature/Slider/Slider";
-import Tab from "../../feature/Tab/Tab";
+import Slider from "./Slider/Slider";
+import Tab from "./Tab/Tab";
 import Intro from "./Intro/Intro";
 
 const Home = () => {
