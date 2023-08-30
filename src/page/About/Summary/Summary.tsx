@@ -53,7 +53,7 @@ const Summary = () => {
 		<section className={`section`}>
 			<Header header={`Back-End development`}/>
 			<Content status={ <IconAccept /> } name={`NodeJS`} comment={`JavaScript everywhere!`} />
-			<Content status={ <IconAccept /> } name={`Express`} comment={`Can you do API faster?`} />
+			<Content status={ <IconAccept /> } name={`Express`} comment={`Can you make API faster?`} />
 			<Content status={ <IconAccept /> } name={`MongoDB`} comment={`Where is my users id?`} />
 			<Content status={ <IconAccept /> } name={`MVC`} comment={`Three for one. That is. That shows. That controls.`} />
 			<MockContent />
