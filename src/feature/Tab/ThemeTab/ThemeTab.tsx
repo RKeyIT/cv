@@ -3,7 +3,7 @@ import { states, effects, markup, imports } from "./CodeExamples";
 
 const ThemeTab = () => {
 	return <div className={ `ThemeTab` }>
-		<h3>Welcome to the Theme tab!</h3>
+		<h3>Theme v1</h3>
 		<p>
 			This section contains a micro-guide to create a custom theme switcher.
 			Also it have unexpected features that I found randomly.
