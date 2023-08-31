@@ -1,5 +1,9 @@
 .NullTab {
   text-align: center;
 }
+.NullTab.browser {
+  width: 60%;
+  margin: 0.5em auto !important;
+}
 
 /*# sourceMappingURL=NullTab.css.map */

@@ -1,7 +1,8 @@
 import './NullTab.css'
+import { isBrowser } from "react-device-detect"
 
 const NullTab = () => {
-	return <div className={ `NullTab` }>
+	return <div className={ `NullTab${ isBrowser ? ' browser' : '' }` }>
 		<h3>
 			Welcome to the Null Tab v1!
 		</h3>

@@ -58,14 +58,14 @@ const Tab: FC = () => {
 
 	// TODO: Add arrow buttons to expanded window
 	// TODO: 2 scrollbars are occurred... =/
-	return <div className={ `Tab${isExpanded ? ' hide-scrollbar' : ''}` }>
+	return <div className={ `Tab` }>
 		<div className="container padding window height">
 			<h2>Features of project</h2>
 
 			<TabSwitcher tabActive={ tabActive } changeTab={ changeTab } activateTab={ activateTab } />
 
 			<div { ...swipeable } className={ `content-container${ isExpanded ? ' expanded' : '' }` }>
-				<div className={ `content${isBrowser ? ' browser' : ''}` } id="content">
+				<div className={ `content${ isBrowser ? ' browser' : '' }` } id="content">
 					{ !tabActive && <NullTab /> }
 					{ tabActive && showTab(tabs[ tabActive ]) }
 				</div>
