@@ -1,8 +1,8 @@
 # [Raman Krytski CV](https://rkey-cv.netlify.app/)
 
-## Greetings
-Let me show you my cv as interactive website.
-It's contains a couple of cool and beautiful features.
+## Greetings!
+Let me share my resume as an interactive website. 
+It has some really cool and beautiful features.
 
 [You're welcome!](https://rkey-cv.netlify.app/)
 
