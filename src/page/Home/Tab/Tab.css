@@ -1,0 +1,44 @@
+.Tab .window {
+  display: flex;
+  flex-direction: column;
+}
+.Tab .content-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+  overflow: hidden;
+}
+.Tab .content-container.expanded {
+  position: fixed;
+  z-index: 3;
+  margin: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: auto;
+}
+.Tab .content-container.expanded .content {
+  overflow: auto;
+}
+.Tab .content-container .content {
+  max-height: 100%;
+  padding: 10px;
+  margin: 10px 10px 0 10px;
+  overflow: hidden;
+}
+@media screen and (min-width: 1500px) {
+  .Tab .content-container .content.browser {
+    width: 80%;
+    margin-inline: auto;
+  }
+}
+.Tab .expand-btn {
+  background: none;
+  outline: none;
+  border: none;
+}
+
+/*# sourceMappingURL=Tab.css.map */

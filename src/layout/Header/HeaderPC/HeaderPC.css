@@ -1,3 +1,24 @@
-
+.HeaderPC .container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  padding: 0.2em 0.5em;
+}
+.HeaderPC .container :nth-child(1) {
+  display: flex;
+  justify-content: flex-start;
+}
+.HeaderPC .container :nth-child(2) {
+  display: flex;
+  justify-content: center;
+}
+.HeaderPC .container :nth-child(3) {
+  display: flex;
+  justify-content: flex-end;
+}
+.HeaderPC .container .logo, .HeaderPC .container .theme-button {
+  width: 2.5rem;
+  height: 2.5rem;
+}
 
 /*# sourceMappingURL=HeaderPC.css.map */

@@ -3,27 +3,28 @@
     color: rgba(255, 0, 0, 0.1);
   }
 }
-.Summary {
+.Summary .container {
   display: grid;
   border: 1px solid;
   border-radius: 1px;
+  padding: 0;
 }
-.Summary .section {
+.Summary .container .section {
   display: grid;
 }
-.Summary .section .header {
+.Summary .container .section .header {
   display: grid;
   justify-content: center;
   align-items: center;
   padding-top: 1em;
   padding-bottom: 1em;
 }
-.Summary .section .content {
+.Summary .container .section .content {
   display: grid;
   grid-template-columns: 1fr 2fr 2fr;
   justify-content: center;
 }
-.Summary .section .content .cell {
+.Summary .container .section .cell {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -31,15 +32,15 @@
   padding: 0.3em;
   overflow: hidden;
 }
-.Summary .section .content .cell.head {
+.Summary .container .section .cell.head {
   overflow: auto;
   word-break: break-all;
 }
-.Summary .section .content .cell.error {
+.Summary .container .section .cell.error {
   font-weight: 900;
   animation: error linear infinite 1s;
 }
-.Summary .section .content .cell.status svg {
+.Summary .container .section .cell.status svg {
   width: 1em;
   height: 1em;
 }

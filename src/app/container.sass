@@ -1,9 +1,17 @@
 .container
-  width: 100vw
+  width: 96%
   margin: 0 auto
+  padding: 2rem 0
+  @media screen and (max-width: 320px)
+    width: 100%
+  @media screen and (min-width: 1500px)
+    width: 1500px
 
 .padding
   padding: 1em .2em
 
 .height
   height: 100vh
+
+  @media screen and (min-width: 1500px)
+    height: 500px

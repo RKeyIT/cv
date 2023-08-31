@@ -1,4 +1,4 @@
-.header-inline-menu {
+.MenuPC {
   flex-direction: row;
   justify-content: flex-end;
   list-style: none;
@@ -6,16 +6,10 @@
   margin-block: 0;
   margin-inline: 0;
   padding-inline: 0;
+  font-size: 1.5em;
 }
-@media screen and (max-width: 767px) {
-  .header-inline-menu {
-    display: none;
-  }
-}
-@media screen and (min-width: 768px) {
-  .header-inline-menu {
-    display: flex;
-  }
+.MenuPC .navlink {
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=MenuPC.css.map */

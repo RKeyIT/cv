@@ -1,13 +1,23 @@
 .HeaderMobile {
-  padding: 0.2em;
-  display: flex;
   position: fixed;
+  width: 100%;
+  height: 1.5em;
+  z-index: 3;
+  padding: 0.2em;
+  font-size: 1.75em;
+}
+.HeaderMobile .container {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0;
+  display: flex;
+  position: absolute;
   justify-content: space-between;
   align-items: center;
-  font-size: 1.75em;
-  z-index: 3;
 }
-.HeaderMobile .logo {
+.HeaderMobile .container .logo {
   width: 1em;
   height: 1em;
 }

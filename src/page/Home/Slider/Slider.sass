@@ -1,0 +1,35 @@
+.Slider
+
+  .container
+    display: flex
+    flex-direction: column
+    align-items: center
+
+    & .window
+      position: relative
+      display: flex
+      flex-grow: 1
+      flex-direction: row
+      overflow: hidden
+
+      & .slide
+        display: flex
+        justify-content: center
+        align-items: center
+
+        & svg
+          max-width: 0
+          max-height: 0
+
+        &.active
+          flex-basis: 100%
+          padding: 20px
+
+
+          & svg
+            min-width: 100%
+            width: 100%
+            max-width: 100%
+            min-height: 100%
+            height: 100%
+            max-height: 100%
