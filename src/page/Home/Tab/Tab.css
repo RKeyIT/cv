@@ -36,6 +36,7 @@
   }
 }
 .Tab .expand-btn {
+  padding: 0.5em 0;
   background: none;
   outline: none;
   border: none;
