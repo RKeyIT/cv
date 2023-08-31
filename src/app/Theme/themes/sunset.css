@@ -9,15 +9,26 @@ body {
 /********************************/
 /********************************/
 /************ HOVERS ************/
-.app-icon:hover,
-.navlink:hover,
-.svg-theme-icon:hover,
-.expand-btn:hover {
-  fill: #e5b697;
-  color: #e5b697;
-  text-shadow: 0 0 2px rgb(230, 210, 200);
+@media (hover: hover) {
+  .app-icon:hover,
+  .navlink:hover,
+  .svg-theme-icon:hover,
+  .expand-btn:hover {
+    fill: #e5b697;
+    color: #e5b697;
+    text-shadow: 0 0 2px rgb(230, 210, 200);
+  }
 }
-
+@media (hover: none) {
+  .app-icon:active,
+  .navlink:active,
+  .svg-theme-icon:active,
+  .expand-btn:active {
+    fill: #e5b697;
+    color: #e5b697;
+    text-shadow: 0 0 2px rgb(230, 210, 200);
+  }
+}
 /******** HOVERS-END ************/
 /********************************/
 /********************************/

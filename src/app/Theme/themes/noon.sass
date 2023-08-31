@@ -21,14 +21,24 @@ body
 
 /********************************/
 /************ HOVERS ************/
-.app-icon,
-.navlink,
-.svg-theme-icon,
-.expand-btn
-  &:hover
-    fill: lighten($secondary, 35%)
-    color: lighten($secondary, 35%)
-    text-shadow: 0 0 2px $primary
+@media (hover: hover)
+  .app-icon,
+  .navlink,
+  .svg-theme-icon,
+  .expand-btn
+    &:hover
+      fill: lighten($secondary, 35%)
+      color: lighten($secondary, 35%)
+      text-shadow: 0 0 2px $primary
+@media (hover: none)
+  .app-icon,
+  .navlink,
+  .svg-theme-icon,
+  .expand-btn
+    &:active
+      fill: lighten($secondary, 35%)
+      color: lighten($secondary, 35%)
+      text-shadow: 0 0 2px $primary
 /******** HOVERS-END ************/
 /********************************/
 
