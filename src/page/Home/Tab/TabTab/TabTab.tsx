@@ -1,4 +1,4 @@
-import CodeBlock from "../../../../shared/CodeBlock/CodeBlock";
+import CodeBlock from "../../../../shared/features/CodeBlock/CodeBlock";
 import {
 	OpenCloseTab,
 	states,

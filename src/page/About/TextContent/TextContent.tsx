@@ -1,12 +1,12 @@
-import TypingText from "../TypingText/TypingText";
+import TypingText from "../../../shared/features/TypingText/TypingText";
 import Me from "../Me/Me";
-import Warning from "./Warning/Warning";
+import Warning from "../../../shared/features/Warning/Warning";
 
 const TextContent = () => {
 	return <div className={ `TextContent` }>
 		<div className="container">
-			<Warning />
-			<TypingText />
+			<Warning message={`Warning`}/>
+			<TypingText message={`This is almost private content`}/>
 			<Me />
 		</div>
 	</div>

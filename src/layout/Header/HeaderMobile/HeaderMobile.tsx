@@ -1,5 +1,5 @@
 import './HeaderMobile.css'
-import AppIcon from "../../../shared/AppIcon/AppIcon";
+import AppIcon from "../../../shared/icons/AppIcon/AppIcon";
 import ThemeSwitcher from "../../../app/Theme/ThemeSwitcher";
 import BurgerMenu from "./BurgerMenu/BurgerMenu";
 import { Link } from "react-router-dom";

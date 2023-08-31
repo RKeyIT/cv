@@ -1,6 +1,6 @@
 import './HeaderPC.css'
 import { Link } from "react-router-dom";
-import AppIcon from "../../../shared/AppIcon/AppIcon";
+import AppIcon from "../../../shared/icons/AppIcon/AppIcon";
 import ThemeSwitcher from "../../../app/Theme/ThemeSwitcher";
 import MenuPC from "./MenuPC/MenuPC";
 

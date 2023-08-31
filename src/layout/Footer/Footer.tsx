@@ -1,8 +1,8 @@
 import { FC } from 'react';
 import './Footer.css'
-import IconLinkedIn from "../../shared/IconLinkedIn/IconLinkedIn";
-import IconGitHub from "../../shared/IconGitHub/IconGitHub";
-import CopyableText from "../../shared/CopyableText/CopyableText";
+import IconLinkedIn from "../../shared/icons/IconLinkedIn/IconLinkedIn";
+import IconGitHub from "../../shared/icons/IconGitHub/IconGitHub";
+import CopyableText from "../../shared/features/CopyableText/CopyableText";
 
 const Footer: FC = () => {
 	return <footer className={`Footer`}>

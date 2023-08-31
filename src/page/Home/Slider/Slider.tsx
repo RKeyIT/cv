@@ -1,8 +1,8 @@
-import IconReact from "../../../shared/IconReact/IconReact";
+import IconReact from "../../../shared/icons/IconReact/IconReact";
 import './Slider.css'
-import IconSass from "../../../shared/IconSass/IconSass";
-import IconTS from "../../../shared/IconTS/IconTS";
-import IconVite from "../../../shared/IconVite/IconVite";
+import IconSass from "../../../shared/icons/IconSass/IconSass";
+import IconTS from "../../../shared/icons/IconTS/IconTS";
+import IconVite from "../../../shared/icons/IconVite/IconVite";
 import { useState, useEffect } from "react";
 // import Card from "./Card/Card";
 

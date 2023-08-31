@@ -1,8 +1,8 @@
 import './Summary.css'
 import { FC, ReactNode } from "react";
-import IconAccept from "../../../shared/IconAccept/IconAccept";
-import IconCross from "../../../shared/IconCross/IconCross";
-import IconProgress from "../../../shared/IconProgress/IconProgress";
+import IconAccept from "../../../shared/icons/IconAccept/IconAccept";
+import IconCross from "../../../shared/icons/IconCross/IconCross";
+import IconProgress from "../../../shared/icons/IconProgress/IconProgress";
 
 interface HeaderProps {
 	header: string

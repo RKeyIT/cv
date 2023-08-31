@@ -1,5 +1,5 @@
 import { FC } from "react";
-import IconArrow from "../../../../shared/IconArrow/IconArrow";
+import IconArrow from "../../../../shared/icons/IconArrow/IconArrow";
 import { ActivateTab, Direction, ChangeTab } from "../types";
 import './TabSwitcher.css'
 

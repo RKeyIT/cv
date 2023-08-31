@@ -1,8 +1,11 @@
 import './TypingText.css'
-import { useState, useEffect } from "react";
+import { useState, useEffect, FC } from "react";
 
-const TypingText = () => {
-	const message = `This is almost private content`
+interface Props {
+	message: string
+}
+
+const TypingText: FC<Props> = ({message}) => {
 	const [ text, setText ] = useState('')
 
 	const typingInterval = () => Math.random() * 100 + 30

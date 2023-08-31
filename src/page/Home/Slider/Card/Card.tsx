@@ -1,5 +1,5 @@
 import './Card.css'
-import IconReact from "../../../../shared/IconReact/IconReact";
+import IconReact from "../../../../shared/icons/IconReact/IconReact";
 
 const Card = () => {
 	return <div className={ `Card` }>

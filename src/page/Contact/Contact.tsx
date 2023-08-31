@@ -1,5 +1,5 @@
 import './Contact.css'
-import CopyableText from "../../shared/CopyableText/CopyableText";
+import CopyableText from "../../shared/features/CopyableText/CopyableText";
 
 const Contact = () => {
 	return <div className={ `Contact` }>

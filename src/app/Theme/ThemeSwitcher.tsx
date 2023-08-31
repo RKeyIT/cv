@@ -2,10 +2,10 @@ import { useState, useEffect } from "react";
 import '../animations.css'
 import './themes/themes.css'
 import './ThemeSwitcher.css'
-import IconSunrise from "../../shared/IconSunrise/IconSunrise";
-import IconNoon from "../../shared/IconNoon/IconNoon";
-import IconSunset from "../../shared/IconSunset/IconSunset";
-import IconMoon from "../../shared/IconMoon/IconMoon";
+import IconSunrise from "../../shared/icons/IconSunrise/IconSunrise";
+import IconNoon from "../../shared/icons/IconNoon/IconNoon";
+import IconSunset from "../../shared/icons/IconSunset/IconSunset";
+import IconMoon from "../../shared/icons/IconMoon/IconMoon";
 import { useTheme } from "./ThemeContext";
 
 const ThemeSwitcher = () => {

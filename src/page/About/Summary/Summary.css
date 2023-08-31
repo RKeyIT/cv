@@ -3,6 +3,9 @@
     color: rgba(255, 0, 0, 0.1);
   }
 }
+.Summary {
+  padding: 2em 0;
+}
 .Summary .container {
   display: grid;
   border: 1px solid;
