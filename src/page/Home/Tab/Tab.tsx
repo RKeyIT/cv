@@ -9,6 +9,7 @@ import { useSwipeable } from "react-swipeable";
 import { ChangeTab, ActivateTab, Direction } from "./types";
 import TabSwitcher from "./TabSwitcher/TabSwitcher";
 import { isBrowser } from "react-device-detect"
+import GlobalScrollOff from "./GlobalScrollOff/GlobalScrollOff";
 
 const Tab: FC = () => {
 	const [ tabActive, setTabActive ] = useState<ChangeTab>(null);
@@ -59,6 +60,7 @@ const Tab: FC = () => {
 	// TODO: Add arrow buttons to expanded window
 	// TODO: 2 scrollbars are occurred... =/
 	return <div className={ `Tab` }>
+		{ isExpanded && <GlobalScrollOff /> }
 		<div className="container padding window height">
 			<h2>Features of project</h2>
 
