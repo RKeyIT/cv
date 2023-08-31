@@ -1,5 +1,5 @@
-$white: darken(white, 10%)
-$black: lighten(black, 10%)
+$white: darken(#fff, 10%)
+$black: lighten(#000, 10%)
 
 $primary: rgb(15, 0, 20)
 $primary-hover: lighten($primary, 10%)
@@ -16,6 +16,13 @@ $exit-btn: rgb(200, 0, 0)
 body
   color: $secondary
   background-color: $primary
+
+.Header, .Slider, .Summary, .Footer
+  background-color: $black
+
+.Intro, .Tab, .TextContent, .Contact
+  background-color: $primary
+
 /******** GENERAL-END ***********/
 /********************************/
 
@@ -90,15 +97,8 @@ body
 
 /********************************/
 /************* MAIN *************/
-.Intro
-  background-color: $primary
-
-.Slider
-  background-color: $black
-
 .Tab
   & .window
-    background-color: $primary
     color: $secondary
 
     & .content-container
@@ -146,8 +146,7 @@ body
 
 /********************************/
 /************ FOOTER ************/
-.footer-wrapper
-  background-color: $primary
+.Footer
 
 /******** FOOTER-END ************/
 /********************************/

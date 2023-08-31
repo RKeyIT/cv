@@ -3,24 +3,26 @@
     color: transparentize(red, 0.9)
 
 .Summary
-  display: grid
-  border: 1px solid
-  border-radius: 1px
-
-  .section
+  .container
     display: grid
+    border: 1px solid
+    border-radius: 1px
+    padding: 0
 
-    .header
+    .section
       display: grid
-      justify-content: center
-      align-items: center
-      padding-top: 1em
-      padding-bottom: 1em
 
-    .content
-      display: grid
-      grid-template-columns: 1fr 2fr 2fr
-      justify-content: center
+      .header
+        display: grid
+        justify-content: center
+        align-items: center
+        padding-top: 1em
+        padding-bottom: 1em
+
+      .content
+        display: grid
+        grid-template-columns: 1fr 2fr 2fr
+        justify-content: center
 
 
 

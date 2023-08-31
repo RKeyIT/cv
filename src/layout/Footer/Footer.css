@@ -1,4 +1,4 @@
-.footer-flex {
+.Footer .footer-flex {
   display: flex;
   padding-top: 2em;
   padding-bottom: 2em;
@@ -8,23 +8,20 @@
   align-items: center;
   text-align: center;
 }
-
-.footer-socials {
+.Footer .footer-socials {
   display: flex;
   flex-direction: row;
 }
-.footer-socials svg {
+.Footer .footer-socials svg {
   width: 3em;
   height: 3em;
 }
-
-.footer-contacts {
+.Footer .footer-contacts {
   display: grid;
   grid-template-rows: 1fr 1fr;
   align-items: center;
 }
-
-.footer-copyright {
+.Footer .footer-copyright {
   display: flex;
   justify-content: center;
   align-items: center;

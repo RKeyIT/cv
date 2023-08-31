@@ -18,6 +18,12 @@ $exit-btn: rgb(200, 0, 0)
 body
   color: $secondary
   background-color: $primary
+
+.Header, .Slider, .Summary, .Footer
+  background-color: $black
+
+.Intro, .Tab, .TextContent, .Contact
+  background-color: $primary
 /******** GENERAL-END ***********/
 /********************************/
 
@@ -134,12 +140,15 @@ body
 
 .Summary
   background-color: transparentize($primary, 0.9)
+
   .header
     background-color: transparentize($secondary, 0.7)
     text-shadow: 0 0 6px $black
+
   .content
     &:nth-child(odd)
       background-color: transparentize($secondary, 0.95)
+
     &:nth-child(even)
       background-color: transparentize($secondary, 0.9)
 

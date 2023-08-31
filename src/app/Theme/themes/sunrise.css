@@ -5,6 +5,14 @@ body {
   background-color: rgb(30, 15, 5);
 }
 
+.Header, .Slider, .Summary, .Footer {
+  background-color: #1a1a1a;
+}
+
+.Intro, .Tab, .TextContent, .Contact {
+  background-color: rgb(30, 15, 5);
+}
+
 /******** GENERAL-END ***********/
 /********************************/
 /********************************/

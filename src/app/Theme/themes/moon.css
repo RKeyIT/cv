@@ -5,6 +5,14 @@ body {
   background-color: rgb(15, 0, 20);
 }
 
+.Header, .Slider, .Summary, .Footer {
+  background-color: #1a1a1a;
+}
+
+.Intro, .Tab, .TextContent, .Contact {
+  background-color: rgb(15, 0, 20);
+}
+
 /******** GENERAL-END ***********/
 /********************************/
 /********************************/
@@ -84,16 +92,7 @@ body {
 /********************************/
 /********************************/
 /************* MAIN *************/
-.Intro {
-  background-color: rgb(15, 0, 20);
-}
-
-.Slider {
-  background-color: #1a1a1a;
-}
-
 .Tab .window {
-  background-color: rgb(15, 0, 20);
   color: rgb(200, 185, 210);
 }
 .Tab .window .content-container {
@@ -142,10 +141,6 @@ body {
 /********************************/
 /********************************/
 /************ FOOTER ************/
-.footer-wrapper {
-  background-color: rgb(15, 0, 20);
-}
-
 /******** FOOTER-END ************/
 /********************************/
 

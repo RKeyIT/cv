@@ -5,8 +5,7 @@ import IconGitHub from "../../shared/IconGitHub/IconGitHub";
 import CopyableText from "../../shared/CopyableText/CopyableText";
 
 const Footer: FC = () => {
-	return <>
-		<footer className={`footer-wrapper`}>
+	return <footer className={`Footer`}>
 			<div className={`container `}>
 				<div className={`footer-flex`}>
 					<div className={`footer-socials`}>
@@ -27,7 +26,6 @@ const Footer: FC = () => {
 				</div>
 			</div>
 		</footer>
-	</>
 };
 
 export default Footer;

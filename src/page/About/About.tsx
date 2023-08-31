@@ -1,15 +1,10 @@
 import './About.css'
-import TypingText from "./TypingText/TypingText";
-import Me from "./Me/Me";
 import Summary from "./Summary/Summary";
+import TextContent from "./TextContent/TextContent";
 
 const About = () => {
-	return <div className={ `About container` }>
-		<div className="warning-container">
-			<h2 className={ 'warning' }>Warning</h2>
-		</div>
-		<TypingText />
-		<Me />
+	return <div className={ `About` }>
+		<TextContent />
 		<Summary />
 	</div>
 };
