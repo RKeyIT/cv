@@ -67,20 +67,24 @@ const Tab: FC = () => {
 
 			<TabSwitcher tabActive={ tabActive } changeTab={ changeTab } activateTab={ activateTab } />
 
-			<div { ...swipeable } className={ `content-container${ isExpanded ? ' expanded' : '' }` }>
+			<div { ...swipeable }
+			     className={ `content-container${ isExpanded ? ' expanded' : '' } ${isBrowser ? ' browser': ''}` }>
 				<div className={ `content${ isBrowser ? ' browser' : '' }` } id="content">
 					{ !tabActive && <NullTab /> }
 					{ tabActive && showTab(tabs[ tabActive ]) }
 				</div>
 				{ isExpanded &&
 					<>
-						<button onClick={() => changeTab(-1)} className={`exp-btn-to-left`}>
+						<button onClick={() => changeTab(-1)}
+						        className={`exp-btn-to-left${isBrowser ? ' browser' : ' mobile'}`}>
 							<IconArrow direction={"left"}/>
 						</button>
-						<button onClick={() => changeTab(1)} className={`exp-btn-to-right`}>
+						<button onClick={() => changeTab(1)}
+						        className={`exp-btn-to-right${isBrowser ? ' browser' : ' mobile'}`}>
 							<IconArrow direction={"right"}/>
 						</button>
-					</> }
+					</>
+				}
 				<button className="expand-btn" onClick={ () => setExpanded(!isExpanded) }>
 					{ isExpanded ? "Collapse" : "Expand" }
 				</button>
