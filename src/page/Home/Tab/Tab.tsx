@@ -85,7 +85,7 @@ const Tab: FC = () => {
 						</button>
 					</>
 				}
-				<button className="expand-btn" onClick={ () => setExpanded(!isExpanded) }>
+				<button className={`expand-btn${isBrowser ? ' browser': ''}`} onClick={ () => setExpanded(!isExpanded) }>
 					{ isExpanded ? "Collapse" : "Expand" }
 				</button>
 			</div>

@@ -6,6 +6,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: space-between;
   flex-grow: 1;
   overflow: hidden;
@@ -22,8 +23,6 @@
 }
 .Tab .content-container.expanded.browser {
   font-size: 1.5em;
-  left: 3em;
-  right: 3em;
 }
 .Tab .content-container.expanded .content {
   overflow: auto;
@@ -46,12 +45,16 @@
   outline: none;
   border: none;
 }
+.Tab .expand-btn.browser {
+  width: 250px;
+  border-radius: 0.1em;
+}
 .Tab .exp-btn-to-left, .Tab .exp-btn-to-right {
   position: fixed;
   border: none;
   top: 0;
   bottom: 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 30%, rgba(128, 128, 128, 0.5) 50%, rgba(0, 0, 0, 0) 70%);
+  background: radial-gradient(circle at center, rgba(128, 128, 128, 0.5) 0%, rgba(0, 0, 0, 0) 20%);
 }
 .Tab .exp-btn-to-left.browser, .Tab .exp-btn-to-right.browser {
   width: 3em;
@@ -60,9 +63,11 @@
   width: 1em;
 }
 .Tab .exp-btn-to-left {
+  background-position: center 50%;
   left: 0;
 }
 .Tab .exp-btn-to-right {
+  background-position: 25% 75%;
   right: 0;
 }
 

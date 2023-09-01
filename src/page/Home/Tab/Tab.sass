@@ -8,6 +8,7 @@
     position: relative
     display: flex
     flex-direction: column
+    align-items: center
     justify-content: space-between
     flex-grow: 1
     overflow: hidden
@@ -24,8 +25,6 @@
 
       &.browser
         font-size: 1.5em
-        left: 3em
-        right: 3em
 
       & .content
         overflow: auto
@@ -47,13 +46,19 @@
     outline: none
     border: none
 
+    &.browser
+      width: 250px
+      border-radius: .1em
+
+
+
   & .exp-btn-to-left,
   & .exp-btn-to-right
     position: fixed
     border: none
     top: 0
     bottom: 0
-    background: linear-gradient(to bottom, rgba(0,0,0,0) 30%, transparentize(gray, 0.5) 50%, rgba(0,0,0,0) 70%)
+    background: radial-gradient(circle at center, transparentize(gray, 0.5) 0%, rgba(0,0,0,0) 20%)
 
     &.browser
       width: 3em
@@ -62,7 +67,9 @@
 
 
   & .exp-btn-to-left
+    background-position: center 50%
     left: 0
   & .exp-btn-to-right
+    background-position: 25% 75%
     right: 0
 
