@@ -1,4 +1,4 @@
-import React, { FC, ReactNode, useState, ChangeEvent } from "react";
+import { FC, ReactNode, useState, ChangeEvent } from "react";
 
 interface Props {
 	components: ReactNode[],
@@ -18,7 +18,7 @@ const TabVersionSwitcher: FC<Props> = ({ components, name }) => {
 		</h3>
 		<label htmlFor={ `versions` }>Chose version:&nbsp;</label>
 		<select id={ `versions` } value={ version } onChange={ versionChanger }>
-			{ components.map((v, i) => {
+			{ components.map((_, i) => {
 				return <option
 					value={ i } key={ i }
 				>
