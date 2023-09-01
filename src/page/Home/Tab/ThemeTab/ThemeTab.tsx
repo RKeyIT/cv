@@ -1,10 +1,9 @@
 import CodeBlock from "../../../../shared/features/CodeBlock/CodeBlock";
 import { states, effects, markup, imports } from "./CodeExamples";
+import TabVersionSwitcher from "../TabVersionSwitcher/TabVersionSwitcher";
 
 const ThemeTab = () => {
-	return <div className={ `ThemeTab` }>
-
-		<h3>Theme v1</h3>
+	const V1 = () => <>
 		<p>
 			This section contains a micro-guide to create a custom theme switcher.
 			Also it have unexpected features that I found randomly.
@@ -72,7 +71,13 @@ const ThemeTab = () => {
 				And I have some solutions as custom hook f.e. But it works not perfect. And I will work on it in future.
 			</p>
 		</section>
+	</>
+	const components = [ <V1 /> ]
+
+	return <div className={ `ThemeTab` }>
+		<TabVersionSwitcher components={ components } name={ `Theme` } />
 	</div>
+
 };
 
 export default ThemeTab;

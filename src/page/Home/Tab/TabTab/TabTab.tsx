@@ -9,10 +9,10 @@ import {
 	buttonImplementation,
 	contentWindow
 } from "./CodeExamples";
+import TabVersionSwitcher from "../TabVersionSwitcher/TabVersionSwitcher";
 
 const TabTab = () => {
-	return <div className={ `TabTab` }>
-		<h3>Tab v1</h3>
+	const V1 = () => <>
 		<p>
 			Let me show you how this component works!
 		</p>
@@ -67,6 +67,11 @@ const TabTab = () => {
 		<CodeBlock code={ tabGetter } />
 		<CodeBlock code={ buttonImplementation } />
 		<CodeBlock code={ contentWindow } />
+	</>
+	const components = [ <V1 /> ]
+
+	return <div className={ `TabTab` }>
+		<TabVersionSwitcher components={ components } name={ `Tab` } />
 	</div>
 };
 
