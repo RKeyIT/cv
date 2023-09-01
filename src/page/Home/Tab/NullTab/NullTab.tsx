@@ -1,11 +1,9 @@
 import './NullTab.css'
 import { isBrowser } from "react-device-detect"
+import TabVersionSwitcher from "../TabVersionSwitcher/TabVersionSwitcher";
 
-const NullTab = () => {
-	return <div className={ `NullTab${ isBrowser ? ' browser' : '' }` }>
-		<h3>
-			Welcome to the Null Tab v1!
-		</h3>
+const V1 = () => {
+	return <>
 		<p>
 			This is description and guide of this section.
 		</p>
@@ -27,6 +25,15 @@ const NullTab = () => {
 		<p>
 			<b>Enjoy!</b>
 		</p>
+	</>
+}
+const V2 = () => <p>Version 2</p>
+
+const NullTab = () => {
+	const components = [ <V1/>, <V2/> ]
+
+	return <div className={ `NullTab${ isBrowser ? ' browser' : '' }` }>
+		<TabVersionSwitcher components={components} name={`NullTab`} />
 	</div>
 };
 

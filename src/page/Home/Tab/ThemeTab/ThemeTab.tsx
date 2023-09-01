@@ -3,6 +3,7 @@ import { states, effects, markup, imports } from "./CodeExamples";
 
 const ThemeTab = () => {
 	return <div className={ `ThemeTab` }>
+
 		<h3>Theme v1</h3>
 		<p>
 			This section contains a micro-guide to create a custom theme switcher.
@@ -31,7 +32,8 @@ const ThemeTab = () => {
 				Here you can see buttons locker and theme auto-changer that bounded with current time
 			</p>
 			<p>
-				Currently I think about hardcode of seconds in first effect. This bounded with timing of animation in css files
+				Currently I think about hardcode of seconds in first effect. This bounded with timing of animation in css
+				files
 			</p>
 		</section>
 		<section>
@@ -45,7 +47,7 @@ const ThemeTab = () => {
 			</p>
 			<p>
 				Mostly interesting place of markup is the <b>theme</b> variable into <code>&lt;style&gt;</code> tags.
-				<br/>
+				<br />
 				It's an implemented feature and an unresolved task in the same time.
 				You will see this variables in the next code section.
 			</p>
@@ -54,7 +56,7 @@ const ThemeTab = () => {
 			<h4>
 				Imports
 			</h4>
-			<CodeBlock code={imports} />
+			<CodeBlock code={ imports } />
 			<p>
 				We're import files as inline text! This is unexpected thing of this part.
 				I doing this because it was AI tip of my IDE :)
