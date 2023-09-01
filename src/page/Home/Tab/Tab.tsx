@@ -58,8 +58,6 @@ const Tab: FC = () => {
 
 	const showTab = (tab: ReactNode) => tab
 
-	// TODO: Add arrow buttons to expanded window
-	// TODO: 2 scrollbars are occurred... =/
 	return <div className={ `Tab` }>
 		{ isExpanded && <GlobalScrollOff /> }
 		<div className="container padding window height">
