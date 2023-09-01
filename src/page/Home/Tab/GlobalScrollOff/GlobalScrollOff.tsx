@@ -6,7 +6,11 @@ const GlobalScrollOff = () => {
 		style.innerHTML = `
 		html {
 			overflow: hidden
-		}`
+		}
+		html * {
+			overflow: initial
+		}
+		`
 		document.head.appendChild(style)
 
 		return () => {
