@@ -13,13 +13,14 @@
     overflow: hidden
 
     &.expanded
+      font-size: 1.5em
       position: fixed
       z-index: 3
       margin: 0
       top: 0
       bottom: 0
-      left: 0
-      right: 0
+      left: 3em
+      right: 3em
       overflow: auto
 
       & .content
@@ -41,3 +42,18 @@
     background: none
     outline: none
     border: none
+
+  & .exp-btn-to-left,
+  & .exp-btn-to-right
+    position: fixed
+    border: none
+    width: 3em
+    top: 0
+    bottom: 0
+    background: linear-gradient(to bottom, rgba(0,0,0,0), transparentize(gray, 0.5) 50%, rgba(0,0,0,0))
+
+  & .exp-btn-to-left
+    left: 0
+  & .exp-btn-to-right
+    right: 0
+

@@ -10,6 +10,7 @@ import { ChangeTab, ActivateTab, Direction } from "./types";
 import TabSwitcher from "./TabSwitcher/TabSwitcher";
 import { isBrowser } from "react-device-detect"
 import GlobalScrollOff from "./GlobalScrollOff/GlobalScrollOff";
+import IconArrow from "../../../shared/icons/IconArrow/IconArrow";
 
 const Tab: FC = () => {
 	const [ tabActive, setTabActive ] = useState<ChangeTab>(null);
@@ -71,6 +72,15 @@ const Tab: FC = () => {
 					{ !tabActive && <NullTab /> }
 					{ tabActive && showTab(tabs[ tabActive ]) }
 				</div>
+				{ isExpanded &&
+					<>
+						<button onClick={() => changeTab(-1)} className={`exp-btn-to-left`}>
+							<IconArrow direction={"left"}/>
+						</button>
+						<button onClick={() => changeTab(1)} className={`exp-btn-to-right`}>
+							<IconArrow direction={"right"}/>
+						</button>
+					</> }
 				<button className="expand-btn" onClick={ () => setExpanded(!isExpanded) }>
 					{ isExpanded ? "Collapse" : "Expand" }
 				</button>
