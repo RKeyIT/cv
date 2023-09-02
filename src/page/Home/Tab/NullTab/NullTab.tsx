@@ -29,9 +29,18 @@ const NullTab = () => {
 			</p>
 		</>
 	}
-	const V2 = () => {
-		return <p>To see usage guide of this section - chose <b>first</b> version of this tab</p>
-	}
+	const V2 = () => <>
+		<p>To see usage guide of this section - chose <b>first</b> version of this tab</p>
+		<section>
+			<h4>New features:</h4>
+			<p>
+				Version change shared component.
+			</p>
+			<p>
+				Content markup is a V(number) built-in component versions as V1 for example
+			</p>
+		</section>
+	</>
 	const components = [ <V1/>, <V2/> ]
 
 	return <div className={ `NullTab${ isBrowser ? ' browser' : '' }` }>
