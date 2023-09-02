@@ -1,0 +1,64 @@
+.SwipeTrail {
+  position: fixed;
+  border-radius: 50%;
+  z-index: 10;
+  width: 1px;
+  height: 1px;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  animation: SwipeTrailAnimation 20s infinite linear;
+}
+.SwipeTrail::after {
+  z-index: 11;
+  content: "";
+  position: absolute;
+  box-shadow: 0 0 50px 25px red;
+  animation: SwipeTrailAfterAnimation 5s linear forwards;
+}
+
+@keyframes SwipeTrailAnimation {
+  0% {
+    box-shadow: 0 0 50px 25px red;
+  }
+  10% {
+    box-shadow: 0 0 50px 25px orange;
+  }
+  20% {
+    box-shadow: 0 0 50px 25px yellow;
+  }
+  30% {
+    box-shadow: 0 0 50px 25px greenyellow;
+  }
+  40% {
+    box-shadow: 0 0 50px 25px limegreen;
+  }
+  50% {
+    box-shadow: 0 0 50px 25px cyan;
+  }
+  60% {
+    box-shadow: 0 0 50px 25px blue;
+  }
+  70% {
+    box-shadow: 0 0 50px 25px blueviolet;
+  }
+  80% {
+    box-shadow: 0 0 50px 25px rebeccapurple;
+  }
+  90% {
+    box-shadow: 0 0 50px 25px deeppink;
+  }
+  100% {
+    box-shadow: 0 0 50px 25px red;
+  }
+}
+@keyframes SwipeTrailAfterAnimation {
+  0% {
+    opacity: 1;
+    box-shadow: 0 0 50px 25px red;
+  }
+  100% {
+    opacity: 0;
+    box-shadow: 0 0 50px 25px rgba(0, 0, 0, 0);
+  }
+}
+
+/*# sourceMappingURL=TouchEffect.css.map */
