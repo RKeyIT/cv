@@ -1,5 +1,15 @@
 import CodeBlock from "../../../../shared/features/CodeBlock/CodeBlock";
-import { states, effects, markup, imports } from "./CodeExamples";
+import {
+	states,
+	effects,
+	markup,
+	imports,
+	importsV2,
+	contextV2,
+	useThemeV2,
+	themeProviderV2,
+	ThemeV2, ThemeSwitcherImportsV2, ThemeSwitcherComponentV2
+} from "./CodeExamples";
 import TabVersionSwitcher from "../TabVersionSwitcher/TabVersionSwitcher";
 
 const ThemeTab = () => {
@@ -72,7 +82,99 @@ const ThemeTab = () => {
 			</p>
 		</section>
 	</>
-	const components = [ <V1 /> ]
+	const V2 = () => <>
+		<section>
+			<h4>
+				Theme component has been moved to the application initialization level to app folder.
+			</h4>
+			<p>
+				Motivation of this move was that component controllers must be available
+				in other pages of application. That was a good idea to create <b>Context</b> and
+				split <b>Theme</b> component on a few parts.
+			</p>
+		</section>
+		<section>
+			<h4>
+				1. Context
+			</h4>
+			<h5>Imports</h5>
+			<CodeBlock code={ importsV2 } />
+			<p>
+				The necessary functions and types have been added to the imports.
+				But import css styles as inline string remains the same (<i>Random founded feature</i>).
+			</p>
+			<h5>Context creating</h5>
+			<CodeBlock code={ contextV2 } />
+			<p>
+				<b>Context</b> creation using interface. It means that context will wait
+				one string and four functions that will change themes.
+				And this mock functions and variable was created as default values that will be changed later.
+			</p>
+			<h5>
+				useTheme hook
+			</h5>
+			<CodeBlock code={ useThemeV2 } />
+			<p>
+				Create a custom hook for using theme functionality.
+				It will contain theme variable and function theme-setters.
+			</p>
+			<h5>Theme Provider</h5>
+			<CodeBlock code={ themeProviderV2 } />
+			<p>
+				It has pretty simple interface of props with ReactNode as a child for this provider-wrapper.
+			</p>
+			<p>
+				And this component return ThemeProvider that we create in <b>Context creating</b> step.
+				It has state with current theme, theme controllers
+				and it also set this controllers and state as a <b>value</b> of provided context.
+				That means that children components will have access to this values and can be use its.
+			</p>
+		</section>
+		<section>
+			<h4>2. Theme markup</h4>
+			<CodeBlock code={ ThemeV2 } />
+			<p>
+				It is pretty simple component that use useTheme hook that we created earlier
+				and useEffect hook to set theme based on the current time on client side.
+			</p>
+			<p>
+				It returns tag <b>&#60;style&#62;</b> that contain css stylesheet as string.
+				This string will be placed on first string of application.
+			</p>
+		</section>
+		<section>
+			<h4>3. ThemeSwitcher</h4>
+			<p>
+				Its a separate component that will create accessibility for clients
+				to using theme switcher functionality.
+			</p>
+
+			<h5>Imports</h5>
+			<CodeBlock code={ ThemeSwitcherImportsV2 } />
+			<ol>
+				<li>
+					<b>useState</b> and <b>useEffect</b> hooks for disable switcher on a short time.
+				</li>
+				<li>
+					<b>useTheme</b> hook to use switcher functionality.
+				</li>
+				<li>
+					<b>2 css files</b> that contains global styles and <b>another one</b> with personal styles.
+				</li>
+				<li>
+					And icons import that can be used to customize switcher.
+				</li>
+			</ol>
+
+			<h5>Component</h5>
+			<CodeBlock code={ ThemeSwitcherComponentV2 } />
+			<p>
+				In the previous version this component was contained <b>&#60;style&#62;</b> tag,
+				but now its only buttons that can be placed anywhere in project.
+			</p>
+		</section>
+	</>
+	const components = [ <V1 />, <V2 /> ]
 
 	return <div className={ `ThemeTab` }>
 		<TabVersionSwitcher components={ components } name={ `Theme` } />

@@ -11,12 +11,13 @@ interface useThemeProps {
 	setSunsetTheme: () => void,
 	setMoonTheme: () => void
 }
+
 const ThemeContext = createContext<useThemeProps>({
-	setMoonTheme(): void {
-	}, setNoonTheme(): void {
-	}, setSunriseTheme(): void {
-	}, setSunsetTheme(): void {
-	}, theme: ""
+	setMoonTheme(): void {},
+	setNoonTheme(): void {},
+	setSunriseTheme(): void {},
+	setSunsetTheme(): void {},
+	theme: ""
 })
 
 export const useTheme = () => useContext(ThemeContext)
@@ -24,8 +25,9 @@ export const useTheme = () => useContext(ThemeContext)
 interface ThemeProviderProps {
 	children: ReactNode
 }
+
 export const ThemeProvider: FC<ThemeProviderProps> = ({ children }) => {
-	const [theme, setTheme] = useState(moon); // Initialize with the default theme
+	const [ theme, setTheme ] = useState(moon); // Initialize with the default theme
 
 	const setSunriseTheme = () => setTheme(sunrise);
 	const setNoonTheme = () => setTheme(noon);
@@ -33,8 +35,8 @@ export const ThemeProvider: FC<ThemeProviderProps> = ({ children }) => {
 	const setMoonTheme = () => setTheme(moon);
 
 	return (
-		<ThemeContext.Provider value={{ theme, setSunriseTheme, setNoonTheme, setSunsetTheme, setMoonTheme }}>
-			{children}
+		<ThemeContext.Provider value={ { theme, setSunriseTheme, setNoonTheme, setSunsetTheme, setMoonTheme } }>
+			{ children }
 		</ThemeContext.Provider>
 	);
 }
