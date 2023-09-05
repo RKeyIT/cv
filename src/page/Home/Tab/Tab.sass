@@ -45,6 +45,20 @@
     outline: none
     border: none
     width: 100%
+    cursor: pointer
+    transition: all 0.3s ease
+
+    @media (hover: hover)
+      &:hover
+        background-color: transparentize(white, 0.75) !important
+        transform: scale(1.2)
+
+    @media (hover: none)
+      &:active
+        background-color: transparentize(white, 0.75) !important
+        transform: scale(1.2)
+
+
 
     //&.browser
     //  width: 250px

@@ -18,10 +18,19 @@
   border: none;
   outline: none;
   box-sizing: border-box;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
-.TabSwitcher .button.active {
-  justify-self: center !important;
-  align-self: center !important;
+@media (hover: hover) {
+  .TabSwitcher .button:hover {
+    background-color: rgba(255, 255, 255, 0.25) !important;
+    transform: scale(1.01, 1);
+  }
+}
+@media (hover: none) {
+  .TabSwitcher .button:active {
+    background-color: rgba(255, 255, 255, 0.25) !important;
+  }
 }
 .TabSwitcher .button svg {
   height: 1em;

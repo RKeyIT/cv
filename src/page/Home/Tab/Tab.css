@@ -44,6 +44,20 @@
   outline: none;
   border: none;
   width: 100%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+@media (hover: hover) {
+  .Tab .expand-btn:hover {
+    background-color: rgba(255, 255, 255, 0.25) !important;
+    transform: scale(1.2);
+  }
+}
+@media (hover: none) {
+  .Tab .expand-btn:active {
+    background-color: rgba(255, 255, 255, 0.25) !important;
+    transform: scale(1.2);
+  }
 }
 .Tab .exp-btn-to-left, .Tab .exp-btn-to-right {
   position: fixed;

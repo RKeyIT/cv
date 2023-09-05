@@ -20,10 +20,17 @@
     border: none
     outline: none
     box-sizing: border-box
+    cursor: pointer
+    transition: all .3s ease
 
-    &.active
-      justify-self: center !important
-      align-self: center !important
+    @media (hover: hover)
+      &:hover
+        background-color: transparentize(white, 0.75) !important
+        transform: scale(1.01, 1)
+
+    @media (hover: none)
+      &:active
+        background-color: transparentize(white, 0.75) !important
 
     & svg
       height: 1em
